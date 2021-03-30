@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Time_Management_System_2021
 {
-    public partial class Form1 : Form
+    public partial class Generalpage : Form
     {
-        public Form1()
+        public Generalpage()
         {
             InitializeComponent();
+        }
+
+        private void btnGetStart_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homepage hp = new Homepage();
+            hp.ShowDialog();
         }
     }
 }
