@@ -19,8 +19,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
         static string myconnstring = ConfigurationManager.ConnectionStrings["connstring"].ConnectionString;
 
 
-
-
+        public int ID;
 
 
         //Selecting TimeSlots data from database
@@ -55,9 +54,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
 
 
         //Inserting TimeSlots data into db
-        public bool insertTimeSlots(TimeSlot ts)
+        public int insertTimeSlots(TimeSlot ts)
         {
-            bool isSuccess = false;
 
             //database connection
             SqlConnection conn = new SqlConnection(myconnstring);
@@ -65,10 +63,14 @@ namespace Time_Management_System_2021.Working_days_and_hours
             try
             {
                 //sql query
-                string sql = "INSERT INTO TimeSlot (StartingTime, EndingTime, TimeSlots) VALUES (@StartingTime, @EndingTime, @TimeSlots)";
+                string sql = "INSERT INTO TimeSlot (StartingTime, EndingTime, TimeSlots) VALUES (@StartingTime, @EndingTime, @TimeSlots); SELECT SCOPE_IDENTITY()";
 
                 //creating cmd using sql and conn
                 SqlCommand cmd = new SqlCommand(sql, conn);
+
+
+                cmd.CommandType = CommandType.Text;
+
 
                 //Creating parameters to add data
                 cmd.Parameters.AddWithValue("@StartingTime", ts.StartingTime);
@@ -77,16 +79,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
 
                 //Open connection
                 conn.Open();
-                int rows = cmd.ExecuteNonQuery();
-
-                if(rows > 0)
-                {
-                    isSuccess = true;
-                }
-                else
-                {
-                    isSuccess = false;
-                }
+                ID = Convert.ToInt32(cmd.ExecuteScalar());
 
             }
             catch (Exception ex)
@@ -97,7 +90,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             {
                 conn.Close();
             }
-            return isSuccess;
+            return ID;
 
         }
 

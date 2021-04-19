@@ -19,6 +19,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
         static string myconnstring = ConfigurationManager.ConnectionStrings["connstring"].ConnectionString;
 
 
+        public int ID;
+
 
         //Selecting TimeSlots data from database
         public DataTable displayWTPerDayData()
@@ -52,7 +54,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
 
 
         //Inserting WTPerDay data into db
-        public bool insertWTPerDay(WTPerDay wtpd)
+        public int insertWTPerDay(WTPerDay wtpd)
         {
             bool isSuccess = false;
 
@@ -62,10 +64,14 @@ namespace Time_Management_System_2021.Working_days_and_hours
             try
             {
                 //sql query
-                string sql = "INSERT INTO WTPerDay (WTHours, WTMinutes) VALUES (@WTHours, @WTMinutes)";
+                string sql = "INSERT INTO WTPerDay (WTHours, WTMinutes) VALUES (@WTHours, @WTMinutes); SELECT SCOPE_IDENTITY()";
 
                 //creating cmd using sql and conn
                 SqlCommand cmd = new SqlCommand(sql, conn);
+
+
+                cmd.CommandType = CommandType.Text;
+
 
                 //Creating parameters to add data
                 cmd.Parameters.AddWithValue("@WTHours", wtpd.WTHours);
@@ -73,16 +79,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
 
                 //Open connection
                 conn.Open();
-                int rows = cmd.ExecuteNonQuery();
-
-                if (rows > 0)
-                {
-                    isSuccess = true;
-                }
-                else
-                {
-                    isSuccess = false;
-                }
+                ID = Convert.ToInt32(cmd.ExecuteScalar());
 
             }
             catch (Exception ex)
@@ -93,7 +90,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             {
                 conn.Close();
             }
-            return isSuccess;
+            return ID;
 
         }
 

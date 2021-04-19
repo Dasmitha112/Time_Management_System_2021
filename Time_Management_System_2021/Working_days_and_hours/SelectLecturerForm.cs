@@ -19,6 +19,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
 
 
         SelectLecturer sl = new SelectLecturer();
+        public string EmployeeID;
+
 
 
         //Loading page data
@@ -28,15 +30,22 @@ namespace Time_Management_System_2021.Working_days_and_hours
             cmbBoxSelectLecturerInForm.DataSource = ds.Tables[0];
             cmbBoxSelectLecturerInForm.DisplayMember = "LecturerName";
             cmbBoxSelectLecturerInForm.ValueMember = "EmployeeID";
+
+            
         }
 
 
         //Select button
         private void btnSelectLecturerInForm_Click(object sender, EventArgs e)
         {
+
+            //Retrieving user selected ID value
+            EmployeeID = cmbBoxSelectLecturerInForm.SelectedValue.ToString();
+
             this.Hide();
-            ManageWDH mwdh = new ManageWDH();
+            ManageWDH mwdh = new ManageWDH(EmployeeID);
             mwdh.ShowDialog();
+
         }
 
 

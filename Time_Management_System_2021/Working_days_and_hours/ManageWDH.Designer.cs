@@ -95,15 +95,17 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.Controls.Add(this.tabPage5);
+            this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(720, 448);
+            this.tabControl.Size = new System.Drawing.Size(973, 601);
             this.tabControl.TabIndex = 3;
             // 
             // tabPage3
             // 
             this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
+            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.Controls.Add(this.numericUpDownMWD);
             this.tabPage3.Controls.Add(this.lblNumberOfWorkingDays);
             this.tabPage3.Controls.Add(this.btnHomeMWD);
@@ -121,18 +123,19 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.tabPage3.Controls.Add(this.dgvMWD);
             this.tabPage3.Controls.Add(this.lblTopicMWD);
             this.tabPage3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(712, 422);
+            this.tabPage3.Size = new System.Drawing.Size(965, 572);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Manage working days";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // numericUpDownMWD
             // 
-            this.numericUpDownMWD.Location = new System.Drawing.Point(176, 120);
+            this.numericUpDownMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.numericUpDownMWD.Location = new System.Drawing.Point(237, 159);
             this.numericUpDownMWD.Name = "numericUpDownMWD";
-            this.numericUpDownMWD.Size = new System.Drawing.Size(69, 20);
+            this.numericUpDownMWD.Size = new System.Drawing.Size(69, 24);
             this.numericUpDownMWD.TabIndex = 15;
             this.numericUpDownMWD.Value = new decimal(new int[] {
             5,
@@ -143,9 +146,10 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // lblNumberOfWorkingDays
             // 
             this.lblNumberOfWorkingDays.AutoSize = true;
-            this.lblNumberOfWorkingDays.Location = new System.Drawing.Point(49, 122);
+            this.lblNumberOfWorkingDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblNumberOfWorkingDays.Location = new System.Drawing.Point(62, 159);
             this.lblNumberOfWorkingDays.Name = "lblNumberOfWorkingDays";
-            this.lblNumberOfWorkingDays.Size = new System.Drawing.Size(121, 13);
+            this.lblNumberOfWorkingDays.Size = new System.Drawing.Size(169, 18);
             this.lblNumberOfWorkingDays.TabIndex = 14;
             this.lblNumberOfWorkingDays.Text = "Number of working days";
             // 
@@ -163,50 +167,63 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // 
             // btnResetMWD
             // 
-            this.btnResetMWD.Location = new System.Drawing.Point(457, 343);
+            this.btnResetMWD.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnResetMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnResetMWD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnResetMWD.Location = new System.Drawing.Point(678, 443);
             this.btnResetMWD.Name = "btnResetMWD";
-            this.btnResetMWD.Size = new System.Drawing.Size(75, 23);
+            this.btnResetMWD.Size = new System.Drawing.Size(150, 60);
             this.btnResetMWD.TabIndex = 12;
             this.btnResetMWD.Text = "RESET";
-            this.btnResetMWD.UseVisualStyleBackColor = true;
+            this.btnResetMWD.UseVisualStyleBackColor = false;
             this.btnResetMWD.Click += new System.EventHandler(this.btnResetMWD_Click);
             // 
             // btnDeleteMWD
             // 
-            this.btnDeleteMWD.Location = new System.Drawing.Point(351, 343);
+            this.btnDeleteMWD.BackColor = System.Drawing.Color.Maroon;
+            this.btnDeleteMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnDeleteMWD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDeleteMWD.Location = new System.Drawing.Point(497, 443);
             this.btnDeleteMWD.Name = "btnDeleteMWD";
-            this.btnDeleteMWD.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteMWD.Size = new System.Drawing.Size(150, 60);
             this.btnDeleteMWD.TabIndex = 11;
             this.btnDeleteMWD.Text = "DELETE";
-            this.btnDeleteMWD.UseVisualStyleBackColor = true;
+            this.btnDeleteMWD.UseVisualStyleBackColor = false;
             this.btnDeleteMWD.Click += new System.EventHandler(this.btnDeleteMWD_Click);
             // 
             // btnEditMWD
             // 
-            this.btnEditMWD.Location = new System.Drawing.Point(247, 343);
+            this.btnEditMWD.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnEditMWD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEditMWD.Location = new System.Drawing.Point(316, 443);
             this.btnEditMWD.Name = "btnEditMWD";
-            this.btnEditMWD.Size = new System.Drawing.Size(75, 23);
+            this.btnEditMWD.Size = new System.Drawing.Size(150, 60);
             this.btnEditMWD.TabIndex = 10;
-            this.btnEditMWD.Text = "EDIT";
-            this.btnEditMWD.UseVisualStyleBackColor = true;
+            this.btnEditMWD.Text = "UPDATE";
+            this.btnEditMWD.UseVisualStyleBackColor = false;
             this.btnEditMWD.Click += new System.EventHandler(this.btnEditMWD_Click);
             // 
             // btnAddMWD
             // 
-            this.btnAddMWD.Location = new System.Drawing.Point(144, 343);
+            this.btnAddMWD.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAddMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnAddMWD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddMWD.Location = new System.Drawing.Point(135, 443);
             this.btnAddMWD.Name = "btnAddMWD";
-            this.btnAddMWD.Size = new System.Drawing.Size(75, 23);
+            this.btnAddMWD.Size = new System.Drawing.Size(150, 60);
             this.btnAddMWD.TabIndex = 9;
             this.btnAddMWD.Text = "ADD";
-            this.btnAddMWD.UseVisualStyleBackColor = true;
+            this.btnAddMWD.UseVisualStyleBackColor = false;
             this.btnAddMWD.Click += new System.EventHandler(this.btnAddMWD_Click);
             // 
             // chkboxSunday
             // 
             this.chkboxSunday.AutoSize = true;
-            this.chkboxSunday.Location = new System.Drawing.Point(543, 285);
+            this.chkboxSunday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.chkboxSunday.Location = new System.Drawing.Point(772, 373);
             this.chkboxSunday.Name = "chkboxSunday";
-            this.chkboxSunday.Size = new System.Drawing.Size(62, 17);
+            this.chkboxSunday.Size = new System.Drawing.Size(76, 22);
             this.chkboxSunday.TabIndex = 8;
             this.chkboxSunday.Text = "Sunday";
             this.chkboxSunday.UseVisualStyleBackColor = true;
@@ -214,9 +231,10 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // chkboxSaturday
             // 
             this.chkboxSaturday.AutoSize = true;
-            this.chkboxSaturday.Location = new System.Drawing.Point(454, 285);
+            this.chkboxSaturday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.chkboxSaturday.Location = new System.Drawing.Point(664, 373);
             this.chkboxSaturday.Name = "chkboxSaturday";
-            this.chkboxSaturday.Size = new System.Drawing.Size(68, 17);
+            this.chkboxSaturday.Size = new System.Drawing.Size(85, 22);
             this.chkboxSaturday.TabIndex = 7;
             this.chkboxSaturday.Text = "Saturday";
             this.chkboxSaturday.UseVisualStyleBackColor = true;
@@ -224,9 +242,10 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // chkboxFriday
             // 
             this.chkboxFriday.AutoSize = true;
-            this.chkboxFriday.Location = new System.Drawing.Point(382, 285);
+            this.chkboxFriday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.chkboxFriday.Location = new System.Drawing.Point(574, 373);
             this.chkboxFriday.Name = "chkboxFriday";
-            this.chkboxFriday.Size = new System.Drawing.Size(54, 17);
+            this.chkboxFriday.Size = new System.Drawing.Size(67, 22);
             this.chkboxFriday.TabIndex = 6;
             this.chkboxFriday.Text = "Friday";
             this.chkboxFriday.UseVisualStyleBackColor = true;
@@ -234,9 +253,10 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // chkboxThursday
             // 
             this.chkboxThursday.AutoSize = true;
-            this.chkboxThursday.Location = new System.Drawing.Point(306, 285);
+            this.chkboxThursday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.chkboxThursday.Location = new System.Drawing.Point(463, 373);
             this.chkboxThursday.Name = "chkboxThursday";
-            this.chkboxThursday.Size = new System.Drawing.Size(70, 17);
+            this.chkboxThursday.Size = new System.Drawing.Size(88, 22);
             this.chkboxThursday.TabIndex = 5;
             this.chkboxThursday.Text = "Thursday";
             this.chkboxThursday.UseVisualStyleBackColor = true;
@@ -244,9 +264,10 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // chkboxWednesday
             // 
             this.chkboxWednesday.AutoSize = true;
-            this.chkboxWednesday.Location = new System.Drawing.Point(212, 285);
+            this.chkboxWednesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.chkboxWednesday.Location = new System.Drawing.Point(335, 373);
             this.chkboxWednesday.Name = "chkboxWednesday";
-            this.chkboxWednesday.Size = new System.Drawing.Size(83, 17);
+            this.chkboxWednesday.Size = new System.Drawing.Size(105, 22);
             this.chkboxWednesday.TabIndex = 4;
             this.chkboxWednesday.Text = "Wednesday";
             this.chkboxWednesday.UseVisualStyleBackColor = true;
@@ -254,9 +275,10 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // chkboxTuesday
             // 
             this.chkboxTuesday.AutoSize = true;
-            this.chkboxTuesday.Location = new System.Drawing.Point(135, 285);
+            this.chkboxTuesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.chkboxTuesday.Location = new System.Drawing.Point(229, 373);
             this.chkboxTuesday.Name = "chkboxTuesday";
-            this.chkboxTuesday.Size = new System.Drawing.Size(67, 17);
+            this.chkboxTuesday.Size = new System.Drawing.Size(83, 22);
             this.chkboxTuesday.TabIndex = 3;
             this.chkboxTuesday.Text = "Tuesday";
             this.chkboxTuesday.UseVisualStyleBackColor = true;
@@ -264,9 +286,10 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // chkboxMonday
             // 
             this.chkboxMonday.AutoSize = true;
-            this.chkboxMonday.Location = new System.Drawing.Point(52, 285);
+            this.chkboxMonday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.chkboxMonday.Location = new System.Drawing.Point(126, 373);
             this.chkboxMonday.Name = "chkboxMonday";
-            this.chkboxMonday.Size = new System.Drawing.Size(64, 17);
+            this.chkboxMonday.Size = new System.Drawing.Size(80, 22);
             this.chkboxMonday.TabIndex = 2;
             this.chkboxMonday.Text = "Monday";
             this.chkboxMonday.UseVisualStyleBackColor = true;
@@ -274,9 +297,9 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // dgvMWD
             // 
             this.dgvMWD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMWD.Location = new System.Drawing.Point(306, 85);
+            this.dgvMWD.Location = new System.Drawing.Point(335, 135);
             this.dgvMWD.Name = "dgvMWD";
-            this.dgvMWD.Size = new System.Drawing.Size(389, 167);
+            this.dgvMWD.Size = new System.Drawing.Size(602, 201);
             this.dgvMWD.TabIndex = 1;
             this.dgvMWD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMWD_CellContentClick);
             this.dgvMWD.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvMWD_RowHeaderMouseClick);
@@ -284,16 +307,18 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // lblTopicMWD
             // 
             this.lblTopicMWD.AutoSize = true;
-            this.lblTopicMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTopicMWD.Location = new System.Drawing.Point(267, 35);
+            this.lblTopicMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
+            this.lblTopicMWD.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblTopicMWD.Location = new System.Drawing.Point(299, 32);
             this.lblTopicMWD.Name = "lblTopicMWD";
-            this.lblTopicMWD.Size = new System.Drawing.Size(159, 16);
+            this.lblTopicMWD.Size = new System.Drawing.Size(325, 36);
             this.lblTopicMWD.TabIndex = 0;
             this.lblTopicMWD.Text = "Manage working days";
             // 
             // tabPage4
             // 
             this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
+            this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage4.Controls.Add(this.btnHomeWTPerDay);
             this.tabPage4.Controls.Add(this.dgvWTPerDay);
             this.tabPage4.Controls.Add(this.numericUpDownMinutesWTPerDay);
@@ -306,9 +331,9 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.tabPage4.Controls.Add(this.lblHours);
             this.tabPage4.Controls.Add(this.lblWTPerDay);
             this.tabPage4.Controls.Add(this.lblTopicWTPerDay);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(712, 422);
+            this.tabPage4.Size = new System.Drawing.Size(965, 572);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Working time per day";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -328,107 +353,126 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // dgvWTPerDay
             // 
             this.dgvWTPerDay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvWTPerDay.Location = new System.Drawing.Point(157, 269);
+            this.dgvWTPerDay.Location = new System.Drawing.Point(293, 345);
             this.dgvWTPerDay.Name = "dgvWTPerDay";
-            this.dgvWTPerDay.Size = new System.Drawing.Size(340, 130);
+            this.dgvWTPerDay.Size = new System.Drawing.Size(363, 179);
             this.dgvWTPerDay.TabIndex = 10;
             this.dgvWTPerDay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWTPerDay_CellContentClick);
             this.dgvWTPerDay.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvWTPerDay_RowHeaderMouseClick);
             // 
             // numericUpDownMinutesWTPerDay
             // 
-            this.numericUpDownMinutesWTPerDay.Location = new System.Drawing.Point(367, 120);
+            this.numericUpDownMinutesWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.numericUpDownMinutesWTPerDay.Location = new System.Drawing.Point(582, 159);
             this.numericUpDownMinutesWTPerDay.Name = "numericUpDownMinutesWTPerDay";
-            this.numericUpDownMinutesWTPerDay.Size = new System.Drawing.Size(80, 20);
+            this.numericUpDownMinutesWTPerDay.Size = new System.Drawing.Size(80, 24);
             this.numericUpDownMinutesWTPerDay.TabIndex = 9;
             // 
             // numericUpDownHoursWTPerDay
             // 
-            this.numericUpDownHoursWTPerDay.Location = new System.Drawing.Point(207, 120);
+            this.numericUpDownHoursWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.numericUpDownHoursWTPerDay.Location = new System.Drawing.Point(400, 159);
             this.numericUpDownHoursWTPerDay.Name = "numericUpDownHoursWTPerDay";
-            this.numericUpDownHoursWTPerDay.Size = new System.Drawing.Size(84, 20);
+            this.numericUpDownHoursWTPerDay.Size = new System.Drawing.Size(84, 24);
             this.numericUpDownHoursWTPerDay.TabIndex = 8;
             // 
             // btnResetWTPerDay
             // 
-            this.btnResetWTPerDay.Location = new System.Drawing.Point(514, 213);
+            this.btnResetWTPerDay.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnResetWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnResetWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnResetWTPerDay.Location = new System.Drawing.Point(685, 240);
             this.btnResetWTPerDay.Name = "btnResetWTPerDay";
-            this.btnResetWTPerDay.Size = new System.Drawing.Size(75, 23);
+            this.btnResetWTPerDay.Size = new System.Drawing.Size(150, 60);
             this.btnResetWTPerDay.TabIndex = 7;
             this.btnResetWTPerDay.Text = "RESET";
-            this.btnResetWTPerDay.UseVisualStyleBackColor = true;
+            this.btnResetWTPerDay.UseVisualStyleBackColor = false;
             this.btnResetWTPerDay.Click += new System.EventHandler(this.btnResetWTPerDay_Click_1);
             // 
             // btnDeleteWTPerDay
             // 
-            this.btnDeleteWTPerDay.Location = new System.Drawing.Point(372, 213);
+            this.btnDeleteWTPerDay.BackColor = System.Drawing.Color.Maroon;
+            this.btnDeleteWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnDeleteWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDeleteWTPerDay.Location = new System.Drawing.Point(506, 240);
             this.btnDeleteWTPerDay.Name = "btnDeleteWTPerDay";
-            this.btnDeleteWTPerDay.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteWTPerDay.Size = new System.Drawing.Size(150, 60);
             this.btnDeleteWTPerDay.TabIndex = 6;
             this.btnDeleteWTPerDay.Text = "DELETE";
-            this.btnDeleteWTPerDay.UseVisualStyleBackColor = true;
+            this.btnDeleteWTPerDay.UseVisualStyleBackColor = false;
             this.btnDeleteWTPerDay.Click += new System.EventHandler(this.btnDeleteWTPerDay_Click_1);
             // 
             // btnEditWTPerDay
             // 
-            this.btnEditWTPerDay.Location = new System.Drawing.Point(228, 213);
+            this.btnEditWTPerDay.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnEditWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEditWTPerDay.Location = new System.Drawing.Point(327, 240);
             this.btnEditWTPerDay.Name = "btnEditWTPerDay";
-            this.btnEditWTPerDay.Size = new System.Drawing.Size(75, 23);
+            this.btnEditWTPerDay.Size = new System.Drawing.Size(150, 60);
             this.btnEditWTPerDay.TabIndex = 5;
             this.btnEditWTPerDay.Text = "EDIT";
-            this.btnEditWTPerDay.UseVisualStyleBackColor = true;
+            this.btnEditWTPerDay.UseVisualStyleBackColor = false;
             this.btnEditWTPerDay.Click += new System.EventHandler(this.btnEditWTPerDay_Click);
             // 
             // btnAddWTPerDay
             // 
-            this.btnAddWTPerDay.Location = new System.Drawing.Point(91, 213);
+            this.btnAddWTPerDay.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAddWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnAddWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddWTPerDay.Location = new System.Drawing.Point(148, 240);
             this.btnAddWTPerDay.Name = "btnAddWTPerDay";
-            this.btnAddWTPerDay.Size = new System.Drawing.Size(75, 23);
+            this.btnAddWTPerDay.Size = new System.Drawing.Size(150, 60);
             this.btnAddWTPerDay.TabIndex = 4;
             this.btnAddWTPerDay.Text = "ADD";
-            this.btnAddWTPerDay.UseVisualStyleBackColor = true;
+            this.btnAddWTPerDay.UseVisualStyleBackColor = false;
             this.btnAddWTPerDay.Click += new System.EventHandler(this.btnAddWTPerDay_Click);
             // 
             // lblMinutes
             // 
             this.lblMinutes.AutoSize = true;
-            this.lblMinutes.Location = new System.Drawing.Point(453, 123);
+            this.lblMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblMinutes.Location = new System.Drawing.Point(668, 162);
             this.lblMinutes.Name = "lblMinutes";
-            this.lblMinutes.Size = new System.Drawing.Size(44, 13);
+            this.lblMinutes.Size = new System.Drawing.Size(60, 18);
             this.lblMinutes.TabIndex = 3;
             this.lblMinutes.Text = "Minutes";
             // 
             // lblHours
             // 
             this.lblHours.AutoSize = true;
-            this.lblHours.Location = new System.Drawing.Point(297, 123);
+            this.lblHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblHours.Location = new System.Drawing.Point(486, 162);
             this.lblHours.Name = "lblHours";
-            this.lblHours.Size = new System.Drawing.Size(35, 13);
+            this.lblHours.Size = new System.Drawing.Size(49, 18);
             this.lblHours.TabIndex = 2;
             this.lblHours.Text = "Hours";
             // 
             // lblWTPerDay
             // 
             this.lblWTPerDay.AutoSize = true;
-            this.lblWTPerDay.Location = new System.Drawing.Point(63, 125);
+            this.lblWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblWTPerDay.Location = new System.Drawing.Point(194, 159);
             this.lblWTPerDay.Name = "lblWTPerDay";
-            this.lblWTPerDay.Size = new System.Drawing.Size(107, 13);
+            this.lblWTPerDay.Size = new System.Drawing.Size(148, 18);
             this.lblWTPerDay.TabIndex = 1;
             this.lblWTPerDay.Text = "Working time per day";
             // 
             // lblTopicWTPerDay
             // 
             this.lblTopicWTPerDay.AutoSize = true;
-            this.lblTopicWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTopicWTPerDay.Location = new System.Drawing.Point(279, 38);
+            this.lblTopicWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
+            this.lblTopicWTPerDay.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblTopicWTPerDay.Location = new System.Drawing.Point(308, 43);
             this.lblTopicWTPerDay.Name = "lblTopicWTPerDay";
-            this.lblTopicWTPerDay.Size = new System.Drawing.Size(155, 16);
+            this.lblTopicWTPerDay.Size = new System.Drawing.Size(316, 36);
             this.lblTopicWTPerDay.TabIndex = 0;
             this.lblTopicWTPerDay.Text = "Working time per day";
             // 
             // tabPage5
             // 
             this.tabPage5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage5.BackgroundImage")));
+            this.tabPage5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage5.Controls.Add(this.btnHomeTimeSlots);
             this.tabPage5.Controls.Add(this.txtBoxEndTime);
             this.tabPage5.Controls.Add(this.txtBoxStartTime);
@@ -442,9 +486,9 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.tabPage5.Controls.Add(this.lblEndTime);
             this.tabPage5.Controls.Add(this.lblStartTime);
             this.tabPage5.Controls.Add(this.lblTopicTimeSlots);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(712, 422);
+            this.tabPage5.Size = new System.Drawing.Size(965, 572);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Time slots";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -464,113 +508,132 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // 
             // txtBoxEndTime
             // 
-            this.txtBoxEndTime.Location = new System.Drawing.Point(450, 112);
+            this.txtBoxEndTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.txtBoxEndTime.Location = new System.Drawing.Point(619, 125);
             this.txtBoxEndTime.Name = "txtBoxEndTime";
-            this.txtBoxEndTime.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxEndTime.Size = new System.Drawing.Size(100, 24);
             this.txtBoxEndTime.TabIndex = 11;
             // 
             // txtBoxStartTime
             // 
-            this.txtBoxStartTime.Location = new System.Drawing.Point(161, 112);
+            this.txtBoxStartTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.txtBoxStartTime.Location = new System.Drawing.Point(277, 126);
             this.txtBoxStartTime.Name = "txtBoxStartTime";
-            this.txtBoxStartTime.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxStartTime.Size = new System.Drawing.Size(100, 24);
             this.txtBoxStartTime.TabIndex = 10;
             // 
             // cmbTimeSlot
             // 
+            this.cmbTimeSlot.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cmbTimeSlot.FormattingEnabled = true;
             this.cmbTimeSlot.Items.AddRange(new object[] {
             "1 Hour",
             "30 Minutes"});
-            this.cmbTimeSlot.Location = new System.Drawing.Point(302, 162);
+            this.cmbTimeSlot.Location = new System.Drawing.Point(430, 173);
             this.cmbTimeSlot.Name = "cmbTimeSlot";
-            this.cmbTimeSlot.Size = new System.Drawing.Size(121, 21);
+            this.cmbTimeSlot.Size = new System.Drawing.Size(121, 26);
             this.cmbTimeSlot.TabIndex = 9;
             // 
             // dgvTimeSlots
             // 
             this.dgvTimeSlots.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTimeSlots.Location = new System.Drawing.Point(139, 291);
+            this.dgvTimeSlots.Location = new System.Drawing.Point(263, 345);
             this.dgvTimeSlots.Name = "dgvTimeSlots";
-            this.dgvTimeSlots.Size = new System.Drawing.Size(443, 121);
+            this.dgvTimeSlots.Size = new System.Drawing.Size(464, 169);
             this.dgvTimeSlots.TabIndex = 8;
             this.dgvTimeSlots.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTimeSlots_CellContentClick);
             this.dgvTimeSlots.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvTimeSlots_RowHeaderMouseClick);
             // 
             // btnResetTimeSlots
             // 
-            this.btnResetTimeSlots.Location = new System.Drawing.Point(534, 231);
+            this.btnResetTimeSlots.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnResetTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnResetTimeSlots.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnResetTimeSlots.Location = new System.Drawing.Point(706, 253);
             this.btnResetTimeSlots.Name = "btnResetTimeSlots";
-            this.btnResetTimeSlots.Size = new System.Drawing.Size(75, 23);
+            this.btnResetTimeSlots.Size = new System.Drawing.Size(150, 60);
             this.btnResetTimeSlots.TabIndex = 7;
             this.btnResetTimeSlots.Text = "RESET";
-            this.btnResetTimeSlots.UseVisualStyleBackColor = true;
+            this.btnResetTimeSlots.UseVisualStyleBackColor = false;
             this.btnResetTimeSlots.Click += new System.EventHandler(this.btnResetTimeSlots_Click);
             // 
             // btnDeleteTimeSlots
             // 
-            this.btnDeleteTimeSlots.Location = new System.Drawing.Point(399, 231);
+            this.btnDeleteTimeSlots.BackColor = System.Drawing.Color.Maroon;
+            this.btnDeleteTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnDeleteTimeSlots.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDeleteTimeSlots.Location = new System.Drawing.Point(526, 253);
             this.btnDeleteTimeSlots.Name = "btnDeleteTimeSlots";
-            this.btnDeleteTimeSlots.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteTimeSlots.Size = new System.Drawing.Size(150, 60);
             this.btnDeleteTimeSlots.TabIndex = 6;
             this.btnDeleteTimeSlots.Text = "DELETE";
-            this.btnDeleteTimeSlots.UseVisualStyleBackColor = true;
+            this.btnDeleteTimeSlots.UseVisualStyleBackColor = false;
             this.btnDeleteTimeSlots.Click += new System.EventHandler(this.btnDeleteTimeSlots_Click);
             // 
             // btnEditTimeSlots
             // 
-            this.btnEditTimeSlots.Location = new System.Drawing.Point(266, 231);
+            this.btnEditTimeSlots.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnEditTimeSlots.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEditTimeSlots.Location = new System.Drawing.Point(346, 253);
             this.btnEditTimeSlots.Name = "btnEditTimeSlots";
-            this.btnEditTimeSlots.Size = new System.Drawing.Size(75, 23);
+            this.btnEditTimeSlots.Size = new System.Drawing.Size(150, 60);
             this.btnEditTimeSlots.TabIndex = 5;
-            this.btnEditTimeSlots.Text = "EDIT";
-            this.btnEditTimeSlots.UseVisualStyleBackColor = true;
+            this.btnEditTimeSlots.Text = "UPDATE";
+            this.btnEditTimeSlots.UseVisualStyleBackColor = false;
             this.btnEditTimeSlots.Click += new System.EventHandler(this.btnEditTimeSlots_Click);
             // 
             // btnAddTimeSlots
             // 
-            this.btnAddTimeSlots.Location = new System.Drawing.Point(139, 231);
+            this.btnAddTimeSlots.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAddTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.btnAddTimeSlots.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddTimeSlots.Location = new System.Drawing.Point(166, 253);
             this.btnAddTimeSlots.Name = "btnAddTimeSlots";
-            this.btnAddTimeSlots.Size = new System.Drawing.Size(75, 23);
+            this.btnAddTimeSlots.Size = new System.Drawing.Size(150, 60);
             this.btnAddTimeSlots.TabIndex = 4;
             this.btnAddTimeSlots.Text = "ADD";
-            this.btnAddTimeSlots.UseVisualStyleBackColor = true;
+            this.btnAddTimeSlots.UseVisualStyleBackColor = false;
             this.btnAddTimeSlots.Click += new System.EventHandler(this.btnAddTimeSlots_Click);
             // 
             // lblTimeSlot
             // 
             this.lblTimeSlot.AutoSize = true;
-            this.lblTimeSlot.Location = new System.Drawing.Point(247, 165);
+            this.lblTimeSlot.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblTimeSlot.Location = new System.Drawing.Point(356, 177);
             this.lblTimeSlot.Name = "lblTimeSlot";
-            this.lblTimeSlot.Size = new System.Drawing.Size(49, 13);
+            this.lblTimeSlot.Size = new System.Drawing.Size(69, 18);
             this.lblTimeSlot.TabIndex = 3;
             this.lblTimeSlot.Text = "Time slot";
             // 
             // lblEndTime
             // 
             this.lblEndTime.AutoSize = true;
-            this.lblEndTime.Location = new System.Drawing.Point(396, 115);
+            this.lblEndTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblEndTime.Location = new System.Drawing.Point(548, 126);
             this.lblEndTime.Name = "lblEndTime";
-            this.lblEndTime.Size = new System.Drawing.Size(48, 13);
+            this.lblEndTime.Size = new System.Drawing.Size(66, 18);
             this.lblEndTime.TabIndex = 2;
             this.lblEndTime.Text = "End time";
             // 
             // lblStartTime
             // 
             this.lblStartTime.AutoSize = true;
-            this.lblStartTime.Location = new System.Drawing.Point(104, 115);
+            this.lblStartTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblStartTime.Location = new System.Drawing.Point(201, 126);
             this.lblStartTime.Name = "lblStartTime";
-            this.lblStartTime.Size = new System.Drawing.Size(51, 13);
+            this.lblStartTime.Size = new System.Drawing.Size(71, 18);
             this.lblStartTime.TabIndex = 1;
             this.lblStartTime.Text = "Start time";
             // 
             // lblTopicTimeSlots
             // 
             this.lblTopicTimeSlots.AutoSize = true;
-            this.lblTopicTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTopicTimeSlots.Location = new System.Drawing.Point(298, 36);
+            this.lblTopicTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
+            this.lblTopicTimeSlots.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblTopicTimeSlots.Location = new System.Drawing.Point(407, 38);
             this.lblTopicTimeSlots.Name = "lblTopicTimeSlots";
-            this.lblTopicTimeSlots.Size = new System.Drawing.Size(80, 16);
+            this.lblTopicTimeSlots.Size = new System.Drawing.Size(159, 36);
             this.lblTopicTimeSlots.TabIndex = 0;
             this.lblTopicTimeSlots.Text = "Time slots";
             // 
@@ -580,7 +643,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(721, 446);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.tabControl);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "ManageWDH";

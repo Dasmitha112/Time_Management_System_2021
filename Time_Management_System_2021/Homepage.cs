@@ -30,6 +30,12 @@ namespace Time_Management_System_2021
             this.Hide();
             SelectLecturerForm slf = new SelectLecturerForm();
             slf.ShowDialog();
+
+        }
+
+        private void btnLecturer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

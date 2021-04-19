@@ -12,16 +12,31 @@ namespace Time_Management_System_2021.Working_days_and_hours
 {
     public partial class ManageWDH : Form
     {
-        public ManageWDH()
+
+        //variables
+        public string passedEmployeeID, tableEmployeeID;
+        public int WorkingDaysID, WTPerDayID, TimeSlotID;
+
+
+
+        //overloading constructor
+        public ManageWDH(string EmployeeID)
         {
             InitializeComponent();
+            passedEmployeeID = EmployeeID;
         }
+
 
 
         //Creating objects from the classes
         TimeSlot ts = new TimeSlot();
         WTPerDay wtpd = new WTPerDay();
         WorkingDays wd = new WorkingDays();
+        SelectLecturerForm sl = new SelectLecturerForm();
+        has_lecturer_workingDays_WTPerDay_Timeslot h = new has_lecturer_workingDays_WTPerDay_Timeslot();
+
+
+
 
 
 
@@ -43,12 +58,6 @@ namespace Time_Management_System_2021.Working_days_and_hours
 
         // ------------------------ Homepage navigation -----------------------------
 
-        private void btnHomeSelectLecturer_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Homepage hp = new Homepage();
-            hp.ShowDialog();
-        }
 
         private void btnHomeMWD_Click(object sender, EventArgs e)
         {
@@ -111,9 +120,9 @@ namespace Time_Management_System_2021.Working_days_and_hours
                 ts.TimeSlots = cmbTimeSlot.Text;
 
                 //Inserting data to db
-                bool success = ts.insertTimeSlots(ts);
+                int TimeSlotID = ts.insertTimeSlots(ts);
 
-                if (success == true)
+                if (TimeSlotID > 0)
                 {
                     MessageBox.Show("New time slot successfully added!");
 
@@ -129,6 +138,47 @@ namespace Time_Management_System_2021.Working_days_and_hours
                 //Load time slots data on data gridview
                 DataTable dtTS = ts.displayTimeSlotsData();
                 dgvTimeSlots.DataSource = dtTS;
+
+
+
+
+
+                // ---------------------------- Adding data to reference table ----------------------------------
+
+
+                if(TSID == null || TSID == "" || TSID == " ")
+                {                 
+                    //inserting data
+                    tableEmployeeID = passedEmployeeID;
+
+                    h.EmployeeID = tableEmployeeID;
+                    h.WDID = WorkingDaysID;
+                    h.WTPDID = WTPerDayID;
+                    h.TSID = TimeSlotID;
+
+                    //Inserting data to db
+                    h.insertHas_lecturer_workingDays_WTPerDay_Timeslot(h);
+                }
+                else
+                {
+                    //inserting data
+                    tableEmployeeID = passedEmployeeID;
+                    int tableWDID = int.Parse(WDID);
+                    int tableWTPDID = int.Parse(WTPDID);
+                    int tableTSID = int.Parse(TSID);
+
+                    h.EmployeeID = tableEmployeeID;
+                    h.WDID = tableWDID;
+                    h.WTPDID = tableWTPDID;
+                    h.TSID = tableTSID;
+
+                    //Inserting data to db
+                    h.insertHas_lecturer_workingDays_WTPerDay_Timeslot(h);
+                }
+                
+
+
+
             }
             else
             {
@@ -238,7 +288,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
 
 
         
-        
+
         // ------------------------ Working time per day tab -----------------------------
 
 
@@ -253,9 +303,9 @@ namespace Time_Management_System_2021.Working_days_and_hours
                 wtpd.WTMinutes = int.Parse(numericUpDownMinutesWTPerDay.Text);
 
                 //Inserting data to db
-                bool success = wtpd.insertWTPerDay(wtpd);
+                WTPerDayID = wtpd.insertWTPerDay(wtpd);
 
-                if (success == true)
+                if (WTPerDayID > 0)
                 {
                     MessageBox.Show("New record successfully added!");
 
@@ -373,7 +423,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
 
         // ---------------------------- Working days tab ----------------------------------
 
-
+        
 
         //Insert data
         private void btnAddMWD_Click(object sender, EventArgs e)
@@ -436,9 +486,9 @@ namespace Time_Management_System_2021.Working_days_and_hours
                 wd.Day7 = sunday;
 
                 //Inserting data to db
-                bool success = wd.insertWorkingDays(wd);
+                WorkingDaysID = wd.insertWorkingDays(wd);
 
-                if (success == true)
+                if (WorkingDaysID > 0)
                 {
                     MessageBox.Show("New record successfully added!");
 
@@ -629,7 +679,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
         //Method to clear Working days fields
         public void clearWorkingDaysFields()
         {
-            numericUpDownMWD.Text = "";
+            numericUpDownMWD.Text = "5";
             chkboxMonday.Checked = false;
             chkboxTuesday.Checked = false;
             chkboxWednesday.Checked = false;

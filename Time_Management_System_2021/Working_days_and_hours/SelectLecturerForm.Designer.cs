@@ -39,39 +39,47 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // lblSelectLecturerInForm
             // 
             this.lblSelectLecturerInForm.AutoSize = true;
+            this.lblSelectLecturerInForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lblSelectLecturerInForm.ForeColor = System.Drawing.Color.Black;
             this.lblSelectLecturerInForm.Location = new System.Drawing.Point(116, 74);
             this.lblSelectLecturerInForm.Name = "lblSelectLecturerInForm";
-            this.lblSelectLecturerInForm.Size = new System.Drawing.Size(75, 13);
+            this.lblSelectLecturerInForm.Size = new System.Drawing.Size(102, 18);
             this.lblSelectLecturerInForm.TabIndex = 0;
             this.lblSelectLecturerInForm.Text = "Select lecturer";
             // 
             // cmbBoxSelectLecturerInForm
             // 
+            this.cmbBoxSelectLecturerInForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cmbBoxSelectLecturerInForm.FormattingEnabled = true;
-            this.cmbBoxSelectLecturerInForm.Location = new System.Drawing.Point(202, 71);
+            this.cmbBoxSelectLecturerInForm.Location = new System.Drawing.Point(228, 72);
             this.cmbBoxSelectLecturerInForm.Name = "cmbBoxSelectLecturerInForm";
-            this.cmbBoxSelectLecturerInForm.Size = new System.Drawing.Size(166, 21);
+            this.cmbBoxSelectLecturerInForm.Size = new System.Drawing.Size(166, 26);
             this.cmbBoxSelectLecturerInForm.TabIndex = 1;
             // 
             // btnSelectLecturerInForm
             // 
-            this.btnSelectLecturerInForm.Location = new System.Drawing.Point(146, 155);
+            this.btnSelectLecturerInForm.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnSelectLecturerInForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnSelectLecturerInForm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSelectLecturerInForm.Location = new System.Drawing.Point(119, 187);
             this.btnSelectLecturerInForm.Name = "btnSelectLecturerInForm";
-            this.btnSelectLecturerInForm.Size = new System.Drawing.Size(75, 23);
+            this.btnSelectLecturerInForm.Size = new System.Drawing.Size(120, 55);
             this.btnSelectLecturerInForm.TabIndex = 2;
             this.btnSelectLecturerInForm.Text = "SELECT";
-            this.btnSelectLecturerInForm.UseVisualStyleBackColor = true;
+            this.btnSelectLecturerInForm.UseVisualStyleBackColor = false;
             this.btnSelectLecturerInForm.Click += new System.EventHandler(this.btnSelectLecturerInForm_Click);
             // 
             // btnCancelInForm
             // 
-            this.btnCancelInForm.Location = new System.Drawing.Point(254, 155);
+            this.btnCancelInForm.BackColor = System.Drawing.Color.Maroon;
+            this.btnCancelInForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnCancelInForm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancelInForm.Location = new System.Drawing.Point(274, 187);
             this.btnCancelInForm.Name = "btnCancelInForm";
-            this.btnCancelInForm.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelInForm.Size = new System.Drawing.Size(120, 55);
             this.btnCancelInForm.TabIndex = 3;
             this.btnCancelInForm.Text = "CANCEL";
-            this.btnCancelInForm.UseVisualStyleBackColor = true;
+            this.btnCancelInForm.UseVisualStyleBackColor = false;
             this.btnCancelInForm.Click += new System.EventHandler(this.btnCancelInForm_Click);
             // 
             // SelectLecturerForm
@@ -80,7 +88,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(499, 259);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(519, 272);
             this.Controls.Add(this.btnCancelInForm);
             this.Controls.Add(this.btnSelectLecturerInForm);
             this.Controls.Add(this.cmbBoxSelectLecturerInForm);

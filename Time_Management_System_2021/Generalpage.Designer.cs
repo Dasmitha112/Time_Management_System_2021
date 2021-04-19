@@ -59,15 +59,15 @@ namespace Time_Management_System_2021
             // btnGetStart
             // 
             this.btnGetStart.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnGetStart.FlatAppearance.BorderSize = 0;
+            this.btnGetStart.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnGetStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGetStart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGetStart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11F);
             this.btnGetStart.ForeColor = System.Drawing.Color.White;
             this.btnGetStart.Image = ((System.Drawing.Image)(resources.GetObject("btnGetStart.Image")));
             this.btnGetStart.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGetStart.Location = new System.Drawing.Point(61, 312);
+            this.btnGetStart.Location = new System.Drawing.Point(60, 316);
             this.btnGetStart.Name = "btnGetStart";
-            this.btnGetStart.Size = new System.Drawing.Size(103, 52);
+            this.btnGetStart.Size = new System.Drawing.Size(119, 56);
             this.btnGetStart.TabIndex = 2;
             this.btnGetStart.Text = "Get Start";
             this.btnGetStart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -86,7 +86,7 @@ namespace Time_Management_System_2021
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnGetStart);

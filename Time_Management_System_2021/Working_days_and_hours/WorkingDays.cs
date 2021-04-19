@@ -26,7 +26,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
         static string myconnstring = ConfigurationManager.ConnectionStrings["connstring"].ConnectionString;
 
 
-
+        public int ID;
 
 
         //Selecting TimeSlots data from database
@@ -38,7 +38,9 @@ namespace Time_Management_System_2021.Working_days_and_hours
             try
             {
                 //sql query
+                //string sql = "SELECT wd.WDID, l.LecturerName, wd.NumberOfWorkingDays, wd.Day1, wd.Day2, wd.Day3, wd.Day4, wd.Day5, wd.Day6, wd.Day7 FROM WorkingDays wd, Lecturer l, has_lecturer_WorkingDays_WTPerDay_Timeslot h where h.WDID=wd.WDID AND h.EmployeeID=l.EmployeeID";
                 string sql = "SELECT * FROM WorkingDays";
+
 
                 //creating cmd using sql and conn
                 SqlCommand cmd = new SqlCommand(sql, conn);
@@ -61,9 +63,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
 
 
         //Inserting WorkingDays data into db
-        public bool insertWorkingDays(WorkingDays wd)
-        {
-            bool isSuccess = false;
+        public int insertWorkingDays(WorkingDays wd)
+        {      
 
             //database connection
             SqlConnection conn = new SqlConnection(myconnstring);
@@ -71,10 +72,12 @@ namespace Time_Management_System_2021.Working_days_and_hours
             try
             {
                 //sql query
-                string sql = "INSERT INTO WorkingDays (NumberOfWorkingDays, Day1, Day2, Day3, Day4, Day5, Day6, Day7) VALUES (@NumberOfWorkingDays, @Day1, @Day2, @Day3, @Day4, @Day5, @Day6, @Day7)";
+                string sql = "INSERT INTO WorkingDays (NumberOfWorkingDays, Day1, Day2, Day3, Day4, Day5, Day6, Day7) VALUES (@NumberOfWorkingDays, @Day1, @Day2, @Day3, @Day4, @Day5, @Day6, @Day7); SELECT SCOPE_IDENTITY()";
 
                 //creating cmd using sql and conn
                 SqlCommand cmd = new SqlCommand(sql, conn);
+
+                cmd.CommandType = CommandType.Text;
 
                 //Creating parameters to add data
                 cmd.Parameters.AddWithValue("@NumberOfWorkingDays", wd.NumberOfWorkingDays);
@@ -88,18 +91,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
 
                 //Open connection
                 conn.Open();
-                int rows = cmd.ExecuteNonQuery();
+                ID = Convert.ToInt32(cmd.ExecuteScalar());
 
-                Console.WriteLine("Inside insert method and value of rows variable is " + rows);
-
-                if (rows > 0)
-                {
-                    isSuccess = true;
-                }
-                else
-                {
-                    isSuccess = false;
-                }
 
             }
             catch (Exception ex)
@@ -110,9 +103,11 @@ namespace Time_Management_System_2021.Working_days_and_hours
             {
                 conn.Close();
             }
-            return isSuccess;
+            return ID;
 
         }
+
+
 
 
         //Updating WorkingDays data in db

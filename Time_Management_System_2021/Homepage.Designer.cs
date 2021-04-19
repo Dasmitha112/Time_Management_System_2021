@@ -50,13 +50,13 @@ namespace Time_Management_System_2021
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(376, 41);
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 35F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(385, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 40);
+            this.label1.Size = new System.Drawing.Size(274, 54);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Home Page";
+            this.label1.Text = "Dashboard";
             // 
             // btnLecturer
             // 
@@ -74,6 +74,7 @@ namespace Time_Management_System_2021
             this.btnLecturer.Text = "Lecturer";
             this.btnLecturer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLecturer.UseVisualStyleBackColor = false;
+            this.btnLecturer.Click += new System.EventHandler(this.btnLecturer_Click);
             // 
             // btnStudent
             // 
@@ -284,6 +285,7 @@ namespace Time_Management_System_2021
             this.Controls.Add(this.btnStudent);
             this.Controls.Add(this.btnLecturer);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "Homepage";
             this.Load += new System.EventHandler(this.Homepage_Load);
             this.panel1.ResumeLayout(false);

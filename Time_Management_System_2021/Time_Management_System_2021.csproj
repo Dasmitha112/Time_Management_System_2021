@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Working_days_and_hours\has_lecturer_workingDays_WTPerDay_Timeslot.cs" />
     <Compile Include="Working_days_and_hours\ManageWDH.cs">
       <SubType>Form</SubType>
     </Compile>
