@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Time_Management_System_2021.Location;
+using Time_Management_System_2021.Static;
+
 namespace Time_Management_System_2021
 {
     static class Program
@@ -16,7 +19,9 @@ namespace Time_Management_System_2021
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new location());
+            Application.Run(new AddStudentsStatic());
+            
         }
     }
 }
