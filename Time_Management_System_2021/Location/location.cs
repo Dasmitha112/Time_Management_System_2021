@@ -120,6 +120,7 @@ namespace Time_Management_System_2021.Location
             {
                 if (IsValidUpdate())
                 {
+                    //comment
                     SqlCommand cmd = new SqlCommand("UPDATE building SET Location_name = @Location_name, Room_type = @Room_type, Room_name =  @Room_name, Capacity = @Capacity WHERE LocID = @LocID", con);
                     cmd.CommandType = CommandType.Text;
 
