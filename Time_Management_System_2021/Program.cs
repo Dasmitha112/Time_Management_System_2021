@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Time_Management_System_2021.Lecturers;
+using Time_Management_System_2021.Sessions;
+using Time_Management_System_2021.Subjects;
 
 namespace Time_Management_System_2021
 {
@@ -16,7 +19,8 @@ namespace Time_Management_System_2021
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new AddSubjectForm());
         }
     }
+
 }
