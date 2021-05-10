@@ -1,15 +1,21 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+
 using System.Threading.Tasks;
 
 namespace Time_Management_System_2021.Configuration
 {
-    class DBconfig
+     class DBconfig
     {
-        public static SqlConnection con = new SqlConnection("Server=tcp:timemanagementsystem-server.database.windows.net,1433;Initial Catalog=TimeManagementSystem_DB;Persist Security Info=False;User ID=myadmin;Password=myServer01;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+          public static SqlConnection con = new SqlConnection("Server=tcp:timemanagementsystem-server.database.windows.net,1433;Initial Catalog=TimeManagementSystem_DB;Persist Security Info=False;User ID=myadmin;Password=myServer01;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
         /*
        Use this as
