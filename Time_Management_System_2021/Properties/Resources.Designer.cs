@@ -9,6 +9,8 @@
 //------------------------------------------------------------------------------
 
 
+using System.Drawing;
+
 namespace Time_Management_System_2021.Properties
 {
     /// <summary>
@@ -23,7 +25,7 @@ namespace Time_Management_System_2021.Properties
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources
     {
-
+        internal static Image _22;
         private static global::System.Resources.ResourceManager resourceMan;
 
         private static global::System.Globalization.CultureInfo resourceCulture;
