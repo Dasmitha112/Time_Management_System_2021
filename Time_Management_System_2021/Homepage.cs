@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Time_Management_System_2021.Lecturers;
 using Time_Management_System_2021.Location;
+using Time_Management_System_2021.Statistics;
 using Time_Management_System_2021.student;
 using Time_Management_System_2021.Subjects;
 using Time_Management_System_2021.tag;
@@ -73,6 +74,13 @@ namespace Time_Management_System_2021
             this.Hide();
             location l = new location();
             l.ShowDialog();
+        }
+
+        private void btnStatistics_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Static s = new Static();
+            s.ShowDialog();
         }
     }
 }

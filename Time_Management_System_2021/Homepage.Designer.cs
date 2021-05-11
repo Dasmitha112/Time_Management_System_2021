@@ -181,6 +181,7 @@ namespace Time_Management_System_2021
             this.btnStatistics.Text = "Statistics";
             this.btnStatistics.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnStatistics.UseVisualStyleBackColor = false;
+            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
             // 
             // btnWDH
             // 
