@@ -25,6 +25,7 @@ namespace Time_Management_System_2021.Properties {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
         internal static Image _22;
+        internal static Image home5;
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
