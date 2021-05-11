@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Time_Management_System_2021.Lecturers;
+using Time_Management_System_2021.Location;
 using Time_Management_System_2021.student;
 using Time_Management_System_2021.Subjects;
 using Time_Management_System_2021.tag;
@@ -65,6 +66,13 @@ namespace Time_Management_System_2021
             this.Hide();
             AddTag agf = new AddTag();
             agf.ShowDialog();
+        }
+
+        private void btnLocations_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            location l = new location();
+            l.ShowDialog();
         }
     }
 }
