@@ -69,7 +69,7 @@ namespace Time_Management_System_2021
             this.btnLecturer.Image = ((System.Drawing.Image)(resources.GetObject("btnLecturer.Image")));
             this.btnLecturer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLecturer.Location = new System.Drawing.Point(269, 230);
-            this.btnLecturer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLecturer.Margin = new System.Windows.Forms.Padding(4);
             this.btnLecturer.Name = "btnLecturer";
             this.btnLecturer.Size = new System.Drawing.Size(173, 97);
             this.btnLecturer.TabIndex = 1;
@@ -88,7 +88,7 @@ namespace Time_Management_System_2021
             this.btnStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnStudent.Image")));
             this.btnStudent.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnStudent.Location = new System.Drawing.Point(501, 230);
-            this.btnStudent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStudent.Margin = new System.Windows.Forms.Padding(4);
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Size = new System.Drawing.Size(173, 97);
             this.btnStudent.TabIndex = 2;
@@ -107,7 +107,7 @@ namespace Time_Management_System_2021
             this.btnModule.Image = ((System.Drawing.Image)(resources.GetObject("btnModule.Image")));
             this.btnModule.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnModule.Location = new System.Drawing.Point(733, 230);
-            this.btnModule.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModule.Margin = new System.Windows.Forms.Padding(4);
             this.btnModule.Name = "btnModule";
             this.btnModule.Size = new System.Drawing.Size(173, 97);
             this.btnModule.TabIndex = 3;
@@ -126,13 +126,14 @@ namespace Time_Management_System_2021
             this.btnTags.Image = ((System.Drawing.Image)(resources.GetObject("btnTags.Image")));
             this.btnTags.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnTags.Location = new System.Drawing.Point(965, 228);
-            this.btnTags.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTags.Margin = new System.Windows.Forms.Padding(4);
             this.btnTags.Name = "btnTags";
             this.btnTags.Size = new System.Drawing.Size(173, 100);
             this.btnTags.TabIndex = 4;
             this.btnTags.Text = "Tags";
             this.btnTags.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTags.UseVisualStyleBackColor = false;
+            this.btnTags.Click += new System.EventHandler(this.btnTags_Click);
             // 
             // btnLocations
             // 
@@ -144,7 +145,7 @@ namespace Time_Management_System_2021
             this.btnLocations.Image = ((System.Drawing.Image)(resources.GetObject("btnLocations.Image")));
             this.btnLocations.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLocations.Location = new System.Drawing.Point(269, 402);
-            this.btnLocations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLocations.Margin = new System.Windows.Forms.Padding(4);
             this.btnLocations.Name = "btnLocations";
             this.btnLocations.Size = new System.Drawing.Size(173, 100);
             this.btnLocations.TabIndex = 5;
@@ -162,7 +163,7 @@ namespace Time_Management_System_2021
             this.btnRooms.Image = ((System.Drawing.Image)(resources.GetObject("btnRooms.Image")));
             this.btnRooms.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnRooms.Location = new System.Drawing.Point(501, 402);
-            this.btnRooms.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRooms.Margin = new System.Windows.Forms.Padding(4);
             this.btnRooms.Name = "btnRooms";
             this.btnRooms.Size = new System.Drawing.Size(173, 100);
             this.btnRooms.TabIndex = 6;
@@ -180,7 +181,7 @@ namespace Time_Management_System_2021
             this.btnStatistics.Image = ((System.Drawing.Image)(resources.GetObject("btnStatistics.Image")));
             this.btnStatistics.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnStatistics.Location = new System.Drawing.Point(733, 401);
-            this.btnStatistics.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStatistics.Margin = new System.Windows.Forms.Padding(4);
             this.btnStatistics.Name = "btnStatistics";
             this.btnStatistics.Size = new System.Drawing.Size(173, 101);
             this.btnStatistics.TabIndex = 7;
@@ -198,7 +199,7 @@ namespace Time_Management_System_2021
             this.btnWDH.Image = ((System.Drawing.Image)(resources.GetObject("btnWDH.Image")));
             this.btnWDH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnWDH.Location = new System.Drawing.Point(965, 401);
-            this.btnWDH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWDH.Margin = new System.Windows.Forms.Padding(4);
             this.btnWDH.Name = "btnWDH";
             this.btnWDH.Size = new System.Drawing.Size(173, 101);
             this.btnWDH.TabIndex = 8;
@@ -215,7 +216,7 @@ namespace Time_Management_System_2021
             this.panel1.Controls.Add(this.btnSession);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(176, 629);
             this.panel1.TabIndex = 9;
@@ -230,7 +231,7 @@ namespace Time_Management_System_2021
             this.btnGenerate.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerate.Image")));
             this.btnGenerate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnGenerate.Location = new System.Drawing.Point(0, 409);
-            this.btnGenerate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGenerate.Margin = new System.Windows.Forms.Padding(4);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(173, 78);
             this.btnGenerate.TabIndex = 13;
@@ -248,7 +249,7 @@ namespace Time_Management_System_2021
             this.btnAdvanced.Image = ((System.Drawing.Image)(resources.GetObject("btnAdvanced.Image")));
             this.btnAdvanced.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAdvanced.Location = new System.Drawing.Point(0, 282);
-            this.btnAdvanced.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdvanced.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdvanced.Name = "btnAdvanced";
             this.btnAdvanced.Size = new System.Drawing.Size(173, 78);
             this.btnAdvanced.TabIndex = 12;
@@ -266,7 +267,7 @@ namespace Time_Management_System_2021
             this.btnSession.Image = ((System.Drawing.Image)(resources.GetObject("btnSession.Image")));
             this.btnSession.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSession.Location = new System.Drawing.Point(0, 154);
-            this.btnSession.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSession.Margin = new System.Windows.Forms.Padding(4);
             this.btnSession.Name = "btnSession";
             this.btnSession.Size = new System.Drawing.Size(173, 79);
             this.btnSession.TabIndex = 11;
@@ -278,7 +279,7 @@ namespace Time_Management_System_2021
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.Location = new System.Drawing.Point(1133, 27);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(77, 89);
             this.panel2.TabIndex = 10;
@@ -302,7 +303,7 @@ namespace Time_Management_System_2021
             this.Controls.Add(this.btnLecturer);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Homepage";
             this.Load += new System.EventHandler(this.Homepage_Load);
             this.panel1.ResumeLayout(false);
