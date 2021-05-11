@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\DBconfig.cs" />
     <Compile Include="Generalpage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +59,12 @@
     </Compile>
     <Compile Include="Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturers\AddLecturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturers\AddLecturerForm.Designer.cs">
+      <DependentUpon>AddLecturerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
