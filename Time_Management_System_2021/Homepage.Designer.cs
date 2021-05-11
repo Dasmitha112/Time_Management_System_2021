@@ -63,7 +63,7 @@ namespace Time_Management_System_2021
             this.btnLecturer.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnLecturer.FlatAppearance.BorderSize = 0;
             this.btnLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLecturer.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLecturer.ForeColor = System.Drawing.Color.White;
             this.btnLecturer.Image = ((System.Drawing.Image)(resources.GetObject("btnLecturer.Image")));
             this.btnLecturer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -81,7 +81,7 @@ namespace Time_Management_System_2021
             this.btnStudent.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnStudent.FlatAppearance.BorderSize = 0;
             this.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStudent.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudent.ForeColor = System.Drawing.Color.White;
             this.btnStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnStudent.Image")));
             this.btnStudent.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -98,7 +98,7 @@ namespace Time_Management_System_2021
             this.btnModule.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnModule.FlatAppearance.BorderSize = 0;
             this.btnModule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModule.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModule.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModule.ForeColor = System.Drawing.Color.White;
             this.btnModule.Image = ((System.Drawing.Image)(resources.GetObject("btnModule.Image")));
             this.btnModule.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -109,13 +109,14 @@ namespace Time_Management_System_2021
             this.btnModule.Text = "Module";
             this.btnModule.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnModule.UseVisualStyleBackColor = false;
+            this.btnModule.Click += new System.EventHandler(this.btnModule_Click);
             // 
             // btnTags
             // 
             this.btnTags.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnTags.FlatAppearance.BorderSize = 0;
             this.btnTags.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTags.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTags.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTags.ForeColor = System.Drawing.Color.White;
             this.btnTags.Image = ((System.Drawing.Image)(resources.GetObject("btnTags.Image")));
             this.btnTags.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -132,7 +133,7 @@ namespace Time_Management_System_2021
             this.btnLocations.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnLocations.FlatAppearance.BorderSize = 0;
             this.btnLocations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLocations.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLocations.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLocations.ForeColor = System.Drawing.Color.White;
             this.btnLocations.Image = ((System.Drawing.Image)(resources.GetObject("btnLocations.Image")));
             this.btnLocations.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -149,7 +150,7 @@ namespace Time_Management_System_2021
             this.btnRooms.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnRooms.FlatAppearance.BorderSize = 0;
             this.btnRooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRooms.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRooms.ForeColor = System.Drawing.Color.White;
             this.btnRooms.Image = ((System.Drawing.Image)(resources.GetObject("btnRooms.Image")));
             this.btnRooms.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -166,7 +167,7 @@ namespace Time_Management_System_2021
             this.btnStatistics.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnStatistics.FlatAppearance.BorderSize = 0;
             this.btnStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatistics.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatistics.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStatistics.ForeColor = System.Drawing.Color.White;
             this.btnStatistics.Image = ((System.Drawing.Image)(resources.GetObject("btnStatistics.Image")));
             this.btnStatistics.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -183,7 +184,7 @@ namespace Time_Management_System_2021
             this.btnWDH.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnWDH.FlatAppearance.BorderSize = 0;
             this.btnWDH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWDH.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWDH.ForeColor = System.Drawing.Color.White;
             this.btnWDH.Image = ((System.Drawing.Image)(resources.GetObject("btnWDH.Image")));
             this.btnWDH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
