@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Time_Management_System_2021.Lecturers;
 using Time_Management_System_2021.student;
 using Time_Management_System_2021.Subjects;
+using Time_Management_System_2021.tag;
 using Time_Management_System_2021.Working_days_and_hours;
 
 namespace Time_Management_System_2021
@@ -57,6 +58,13 @@ namespace Time_Management_System_2021
             this.Hide();
             AddStudent atf = new AddStudent();
             atf.ShowDialog();
+        }
+
+        private void btnTags_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddTag agf = new AddTag();
+            agf.ShowDialog();
         }
     }
 }
