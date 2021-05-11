@@ -430,5 +430,31 @@ namespace Time_Management_System_2021.Lecturers
             dataGridView1.DataSource = ds;
 
         }
+
+        private void backhomeL1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homepage hp = new Homepage();
+            hp.ShowDialog();
+        }
+
+        private void backhomeL2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homepage hp = new Homepage();
+            hp.ShowDialog();
+        }
+
+        private void backhomeL3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homepage hp = new Homepage();
+            hp.ShowDialog();
+        }
+
+        private void buildingBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

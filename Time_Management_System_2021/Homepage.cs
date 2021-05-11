@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Time_Management_System_2021.Lecturers;
+using Time_Management_System_2021.Subjects;
 using Time_Management_System_2021.Working_days_and_hours;
 
 namespace Time_Management_System_2021
@@ -39,6 +40,14 @@ namespace Time_Management_System_2021
             this.Hide();
             AddLecturerForm alf = new AddLecturerForm();
             alf.ShowDialog();
+
+        }
+
+        private void btnModule_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddSubjectForm asf = new AddSubjectForm();
+            asf.ShowDialog();
 
         }
     }
