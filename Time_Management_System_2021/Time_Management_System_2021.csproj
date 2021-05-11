@@ -66,6 +66,12 @@
     <Compile Include="Lecturers\AddLecturerForm.Designer.cs">
       <DependentUpon>AddLecturerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Location\location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\location.Designer.cs">
+      <DependentUpon>location.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="student\AddStudent.cs">
@@ -112,6 +118,9 @@
     <EmbeddedResource Include="Lecturers\AddLecturerForm.resx">
       <DependentUpon>AddLecturerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Location\location.resx">
+      <DependentUpon>location.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -153,6 +162,8 @@
   <ItemGroup>
     <None Include="Resources\background1.jpeg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\MicrosoftTeams-image.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
