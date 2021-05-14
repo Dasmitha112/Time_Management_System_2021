@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Time_Management_System_2021.Lecturers;
 using Time_Management_System_2021.Location;
+using Time_Management_System_2021.Sessions;
 using Time_Management_System_2021.Statistics;
 using Time_Management_System_2021.student;
 using Time_Management_System_2021.Subjects;
@@ -46,6 +47,7 @@ namespace Time_Management_System_2021
             alf.ShowDialog();
 
         }
+       
 
         private void btnModule_Click(object sender, EventArgs e)
         {
@@ -81,6 +83,14 @@ namespace Time_Management_System_2021
             this.Hide();
             Static s = new Static();
             s.ShowDialog();
+        }
+
+        private void btnSession_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddSessionForm alf = new AddSessionForm();
+            alf.ShowDialog();
+
         }
     }
 }

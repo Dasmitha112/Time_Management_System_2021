@@ -263,6 +263,7 @@ namespace Time_Management_System_2021
             this.btnSession.Text = "Session";
             this.btnSession.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSession.UseVisualStyleBackColor = true;
+            this.btnSession.Click += new System.EventHandler(this.btnSession_Click);
             // 
             // panel2
             // 
