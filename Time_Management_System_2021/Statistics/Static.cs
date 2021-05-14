@@ -52,5 +52,10 @@ namespace Time_Management_System_2021.Statistics
             Homepage hp = new Homepage();
             hp.ShowDialog();
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
