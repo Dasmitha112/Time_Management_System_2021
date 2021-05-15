@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -42,6 +43,9 @@ namespace Time_Management_System_2021.Sessions
 
         public TabPage tabControl { get; private set; }
         public TabPage ViewSessions { get; private set; }
+        public int NOT_overlapping_sesstionID;
+        public int C_sesstionID;
+        public int P_sesstionID;
 
         private void Sessions_Load(object sender, EventArgs e)
         {
@@ -580,14 +584,205 @@ namespace Time_Management_System_2021.Sessions
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homepage hp = new Homepage();
+            hp.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homepage hp = new Homepage();
+            hp.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homepage hp = new Homepage();
+            hp.ShowDialog();
+        }
+
+        private void AddSessionForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'timeManagementSystem_DBDataSet2.Sessions' table. You can move, or remove it, as needed.
+            this.sessionsTableAdapter2.Fill(this.timeManagementSystem_DBDataSet2.Sessions);
+            DataGridViewCheckBoxColumn chckbox = new DataGridViewCheckBoxColumn();
+            // TODO: This line of code loads data into the 'timeManagementSystem_DBDataSet1.Sessions' table. You can move, or remove it, as needed.
+            this.sessionsTableAdapter1.Fill(this.timeManagementSystem_DBDataSet1.Sessions);
+            DataGridViewCheckBoxColumn chckbox1 = new DataGridViewCheckBoxColumn();
+            // TODO: This line of code loads data into the 'timeManagementSystem_DBDataSet.Sessions' table. You can move, or remove it, as needed.
+            this.sessionsTableAdapter.Fill(this.timeManagementSystem_DBDataSet.Sessions);
+            DataGridViewCheckBoxColumn chckbox2 = new DataGridViewCheckBoxColumn();
+            chckbox.HeaderText = "";
+            chckbox.Width = 30;
+            chckbox.Name = "CheckboxClumn";
+            chckbox1.HeaderText = "";
+            chckbox1.Width = 30;
+            chckbox1.Name = "CheckboxClumn1";
+            chckbox2.HeaderText = "";
+            chckbox2.Width = 30;
+            chckbox2.Name = "CheckboxClumn2";
+            dataGridView1.Columns.Insert(0, chckbox);
+            dataGridView2.Columns.Insert(0, chckbox2);
+            dataGridView3.Columns.Insert(0, chckbox1);
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            
+            string mainconn = ConfigurationManager.ConnectionStrings["Time_Management_System_2021.Properties.Settings.TimeManagementSystem_DBConnectionString"].ConnectionString;
+            SqlConnection sqlconn = new SqlConnection(mainconn);
+
+            String session_name = NOT_overlapping_Session_nameTXT.Text;
+
+            foreach (DataGridViewRow dr in dataGridView1.Rows) 
+            {
+                bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn"].Value);
+                if (chackboxselected) 
+                {
+                    string Sqlquery = "INSERT INTO [dbo].[not_overlapping_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
+                    SqlCommand sqlcomm = new SqlCommand(Sqlquery, sqlconn);
+                    
+                    sqlcomm.Parameters.AddWithValue("@SessionID", dr.Cells[1].Value);
+                    sqlcomm.Parameters.AddWithValue("@session_name", session_name);
+                    sqlcomm.Parameters.AddWithValue("@LecturerName", dr.Cells[2].Value);                    
+                    sqlcomm.Parameters.AddWithValue("@SubjectName", dr.Cells[3].Value);
+                    sqlcomm.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
+                    sqlcomm.Parameters.AddWithValue("@Tag", dr.Cells[5].Value);
+                    sqlcomm.Parameters.AddWithValue("@GroupNumber", dr.Cells[6].Value);
+                    sqlcomm.Parameters.AddWithValue("@StudentCount", dr.Cells[7].Value);
+                    sqlcomm.Parameters.AddWithValue("@Duration", dr.Cells[8].Value);
+                    sqlcomm.Parameters.AddWithValue("@StartTime", dr.Cells[9].Value);
+                    sqlcomm.Parameters.AddWithValue("@EndTime", dr.Cells[10].Value);
+                    sqlcomm.Parameters.AddWithValue("@Day", dr.Cells[11].Value);
+                    sqlconn.Open();
+                    sqlcomm.ExecuteNonQuery();
+                    sqlconn.Close();
+                  
+                 
+
+              
+
+
+                }
+            }
+            MessageBox.Show("created not overlapping session successfully", "Successfully");
+
+        }
+
+      
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            NOT_overlapping_Session_nameTXT.Text = string.Empty;
+            clearcheckbox1();
+
+        }
+
+        private void clearcheckbox1()
+        {
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string mainconn = ConfigurationManager.ConnectionStrings["Time_Management_System_2021.Properties.Settings.TimeManagementSystem_DBConnectionString"].ConnectionString;
+            SqlConnection sqlconn = new SqlConnection(mainconn);
+
+            String session_name = consective_TXT.Text;
+
+            foreach (DataGridViewRow dr in dataGridView2.Rows)
+            {
+                bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn2"].Value);
+                if (chackboxselected)
+                {
+                    string Sqlquery = "INSERT INTO [dbo].[consecutive_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
+                    SqlCommand sqlcomm = new SqlCommand(Sqlquery, sqlconn);
+
+                    sqlcomm.Parameters.AddWithValue("@SessionID", dr.Cells[1].Value);
+                    sqlcomm.Parameters.AddWithValue("@session_name", session_name);
+                    sqlcomm.Parameters.AddWithValue("@LecturerName", dr.Cells[2].Value);
+                    sqlcomm.Parameters.AddWithValue("@SubjectName", dr.Cells[3].Value);
+                    sqlcomm.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
+                    sqlcomm.Parameters.AddWithValue("@Tag", dr.Cells[5].Value);
+                    sqlcomm.Parameters.AddWithValue("@GroupNumber", dr.Cells[6].Value);
+                    sqlcomm.Parameters.AddWithValue("@StudentCount", dr.Cells[7].Value);
+                    sqlcomm.Parameters.AddWithValue("@Duration", dr.Cells[8].Value);
+                    sqlcomm.Parameters.AddWithValue("@StartTime", dr.Cells[9].Value);
+                    sqlcomm.Parameters.AddWithValue("@EndTime", dr.Cells[10].Value);
+                    sqlcomm.Parameters.AddWithValue("@Day", dr.Cells[11].Value);
+                    sqlconn.Open();
+                    sqlcomm.ExecuteNonQuery();
+                    sqlconn.Close();
+                   
+                   
+                }
+            }
+            MessageBox.Show("created consecutive session successfully", "Successfully");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string mainconn = ConfigurationManager.ConnectionStrings["Time_Management_System_2021.Properties.Settings.TimeManagementSystem_DBConnectionString"].ConnectionString;
+            SqlConnection sqlconn = new SqlConnection(mainconn);
+
+            String session_name = Parallel_TxT.Text;
+
+            foreach (DataGridViewRow dr in dataGridView3.Rows)
+            {
+                bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn1"].Value);
+                if (chackboxselected)
+                {
+                    string Sqlquery = "INSERT INTO [dbo].[parellel_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
+                    SqlCommand sqlcomm = new SqlCommand(Sqlquery, sqlconn);
+
+                    sqlcomm.Parameters.AddWithValue("@SessionID", dr.Cells[1].Value);
+                    sqlcomm.Parameters.AddWithValue("@session_name", session_name);
+                    sqlcomm.Parameters.AddWithValue("@LecturerName", dr.Cells[2].Value);
+                    sqlcomm.Parameters.AddWithValue("@SubjectName", dr.Cells[3].Value);
+                    sqlcomm.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
+                    sqlcomm.Parameters.AddWithValue("@Tag", dr.Cells[5].Value);
+                    sqlcomm.Parameters.AddWithValue("@GroupNumber", dr.Cells[6].Value);
+                    sqlcomm.Parameters.AddWithValue("@StudentCount", dr.Cells[7].Value);
+                    sqlcomm.Parameters.AddWithValue("@Duration", dr.Cells[8].Value);
+                    sqlcomm.Parameters.AddWithValue("@StartTime", dr.Cells[9].Value);
+                    sqlcomm.Parameters.AddWithValue("@EndTime", dr.Cells[10].Value);
+                    sqlcomm.Parameters.AddWithValue("@Day", dr.Cells[11].Value);
+                    sqlconn.Open();
+                    sqlcomm.ExecuteNonQuery();
+                    sqlconn.Close();
+
+                  
+
+                }
+            }
+            MessageBox.Show("created parellel session successfully", "Successfully");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Parallel_TxT.Text = string.Empty;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            consective_TXT.Text = string.Empty;
+        }
     }
+    }
+        
+    
 
-   
-
-   
-
-
-}
 
 
 
