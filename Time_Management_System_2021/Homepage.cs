@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Time_Management_System_2021.Lecturers;
 using Time_Management_System_2021.Location;
+using Time_Management_System_2021.Rooms;
 using Time_Management_System_2021.Sessions;
 using Time_Management_System_2021.Statistics;
 using Time_Management_System_2021.student;
@@ -91,6 +92,13 @@ namespace Time_Management_System_2021
             AddSessionForm alf = new AddSessionForm();
             alf.ShowDialog();
 
+        }
+
+        private void btnRooms_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManageRoom rlf = new ManageRoom();
+            rlf.ShowDialog();
         }
     }
 }
