@@ -75,6 +75,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rooms\ManageRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms\ManageRoom.Designer.cs">
+      <DependentUpon>ManageRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sessions\AddSessionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,10 +121,125 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TimeManagementSystem_DBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet19.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TimeManagementSystem_DBDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TimeManagementSystem_DBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManagementSystem_DBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeManagementSystem_DBDataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="Working_days_and_hours\has_lecturer_workingDays_WTPerDay_Timeslot.cs" />
     <Compile Include="Working_days_and_hours\ManageWDH.cs">
@@ -159,6 +280,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Rooms\ManageRoom.resx">
+      <DependentUpon>ManageRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sessions\AddSessionForm.resx">
       <DependentUpon>AddSessionForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +335,116 @@
     <None Include="TimeManagementSystem_DBDataSet1.xss">
       <DependentUpon>TimeManagementSystem_DBDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="TimeManagementSystem_DBDataSet10.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet10.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet11.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet11.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet12.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet12.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet13.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet13.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet14.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet14.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet15.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet15.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet16.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet16.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet17.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet17.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet18.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet18.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet19.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet19.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet19.xsd</DependentUpon>
+    </None>
     <None Include="TimeManagementSystem_DBDataSet2.xsc">
       <DependentUpon>TimeManagementSystem_DBDataSet2.xsd</DependentUpon>
     </None>
@@ -221,6 +455,149 @@
     </None>
     <None Include="TimeManagementSystem_DBDataSet2.xss">
       <DependentUpon>TimeManagementSystem_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet20.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet20.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet21.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet21.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet22.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet22.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet23.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet23.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet24.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet24.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet25.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet25.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet3.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet3.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet4.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet4.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet5.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet5.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet6.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet6.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet7.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet7.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet8.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet8.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet9.xsc">
+      <DependentUpon>TimeManagementSystem_DBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeManagementSystem_DBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeManagementSystem_DBDataSet9.xss">
+      <DependentUpon>TimeManagementSystem_DBDataSet9.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

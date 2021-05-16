@@ -164,6 +164,7 @@ namespace Time_Management_System_2021
             this.btnRooms.Text = "Rooms";
             this.btnRooms.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnRooms.UseVisualStyleBackColor = false;
+            this.btnRooms.Click += new System.EventHandler(this.btnRooms_Click);
             // 
             // btnStatistics
             // 
