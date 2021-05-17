@@ -21,6 +21,8 @@ namespace Time_Management_System_2021.Rooms
             InitializeComponent();
         }
 
+        NonReservableTimeRoom nrtr = new NonReservableTimeRoom();
+
         private void ManageRoom_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'timeManagementSystem_DBDataSet25.ConsecutiveSessionRoom' table. You can move, or remove it, as needed.
@@ -50,6 +52,31 @@ namespace Time_Management_System_2021.Rooms
             chckbox2.Name = "CheckboxClumn2";
             dataGridView2.Columns.Insert(0, chckbox2);
 
+
+
+            //Loading non-reservable time tab room data
+            DataSet ds = nrtr.displayRooms();
+            cmbRoomNRRT.DataSource = ds.Tables[0];
+            cmbRoomNRRT.DisplayMember = "Room_name";
+            cmbRoomNRRT.ValueMember = "LocID";
+
+
+            //Load non-reservable time data on data gridview
+            DataTable dtNRTR = nrtr.displayRoomNonReservableTimeData();
+            dgvNRTR.DataSource = dtNRTR;
+
+            /*
+            //Loading non-reservable time tab starting time data
+            DataSet ds1 = nrtr.displayStartingTime();
+            cmbStartTime.DataSource = ds1.Tables[0];
+            cmbStartTime.DisplayMember = "StartingTime";
+
+
+            //Loading non-reservable time tab ending time data
+            DataSet ds2 = nrtr.displayEndingTime();
+            cmbEndTime.DataSource = ds2.Tables[0];
+            cmbEndTime.DisplayMember = "EndingTime";
+            */
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -292,6 +319,153 @@ namespace Time_Management_System_2021.Rooms
             bs.Filter = "Convert(session_name, 'System.String') Like '%" + textBox5.Text + "%'";
             dataGridView3.DataSource = bs;
         }
+
+
+        //RoomNonReservableTime home icon
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homepage hp = new Homepage();
+            hp.ShowDialog();
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+        }
+
+
+
+        //Insert data to RoomNonReservableTime
+        private void btnAllocateNRTR_Click(object sender, EventArgs e)
+        {
+            if ((cmbRoomNRRT.Text != string.Empty) && (txtStartTime.Text != string.Empty) && (txtEndTime.Text != string.Empty) && (cmbDay.Text != string.Empty))
+            {
+                //Getting values from the input fields
+                nrtr.Room_name = cmbRoomNRRT.Text;
+                nrtr.StartTime = txtStartTime.Text;
+                nrtr.EndTime = txtEndTime.Text;
+                nrtr.Day = cmbDay.Text;
+
+                //Inserting data to db
+                int RoomNonReservableTimeID = nrtr.insertRoomNonReservableTime(nrtr);
+
+                if (RoomNonReservableTimeID > 0)
+                {
+                    MessageBox.Show("New Non Reservable Time Room successfully added!");
+
+                    //calling clear TimeSlot fields method
+                    clearRoomNonReservableTimeFields();
+
+                }
+                else
+                {
+                    MessageBox.Show("Failed to insert Non Reservable Time Room to database...");
+                }
+
+                //Load time slots data on data gridview
+                DataTable dtNRTR = nrtr.displayRoomNonReservableTimeData();
+                dgvNRTR.DataSource = dtNRTR;
+
+
+            }
+            else
+            {
+                MessageBox.Show("All fields must be filled", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        //Method to clear RoomNonReservableTime fields
+        public void clearRoomNonReservableTimeFields()
+        {
+            cmbRoomNRRT.Text = "";
+            txtStartTime.Text = "";
+            txtEndTime.Text = "";
+            cmbDay.Text = "";
+        }
+
+
+        //Reset RoomNonReservableTime data 
+        private void btnResetNRTR_Click(object sender, EventArgs e)
+        {
+            //calling clear RoomNonReservableTime fields method
+            clearRoomNonReservableTimeFields();
+        }
+
+
+        string NonReservableID;
+
+        //Retrieving data from the selected row and filled with textboxes
+        private void dgvNRTR_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            //Get data from data gridview and load it into the textboxes
+            int rowIndex = e.RowIndex;
+            cmbRoomNRRT.Text = dgvNRTR.Rows[rowIndex].Cells[1].Value.ToString();
+            txtStartTime.Text = dgvNRTR.Rows[rowIndex].Cells[2].Value.ToString();
+            txtEndTime.Text = dgvNRTR.Rows[rowIndex].Cells[3].Value.ToString();
+            cmbDay.Text = dgvNRTR.Rows[rowIndex].Cells[4].Value.ToString();
+
+            NonReservableID = dgvNRTR.Rows[rowIndex].Cells[0].Value.ToString();
+        }
+
+
+
+        //Update RoomNonReservableTime data
+        private void btnUpdateNRTR_Click(object sender, EventArgs e)
+        {
+            //Get data from textboxes
+            nrtr.NonReservableID = int.Parse(NonReservableID);
+            nrtr.Room_name = cmbRoomNRRT.Text;
+            nrtr.StartTime = txtStartTime.Text;
+            nrtr.EndTime = txtEndTime.Text;
+            nrtr.Day = cmbDay.Text;
+
+            //Update data in db
+            bool success = nrtr.updateRoomNonReservableTime(nrtr);
+
+            if (success == true)
+            {
+                MessageBox.Show("Non reservable room time successfully updated!");
+
+                //Load non-reservable time data on data gridview
+                DataTable dtNRTR = nrtr.displayRoomNonReservableTimeData();
+                dgvNRTR.DataSource = dtNRTR;
+
+                //calling clear RoomNonReservableTime fields method
+                clearRoomNonReservableTimeFields();
+
+
+            }
+            else
+            {
+                MessageBox.Show("Failed to update non reservable room time...");
+            }
+        }
+
+
+        //Delete RoomNonReservableTime data
+        private void btnDeleteNRTR_Click(object sender, EventArgs e)
+        {
+            nrtr.NonReservableID = int.Parse(NonReservableID);
+            bool success = nrtr.deleteRoomNonReservableTime(nrtr);
+
+            if (success == true)
+            {
+                MessageBox.Show("Non reservable room time successfully deleted!");
+
+                //Load non-reservable time data on data gridview
+                DataTable dtNRTR = nrtr.displayRoomNonReservableTimeData();
+                dgvNRTR.DataSource = dtNRTR;
+
+                //calling clear RoomNonReservableTime fields method
+                clearRoomNonReservableTimeFields();
+            }
+            else
+            {
+                MessageBox.Show("Failed to delete non reservable room time...");
+            }
+        }
+
     }
 }
     
