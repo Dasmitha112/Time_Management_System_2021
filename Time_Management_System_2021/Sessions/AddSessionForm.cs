@@ -778,6 +778,64 @@ namespace Time_Management_System_2021.Sessions
         {
             consective_TXT.Text = string.Empty;
         }
+
+        private void LectureNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dataGridView2.DataSource;
+            bs.Filter = "Convert(LecturerName, 'System.String') Like '%" + LectureNameTxt.Text + "%'";
+            dataGridView1.DataSource = bs;
+        }
+
+        private void SubjectNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dataGridView2.DataSource;
+            bs.Filter = "Convert(SubjectName, 'System.String') Like '%" + SubjectNameTxt.Text + "%'";
+            dataGridView1.DataSource = bs;
+        }
+
+        private void SubjectTxt_TextChanged(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dataGridView3.DataSource;
+            bs.Filter = "Convert(SubjectName, 'System.String') Like '%" + SubjectNameTxt.Text + "%'";
+            dataGridView1.DataSource = bs;
+        }
+
+        private void subjectNameFilter_TextChanged(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dataGridView1.DataSource;
+            bs.Filter = "Convert(SubjectName, 'System.String') Like '%" + SubjectNameTxt.Text + "%'";
+            dataGridView1.DataSource = bs;
+        }
+
+        private void TagTxt_TextChanged(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dataGridView1.DataSource;
+            bs.Filter = "Convert(Tag, 'System.String') Like '%" + TagTxt.Text + "%'";
+            dataGridView1.DataSource = bs;
+        }
+
+        private void TTxt_TextChanged(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dataGridView3.DataSource;
+            bs.Filter = "Convert(Tag, 'System.String') Like '%" + TTxt.Text + "%'";
+            dataGridView1.DataSource = bs;
+        }
+
+        private void LectureSessionTxt_TextChanged(object sender, EventArgs e)
+        {
+            
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dataGridViewSession.DataSource;
+            bs.Filter = "Convert(LecturerName, 'System.String') Like '%" + LectureSessionTxt.Text + "%'";
+            dataGridView1.DataSource = bs;
+
+        }
     }
     }
         

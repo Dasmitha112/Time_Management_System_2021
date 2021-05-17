@@ -457,6 +457,7 @@ namespace Time_Management_System_2021.Location
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "location";
             this.Text = "location";
             this.Load += new System.EventHandler(this.location_Load);

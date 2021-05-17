@@ -112,7 +112,7 @@
             this.TabSubjectview.Location = new System.Drawing.Point(4, 22);
             this.TabSubjectview.Name = "TabSubjectview";
             this.TabSubjectview.Padding = new System.Windows.Forms.Padding(3);
-            this.TabSubjectview.Size = new System.Drawing.Size(975, 522);
+            this.TabSubjectview.Size = new System.Drawing.Size(979, 539);
             this.TabSubjectview.TabIndex = 0;
             this.TabSubjectview.Text = "View Subjects";
             this.TabSubjectview.UseVisualStyleBackColor = true;
@@ -224,7 +224,7 @@
             this.tabAddSubject.Location = new System.Drawing.Point(4, 22);
             this.tabAddSubject.Name = "tabAddSubject";
             this.tabAddSubject.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAddSubject.Size = new System.Drawing.Size(979, 535);
+            this.tabAddSubject.Size = new System.Drawing.Size(979, 539);
             this.tabAddSubject.TabIndex = 1;
             this.tabAddSubject.Text = "Add Subject";
             this.tabAddSubject.UseVisualStyleBackColor = true;
@@ -722,6 +722,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddSubjectForm";
             this.tabControl1.ResumeLayout(false);
             this.TabSubjectview.ResumeLayout(false);

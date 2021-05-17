@@ -100,7 +100,7 @@ namespace Time_Management_System_2021.student
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(-2, -1);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(987, 565);
@@ -135,9 +135,9 @@ namespace Time_Management_System_2021.student
             this.tabPage1.Controls.Add(this.yeartxt);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(979, 539);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Insert Details";
@@ -158,7 +158,7 @@ namespace Time_Management_System_2021.student
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(40, 38);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(0, 0);
             this.button5.TabIndex = 39;
@@ -171,7 +171,7 @@ namespace Time_Management_System_2021.student
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(667, 316);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 60);
             this.button2.TabIndex = 38;
@@ -185,7 +185,7 @@ namespace Time_Management_System_2021.student
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(667, 162);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 60);
             this.button1.TabIndex = 37;
@@ -198,7 +198,7 @@ namespace Time_Management_System_2021.student
             this.generateSubID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.generateSubID.ForeColor = System.Drawing.SystemColors.WindowText;
             this.generateSubID.Location = new System.Drawing.Point(667, 267);
-            this.generateSubID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.generateSubID.Margin = new System.Windows.Forms.Padding(2);
             this.generateSubID.Name = "generateSubID";
             this.generateSubID.Size = new System.Drawing.Size(252, 23);
             this.generateSubID.TabIndex = 36;
@@ -207,7 +207,7 @@ namespace Time_Management_System_2021.student
             // 
             this.generateID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.generateID.Location = new System.Drawing.Point(667, 123);
-            this.generateID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.generateID.Margin = new System.Windows.Forms.Padding(2);
             this.generateID.Name = "generateID";
             this.generateID.Size = new System.Drawing.Size(252, 23);
             this.generateID.TabIndex = 35;
@@ -243,7 +243,7 @@ namespace Time_Management_System_2021.student
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Location = new System.Drawing.Point(562, 428);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 60);
             this.button4.TabIndex = 32;
@@ -257,7 +257,7 @@ namespace Time_Management_System_2021.student
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Location = new System.Drawing.Point(285, 428);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 60);
             this.button3.TabIndex = 31;
@@ -282,7 +282,7 @@ namespace Time_Management_System_2021.student
             "9",
             "10"});
             this.subgroupnumtxt.Location = new System.Drawing.Point(215, 350);
-            this.subgroupnumtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.subgroupnumtxt.Margin = new System.Windows.Forms.Padding(2);
             this.subgroupnumtxt.Name = "subgroupnumtxt";
             this.subgroupnumtxt.Size = new System.Drawing.Size(168, 24);
             this.subgroupnumtxt.TabIndex = 13;
@@ -309,7 +309,7 @@ namespace Time_Management_System_2021.student
             "14",
             "15"});
             this.groupnumtxt.Location = new System.Drawing.Point(215, 303);
-            this.groupnumtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupnumtxt.Margin = new System.Windows.Forms.Padding(2);
             this.groupnumtxt.Name = "groupnumtxt";
             this.groupnumtxt.Size = new System.Drawing.Size(168, 24);
             this.groupnumtxt.TabIndex = 12;
@@ -373,7 +373,7 @@ namespace Time_Management_System_2021.student
             "humans and sciences",
             "busniess managmnet"});
             this.facultytxt.Location = new System.Drawing.Point(215, 253);
-            this.facultytxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.facultytxt.Margin = new System.Windows.Forms.Padding(2);
             this.facultytxt.Name = "facultytxt";
             this.facultytxt.Size = new System.Drawing.Size(168, 24);
             this.facultytxt.TabIndex = 7;
@@ -390,7 +390,7 @@ namespace Time_Management_System_2021.student
             "DS",
             "ISE"});
             this.programtxt.Location = new System.Drawing.Point(215, 208);
-            this.programtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.programtxt.Margin = new System.Windows.Forms.Padding(2);
             this.programtxt.Name = "programtxt";
             this.programtxt.Size = new System.Drawing.Size(168, 24);
             this.programtxt.TabIndex = 6;
@@ -405,7 +405,7 @@ namespace Time_Management_System_2021.student
             "1",
             "2"});
             this.semestertxt.Location = new System.Drawing.Point(215, 165);
-            this.semestertxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.semestertxt.Margin = new System.Windows.Forms.Padding(2);
             this.semestertxt.Name = "semestertxt";
             this.semestertxt.Size = new System.Drawing.Size(168, 24);
             this.semestertxt.TabIndex = 4;
@@ -447,7 +447,7 @@ namespace Time_Management_System_2021.student
             "3",
             "4"});
             this.yeartxt.Location = new System.Drawing.Point(215, 120);
-            this.yeartxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yeartxt.Margin = new System.Windows.Forms.Padding(2);
             this.yeartxt.Name = "yeartxt";
             this.yeartxt.Size = new System.Drawing.Size(168, 24);
             this.yeartxt.TabIndex = 1;
@@ -480,7 +480,7 @@ namespace Time_Management_System_2021.student
             this.tabPage7.Controls.Add(this.label13);
             this.tabPage7.Controls.Add(this.dataGridView5);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Size = new System.Drawing.Size(979, 539);
             this.tabPage7.TabIndex = 6;
@@ -513,7 +513,7 @@ namespace Time_Management_System_2021.student
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.textBox2.Location = new System.Drawing.Point(654, 139);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(185, 24);
             this.textBox2.TabIndex = 28;
@@ -534,7 +534,7 @@ namespace Time_Management_System_2021.student
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.textBox1.Location = new System.Drawing.Point(242, 139);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(163, 24);
             this.textBox1.TabIndex = 26;
@@ -558,7 +558,7 @@ namespace Time_Management_System_2021.student
             // 
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView5.Location = new System.Drawing.Point(116, 198);
-            this.dataGridView5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView5.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 24;
@@ -595,9 +595,9 @@ namespace Time_Management_System_2021.student
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.EDITacaYeartxt);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(979, 539);
             this.tabPage2.TabIndex = 7;
             this.tabPage2.Text = "Manage Student Details";
@@ -618,7 +618,7 @@ namespace Time_Management_System_2021.student
             // 
             this.EDITsubgroupID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.EDITsubgroupID.Location = new System.Drawing.Point(675, 282);
-            this.EDITsubgroupID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EDITsubgroupID.Margin = new System.Windows.Forms.Padding(2);
             this.EDITsubgroupID.Name = "EDITsubgroupID";
             this.EDITsubgroupID.Size = new System.Drawing.Size(183, 23);
             this.EDITsubgroupID.TabIndex = 53;
@@ -627,7 +627,7 @@ namespace Time_Management_System_2021.student
             // 
             this.EDITgenerategroupID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.EDITgenerategroupID.Location = new System.Drawing.Point(675, 119);
-            this.EDITgenerategroupID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EDITgenerategroupID.Margin = new System.Windows.Forms.Padding(2);
             this.EDITgenerategroupID.Name = "EDITgenerategroupID";
             this.EDITgenerategroupID.Size = new System.Drawing.Size(183, 23);
             this.EDITgenerategroupID.TabIndex = 52;
@@ -650,7 +650,7 @@ namespace Time_Management_System_2021.student
             this.S_reset_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.S_reset_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.S_reset_Button.Location = new System.Drawing.Point(675, 444);
-            this.S_reset_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.S_reset_Button.Margin = new System.Windows.Forms.Padding(2);
             this.S_reset_Button.Name = "S_reset_Button";
             this.S_reset_Button.Size = new System.Drawing.Size(150, 60);
             this.S_reset_Button.TabIndex = 50;
@@ -664,7 +664,7 @@ namespace Time_Management_System_2021.student
             this.S_update_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.S_update_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.S_update_button.Location = new System.Drawing.Point(187, 444);
-            this.S_update_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.S_update_button.Margin = new System.Windows.Forms.Padding(2);
             this.S_update_button.Name = "S_update_button";
             this.S_update_button.Size = new System.Drawing.Size(150, 60);
             this.S_update_button.TabIndex = 49;
@@ -678,7 +678,7 @@ namespace Time_Management_System_2021.student
             this.S_delete_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.S_delete_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.S_delete_Button.Location = new System.Drawing.Point(442, 444);
-            this.S_delete_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.S_delete_Button.Margin = new System.Windows.Forms.Padding(2);
             this.S_delete_Button.Name = "S_delete_Button";
             this.S_delete_Button.Size = new System.Drawing.Size(150, 60);
             this.S_delete_Button.TabIndex = 48;
@@ -692,7 +692,7 @@ namespace Time_Management_System_2021.student
             this.EDITSGgroupid_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.EDITSGgroupid_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.EDITSGgroupid_button.Location = new System.Drawing.Point(675, 321);
-            this.EDITSGgroupid_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EDITSGgroupid_button.Margin = new System.Windows.Forms.Padding(2);
             this.EDITSGgroupid_button.Name = "EDITSGgroupid_button";
             this.EDITSGgroupid_button.Size = new System.Drawing.Size(150, 60);
             this.EDITSGgroupid_button.TabIndex = 47;
@@ -728,7 +728,7 @@ namespace Time_Management_System_2021.student
             "9",
             "10"});
             this.EDITsubgrouptxt.Location = new System.Drawing.Point(187, 341);
-            this.EDITsubgrouptxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EDITsubgrouptxt.Margin = new System.Windows.Forms.Padding(2);
             this.EDITsubgrouptxt.Name = "EDITsubgrouptxt";
             this.EDITsubgrouptxt.Size = new System.Drawing.Size(168, 24);
             this.EDITsubgrouptxt.TabIndex = 44;
@@ -755,7 +755,7 @@ namespace Time_Management_System_2021.student
             "14",
             "15"});
             this.EDITgrouptxt.Location = new System.Drawing.Point(187, 293);
-            this.EDITgrouptxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EDITgrouptxt.Margin = new System.Windows.Forms.Padding(2);
             this.EDITgrouptxt.Name = "EDITgrouptxt";
             this.EDITgrouptxt.Size = new System.Drawing.Size(168, 24);
             this.EDITgrouptxt.TabIndex = 43;
@@ -804,7 +804,7 @@ namespace Time_Management_System_2021.student
             "humans and sciences",
             "busniess managmnet"});
             this.EDITfactxt.Location = new System.Drawing.Point(187, 251);
-            this.EDITfactxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EDITfactxt.Margin = new System.Windows.Forms.Padding(2);
             this.EDITfactxt.Name = "EDITfactxt";
             this.EDITfactxt.Size = new System.Drawing.Size(168, 24);
             this.EDITfactxt.TabIndex = 39;
@@ -815,7 +815,7 @@ namespace Time_Management_System_2021.student
             this.EditGgroupID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.EditGgroupID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.EditGgroupID.Location = new System.Drawing.Point(675, 163);
-            this.EditGgroupID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EditGgroupID.Margin = new System.Windows.Forms.Padding(2);
             this.EditGgroupID.Name = "EditGgroupID";
             this.EditGgroupID.Size = new System.Drawing.Size(150, 60);
             this.EditGgroupID.TabIndex = 38;
@@ -856,7 +856,7 @@ namespace Time_Management_System_2021.student
             "DS",
             "ISE"});
             this.EDITprogtxt.Location = new System.Drawing.Point(187, 205);
-            this.EDITprogtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EDITprogtxt.Margin = new System.Windows.Forms.Padding(2);
             this.EDITprogtxt.Name = "EDITprogtxt";
             this.EDITprogtxt.Size = new System.Drawing.Size(168, 24);
             this.EDITprogtxt.TabIndex = 34;
@@ -870,7 +870,7 @@ namespace Time_Management_System_2021.student
             "1",
             "2"});
             this.EDITsemtxt.Location = new System.Drawing.Point(187, 161);
-            this.EDITsemtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EDITsemtxt.Margin = new System.Windows.Forms.Padding(2);
             this.EDITsemtxt.Name = "EDITsemtxt";
             this.EDITsemtxt.Size = new System.Drawing.Size(168, 24);
             this.EDITsemtxt.TabIndex = 33;
@@ -908,7 +908,7 @@ namespace Time_Management_System_2021.student
             "3",
             "4"});
             this.EDITacaYeartxt.Location = new System.Drawing.Point(187, 119);
-            this.EDITacaYeartxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EDITacaYeartxt.Margin = new System.Windows.Forms.Padding(2);
             this.EDITacaYeartxt.Name = "EDITacaYeartxt";
             this.EDITacaYeartxt.Size = new System.Drawing.Size(168, 24);
             this.EDITacaYeartxt.TabIndex = 30;
@@ -919,7 +919,8 @@ namespace Time_Management_System_2021.student
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddStudent";
             this.Text = "AddStudent";
             this.tabControl1.ResumeLayout(false);

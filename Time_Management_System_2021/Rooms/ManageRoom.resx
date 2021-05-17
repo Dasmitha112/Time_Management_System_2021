@@ -118,6 +118,63 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
+        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
+        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
+        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
+        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
+        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
+        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="LecturerName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="consecutiveSessionsBindingSource7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>281, 563</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet28.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 563</value>
+  </metadata>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
+        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
+        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
+        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
+        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
+        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
+        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="parellelSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 212</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>996, 173</value>
+  </metadata>
+  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
+        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
+        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
+        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
+        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
+        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
+        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="notoverlappingSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>726, 212</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>462, 212</value>
+  </metadata>
   <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
@@ -133,11 +190,20 @@
   <metadata name="parellelRoomBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1006, 368</value>
   </metadata>
+  <metadata name="timeManagementSystem_DBDataSet20.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>742, 368</value>
+  </metadata>
   <metadata name="nonParellelRoomBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1006, 251</value>
   </metadata>
+  <metadata name="timeManagementSystem_DBDataSet15.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>742, 251</value>
+  </metadata>
   <metadata name="consecutiveSessionRoomBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>283, 485</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet25.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>19, 485</value>
   </metadata>
   <data name="tabPage5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -432,111 +498,6 @@
         wASqGJ9AAKNWB2AAxQAACs9wtrYAAWnI8qAAHZAAAf/Z
 </value>
   </data>
-  <data name="button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
-        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
-        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
-        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
-        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
-        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
-        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <metadata name="LecturerName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="consecutiveSessionsBindingSource7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>281, 563</value>
-  </metadata>
-  <metadata name="LecturerName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="consecutiveSessionsBindingSource7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>281, 563</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet28.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 563</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet28.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 563</value>
-  </metadata>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
-        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
-        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
-        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
-        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
-        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
-        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <metadata name="parellelSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 212</value>
-  </metadata>
-  <metadata name="parellelSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 212</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>996, 173</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>996, 173</value>
-  </metadata>
-  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
-        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
-        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
-        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
-        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
-        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
-        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <metadata name="notoverlappingSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>726, 212</value>
-  </metadata>
-  <metadata name="notoverlappingSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>726, 212</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>462, 212</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>462, 212</value>
-  </metadata>
-  <metadata name="parellelRoomBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1006, 368</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet20.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>742, 368</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet20.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>742, 368</value>
-  </metadata>
-  <metadata name="nonParellelRoomBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1006, 251</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet15.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>742, 251</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet15.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>742, 251</value>
-  </metadata>
-  <metadata name="consecutiveSessionRoomBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>283, 485</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet25.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>19, 485</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet25.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>19, 485</value>
-  </metadata>
   <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
@@ -555,14 +516,8 @@
   <metadata name="timeManagementSystem_DBDataSet24.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>547, 446</value>
   </metadata>
-  <metadata name="timeManagementSystem_DBDataSet24.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>547, 446</value>
-  </metadata>
   <metadata name="consecutiveSessionsBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 329</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet17.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>899, 290</value>
   </metadata>
   <metadata name="timeManagementSystem_DBDataSet17.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>899, 290</value>
@@ -573,14 +528,8 @@
   <metadata name="timeManagementSystem_DBDataSet21.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>221, 407</value>
   </metadata>
-  <metadata name="timeManagementSystem_DBDataSet21.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>221, 407</value>
-  </metadata>
   <metadata name="consecutiveSessionsBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>275, 134</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 134</value>
   </metadata>
   <metadata name="timeManagementSystem_DBDataSet8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 134</value>
@@ -591,14 +540,8 @@
   <metadata name="timeManagementSystem_DBDataSet9.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>768, 134</value>
   </metadata>
-  <metadata name="timeManagementSystem_DBDataSet9.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>768, 134</value>
-  </metadata>
   <metadata name="notoverlappingSessionsBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>707, 95</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>449, 95</value>
   </metadata>
   <metadata name="timeManagementSystem_DBDataSet7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>449, 95</value>
@@ -609,14 +552,8 @@
   <metadata name="timeManagementSystem_DBDataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>723, 17</value>
   </metadata>
-  <metadata name="timeManagementSystem_DBDataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>723, 17</value>
-  </metadata>
   <metadata name="parellelSessionsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 95</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1039, 56</value>
   </metadata>
   <metadata name="timeManagementSystem_DBDataSet6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1039, 56</value>
@@ -756,4 +693,298 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>29</value>
   </metadata>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAOkgAAAEAIACoQwAAFgAAACgAAAA6AAAAkAAAAAEAIAAAAAAAQEEAAAAAAAAAAAAAAAAAAAAA
+        AAAdAAAAHQAAAB0AAAAMAAAASwAAAJAAAAB3AAAAZgAAAIQAAACJAAAAcQAAAHoAAABxAAAAiQEBAIUA
+        AABuAAAAWgAAADQAAABdAAAAXwAAAHcAAAB+AAAAbgAAAHwAAACHAAAAfAAAAFcAAAJgAwNsn0ZG64Qc
+        HKRNAAAacwAAAIIAAACIAAAAjAAAAIcAAACXAQEATQAAAAAAAABRAAAAagAAAHUAAABxAAAAiAAAAGgB
+        AQCZAQEA+wAAAHsAAAB/AAAAhAAAAGYAAABzAAAAlwAAAJAAAAAEAAAABgAAAAsAAAALAAAAHQAAAB0A
+        AAAdAAAADAAAAEsAAACQAAAAdwAAAGYAAACEAAAAiQAAAHEAAAB6AAAAcQAAAIkBAQCFAAAAbgAAAFoA
+        AAA0AAAAXQAAAF8AAAB3AAAAfgAAAG8AAABxAAAAaAAADmsAAHykWlru7Nvb///////7+fn/wpSU/4Ua
+        GrNiAAA2cgAAAI4AAACJAAAAlgEBAE0AAAAAAAAAUQAAAGoAAAB1AAAAcQAAAIgAAABoAQEAmQEBAPsA
+        AAB7AAAAfwAAAIQAAABmAAAAcwAAAJcAAACQAAAABAAAAAYAAAALAAAACwAAAB0AAAAdAAAAHQAAAAwA
+        AABLAAAAkAAAAHcAAABmAAAAhAAAAIkAAABxAAAAegAAAHEAAACJAQEAhQAAAG4AAABaAAAANAAAAFwA
+        AABdAAAAeQAAAHUAAABVAAAbbQcHlrV0dPv18vL/////////////////////////////////1bq6/5Iz
+        M9FpAABWcAAAAJgAAABOAAAAAAAAAFEAAABqAAAAdQAAAHEAAACIAAAAaAEBAJkBAQD7AAAAewAAAH8A
+        AACEAAAAZgAAAHMAAACXAAAAkAAAAAQAAAAGAAAACwAAAAsAAAAdAAAAHQAAAB0AAAAMAAAASwAAAJAA
+        AAB3AAAAZgAAAIQAAACJAAAAcQAAAHoAAABxAAAAiQEBAIUAAABwAAAAVQAAACgAAABdAAAAVAAAAFoA
+        ABFzAACcsnJy//79/f///////////8iiov+lY2P//////+nZ2f+KNTX/28PD////////////28fH/48v
+        L+Z8AABYOgAAABEAAABTAAAAZAAAAHYAAABxAAAAiAAAAGgBAQCZAQEA+wAAAHsAAAB/AAAAhAAAAGYA
+        AABzAAAAlwAAAJAAAAAEAAAABgAAAAsAAAALAAAAHQAAAB0AAAAdAAAADAAAAEsAAACQAAAAdwAAAGYA
+        AACEAAAAiQAAAHEAAAB6AAAAcQAAAIkBAQCFAAAAaAAAAGgAAAA/AAAARQAAKHoPD6e8h4f/////////
+        ///z7u7/snh4/4EWFv9RAAD/eioq///////y6Oj/YQAA/1wAAP+MKyv/1bm5////////////5tbW/59T
+        U+tyAAB4QQAAC2EAAAB2AAAAcQAAAIgAAABoAQEAmQEBAPsAAAB7AAAAfwAAAIQAAABmAAAAcwAAAJcA
+        AACQAAAABAAAAAYAAAALAAAACwAAAB0AAAAdAAAAHQAAAAwAAABLAAAAkAAAAHcAAABmAAAAhAAAAIkA
+        AABxAAAAegAAAHAAAACMAQEAhQAAAE4AAABZAAA6jx8fvM6np////////////+/m5v+lXV3/agAA/1wA
+        AP9uAAD/bgAA/48uLv//////8erq/3gDA/91AAD/ZwAA/14AAP+HIyP/07a2////////////8efn/7J0
+        dPt+CwuaUAAAImMAAACLAAAAaQEBAJkBAQD7AAAAewAAAH8AAACEAAAAZgAAAHMAAACXAAAAkAAAAAQA
+        AAAGAAAACwAAAAsAAAAdAAAAHQAAAB0AAAAMAAAASwAAAJAAAAB3AAAAZgAAAIQAAACJAAAAcQAAAHwA
+        AABuAAAAbgAAAGsAAFCLNDTQ5NHR//////////////////////93IyP/VQAA/3cAAP9+AAD/ewAA/2wA
+        AP+OLi7///////Hq6v93AwP/dQAA/3wAAP99AAD/aQAA/04AAP+oZ2f//////////////////////8mh
+        of+EHh68aAAAP1EAAACYAAAA/wAAAHwAAAB/AAAAhAAAAGYAAABzAAAAlwAAAJAAAAAEAAAABgAAAAsA
+        AAALAAAAHQAAAB0AAAAdAAAADAAAAEsAAACQAAAAdwAAAGYAAACEAAAAjAAAAGwAAABcAAAEZAAAaZtH
+        R+Pq29v///////n4+P+7iIj/hSsr//Do6P//////hSEh/3AAAP97AAD/ewAA/3sAAP9sAAD/ji4u////
+        ///x6ur/dwMD/3UAAP97AAD/ewAA/30AAP9kAAD/mU1N///////eysr/tIKC//r29v///////////93G
+        xv+MODjWegAAX5sAAAJqAAAAigAAAIQAAABmAAAAcwAAAJcAAACQAAAABAAAAAYAAAALAAAACwAAAB0A
+        AAAdAAAAHQAAAAwAAABLAAAAkAAAAHcAAABnAAAAhwAAAHAAAAlmAAB+pmBg9O3j4////////P39/6dh
+        Yf9nAAD/VQAA/2wICP/69fX//////4ckJP9vAAD/ewAA/3sAAP97AAD/bAAA/44uLv//////8erq/3cD
+        A/91AAD/ewAA/3sAAP98AAD/ZQAA/6FVVf//////z7e3/08AAP9yAAD/jC8v/9CwsP///////////+Pa
+        2v+NWlrvYgICfnIAAAmHAAAAZwAAAHMAAACXAAAAkAAAAAQAAAAGAAAACwAAAAsAAAAdAAAAHQAAAB0A
+        AAAMAAAASwAAAJAAAAB5AAAAXwAAAF4AAECURkb29PDw////////////v46O/2kAAP9fAAD/eAAA/3YA
+        AP97DAz/+Pj4//////+HJCT/bwAA/3sAAP97AAD/ewAA/2wAAP+OLi7///////Hq6v93AwP/dQAA/3sA
+        AP97AAD/fAAA/2UAAP+hVVX//////9i/v/9rAAD/dgAA/2cAAP9dAAD/ghwc/9Gysv////////////by
+        8v+VR0f2XgAAQF8AAAB0AAAAlwAAAJAAAAAEAAAABgAAAAsAAAALAAAAHQAAAB0AAAAdAAAADAAAAEsA
+        AACUAAAAbgAAAE4AAGe3goL/////////////////n1tb/08AAP90AAD/fgAA/3sAAP9zAAD/egwM//j4
+        +P//////hyQk/28AAP97AAD/ewAA/3sAAP9sAAD/ji4u///////x6ur/dwMD/3UAAP97AAD/ewAA/3wA
+        AP9lAAD/oVVV///////Yv7//agAA/3oAAP98AAD/fgAA/2wAAP9NAAD/r3V1/////////////////7mD
+        g/9OAABnagAAAJsAAACQAAAABAAAAAYAAAALAAAACwAAAB0AAAAdAAAAHQAAAAwAAABOAAAAgwAAAGEA
+        AInWsrL//////72QkP/HoaH//////5A9Pf9mAAD/fAAA/3sAAP97AAD/cwAA/3oMDP/4+Pj//////4ck
+        JP9vAAD/ewAA/3sAAP97AAD/bAAA/44uLv//////8erq/3cDA/91AAD/ewAA/3sAAP98AAD/ZQAA/6FV
+        Vf//////2L+//2oAAP96AAD/ewAA/3sAAP99AAD/YgAA/59bW///////yqWl/695ef//////17S0/1wA
+        AImKAAAAlAAAAAQAAAAGAAAACwAAAAsAAAAeAAAAHwAAABsAAAAAAAAAOAAAAHgAAILUu7v//////69w
+        cP8+AAD/tIuL//////+ZR0f/ZwAA/3wAAP97AAD/ewAA/3MAAP96DAz/+Pj4//////+HJCT/bwAA/3sA
+        AP97AAD/ewAA/2wAAP+OLi7///////Hq6v93AwP/dQAA/3sAAP97AAD/fAAA/2UAAP+hVVX//////9i/
+        v/9qAAD/egAA/3sAAP97AAD/fAAA/2QAAP+nYmL//////8ejo/9AAAD/pWVl///////Svr7/fwAAhYoA
+        AAAAAAAAAAAAAAAAAAAAAAAAGQAAABcAAAAeAAAAPgAAAFUAAFjHm5v//////7SGhv9XAAD/YgAA/8ST
+        k///////mUdH/2cAAP98AAD/ewAA/3sAAP9zAAD/egwM//j4+P//////hyQk/28AAP97AAD/ewAA/3sA
+        AP9sAAD/ji4u///////x6ur/dwMD/3UAAP97AAD/ewAA/3wAAP9lAAD/oVVV///////Yv7//agAA/3oA
+        AP97AAD/ewAA/3wAAP9kAAD/p2Ji///////Qra3/aAAA/1YAAP+qdXX//////8yhof9jAABfLgAAADYA
+        AABGAAAARAAAABMAAAAOAAAAMAAAAF0AACe6Z2f7/////8moqP9gAAD/eAAA/2YAAP/Ck5P//////5pH
+        R/9oAAD/fQAA/3wAAP98AAD/dAAA/3sMDP/4+Pj//////4ckJP9wAAD/fAAA/3wAAP98AAD/bgAA/48u
+        Lv//////8erq/3gDA/92AAD/fAAA/3wAAP99AAD/ZgAA/6FVVf//////2L+//2sAAP97AAD/fAAA/3wA
+        AP99AAD/ZQAA/6hiYv//////z66u/2kAAP96AAD/XAAA/8CYmP//////oW9v/4kAACugAAAAfgAAAIEA
+        AAAAAAAAAAAAAFEAAACULi7E/////+PNzf9MAAD/VgAA/2YAAP9HAAD/to6O//////+GPDz/SwAA/2QA
+        AP9jAAD/YwAA/1oAAP9iBgb/9/T0//////9wHR3/VAAA/2MAAP9jAAD/YwAA/1IAAP95KSn//////+7n
+        5/9eAAD/XAAA/2MAAP9jAAD/ZAAA/0kAAP+PSUn//////9C3t/9OAAD/YgAA/2MAAP9jAAD/ZAAA/0gA
+        AP+XWlr//////8alpf9LAAD/ZQAA/1gAAP9OAAD/6tvb//////+QKCi1RAAAAAAAAAAAAAAAdAAAAEgA
+        AABKAABg3LW1///////BmJj/lkRE/7Bxcf+sbGz/nVVV/9i+vv//////v5KS/59XV/+sbGz/rGxs/6xs
+        bP+nY2P/rHBw//v5+f//////s35+/6ReXv+sbGz/rGxs/6xsbP+jW1v/uIWF///////28fH/qWtr/6hk
+        ZP+sbGz/rGxs/6xsbP+eVVX/xJqa///////n2Nj/ol1d/6tpaf+sbGz/rGxs/6xsbP+eVFT/yKGh////
+        ///hzc3/oFlZ/6xra/+vb2//l0hI/9CwsP//////y52d/04AAEcfAAAAIgAAANMAAACWAAAAhUdH0v//
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////+PNzfDUgAAAFkAAACGAAAAeQAAQc2urv//////7OLi/97J
+        yf/k0dH/5NHR/+TR0f/fycn/8urq///////q3Nz/4MrK/+TR0f/k0dH/5NHR/+LOzv/k0dH//v39////
+        ///m1tb/4s3N/+TR0f/k0dH/5NHR/+DKyv/q3Nz///////j09P/hzc3/5NDQ/+TR0f/k0dH/5NHR/9/K
+        yv/r39////////fy8v/gzMz/5NDQ/+TR0f/k0dH/5NHR/9/Jyf/t4eH///////Xu7v/gysr/5NHR/+TR
+        0f/k0dH/38rK/+nc3P//////x6qq/2EAAEJ9AAAAhgAAAIkWFpD3/////////4IrK/9fAAD/bwAA/28A
+        AP9wAAD/VQAA/7yRkf//////kEJC/1kAAP9wAAD/bwAA/28AAP9mAAD/bggI//j19f//////eyEh/2IA
+        AP9vAAD/bwAA/28AAP9aAAD/kUJC///////dycn/YAAA/20AAP9vAAD/bwAA/3AAAP9XAAD/mFBQ////
+        ///UvLz/XQAA/24AAP9vAAD/bwAA/3AAAP9WAAD/n19f///////LqKj/WQAA/28AAP9vAAD/bwAA/2QA
+        AP91FBT///////z///+PFxeQkgAAAGYAAAOeaWnf/////9vHx/9mAAD/dwAA/3gAAP94AAD/eQAA/2AA
+        AP/AkpL//////5dFRf9jAAD/eQAA/3gAAP94AAD/cAAA/3cKCv/49vb//////4QiIv9rAAD/eAAA/3gA
+        AP94AAD/ZAAA/5hFRf//////3srK/2oAAP92AAD/eAAA/3gAAP95AAD/YgAA/59SUv//////176+/2YA
+        AP93AAD/eAAA/3gAAP95AAD/YAAA/6VgYP//////zaur/2MAAP94AAD/eAAA/3gAAP95AAD/XwAA/8uw
+        sP//////n2lp340AAAN1AAAuzaen///////AlZX/YQAA/3wAAP97AAD/ewAA/3wAAP9kAAD/wpOT////
+        //+ZR0f/ZwAA/3wAAP97AAD/ewAA/3MAAP96DAz/+Pj4//////+HJCT/bwAA/3sAAP97AAD/ewAA/2cA
+        AP+aR0f//////9/Ly/9tAAD/eQAA/3sAAP97AAD/fAAA/2UAAP+hVVX//////9i/v/9qAAD/egAA/3sA
+        AP97AAD/fAAA/2QAAP+nYmL//////8+trf9nAAD/ewAA/3sAAP97AAD/fAAA/2EAAP+yeXn//////82o
+        qP94AAAubAAAcePU1P//////t4KC/1UAAP9xAAD/cAAA/3AAAP9xAAD/VwAA/72Rkf//////kEFB/1oA
+        AP9xAAD/cAAA/3AAAP9oAAD/cAcH//j09P//////fSIi/2MAAP9wAAD/cAAA/3AAAP9bAAD/kkBA////
+        ///dycn/YQAA/24AAP9wAAD/cAAA/3EAAP9YAAD/mU9P///////Vu7v/XgAA/28AAP9wAAD/cAAA/3EA
+        AP9XAAD/oF5e///////Lp6f/WwAA/3AAAP9wAAD/cAAA/3AAAP9YAAD/pmtr///////k1tb/awAAcX8M
+        DIfx6+v//////8OXl/9sAAD/hBoa/4MbG/+DGxv/hBoa/20AAP/FnJz//////59YWP9wAAD/gxsb/4Mb
+        G/+DGxv/fAwM/4IjI//6+fn//////4szM/95Bgb/gxsb/4MbG/+DGxv/cQAA/6BYWP//////4c/P/3YL
+        C/+BFRX/gxsb/4MbG/+EGxv/bgAA/6ZjY///////2sTE/3MGBv+CFhb/gxsb/4MbG/+EGxv/bQAA/6xv
+        b///////0rOz/3AAAP+DGBj/gxsb/4MbG/+DGxv/bQAA/7V+fv//////8uzs/38MDId9Cgp97+fn////
+        //////v//v34//39+v////r////6//7++v/5+Pj//fv7//////////r////5////+v////r////6////
+        +v////n///////76+v/++PT////8///9+v///fr///36///8+f///Pr///////38/P/9+vj///76///9
+        +v///fr///36///8+f///fr///////79/f/6+Pj/+vr6//n6+v/7+vr////6////+P///vr/////////
+        /P////j////6////+v////r/+/v6//n4+f/9+/v//////+/n5/99Cgp9fAkJfe7n5///////////////
+        ///7////x+X//87p////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////u5+f/fAkJfXwJCX3u5+f//////6XG//8/hv//Tpn//wBQ
+        //8ATP//MoX///////+vzv//AGP//yqE//8ngP//J4D//yOA//8igP//J4H//wlr//+pyP//fLH//whv
+        //9ElP//QZH//0GR//9ElP//CnL//1OW/////////////22l//8DbP//Q5T//0GR//9Akf//RJT//xJ3
+        //9Bi/////////////////////////////8jd///AF7//yOA//8qgf//J4D//yiA//8qg///DXb//wBb
+        ///P3v//////////////////7ufn/3wJCX18CQl97ufn//////+kxv//AEz//wBZ//8Kb///D3n//wA/
+        //9om///2Of//wBd//8AXv//AGf//wBk//8AUf//AEn//wBb//8AUP//k7n//5bE//8AUP//AFH//wBi
+        //8AYv//AFH//wBR//9npf////////////+CtP//AFD//wBP//8AYv//AGL//wBS//8AUP//Vpr/////
+        ////////////////////////nMT//w5v//8AU///AGT//wBl//8Aaf//AFL//wBR//9Sm////fz/////
+        /////////////+7n5/98CQl9fAkJfe7n5///////qcv//wBR//8Pb///6O3///////+AtP//AEf//97l
+        //+y0P//AFz//wBw//8Bb///pcb//8ba//8gev//AE3//4Gz////////9/b//yN+//8AZ///AGj//x57
+        ///y8//////////////////////////7//8zhv//AGT//wBr//8Nc///4un/////////////////////
+        ////////////////////////jLj//wBg//8Ac///AGT//z6N///09P//////////////////////////
+        ///u5+f/fAkJfXwJCX3u5+f//////6bM//8AQv//ibT/////////////4e7//wBT//+fwv//2ub//wBd
+        //8Aav//EXP///Dy////////ttD//wBI//95sf////////////9gnv//AFv//wBc//9Ym///////////
+        ////////////////////////dq3//wBa//8AXv//SJT/////////////////////////////////////
+        /////////////8PX//8AYP//AHP//wBZ//+Cs///////////////////////////////////7ufn/3wJ
+        CX18CQl97ufn//////+ZxP//AFf//+Dq/////////////+Ds//8AVf//irn//9Xi//8AXf//AGv//w1y
+        ///s8P///////+vy//8AWv//bqn/////////////X57//wBb//8AXP//WJz/////////////////////
+        /////////////3Gr//8AW///AF///0OU////////////////////////////////////////////////
+        //+40v//AF///wBz//8AWv//fbH//////////////////////////////////+7n5/98CQl9fAkJfe7n
+        5///////h7b//xNw///////////////////h7P//AFX//5C////V4v//AF3//wBr//8Ncv//7PD/////
+        ///t9f//AF3//26o/////////////16d//8AXP//AFz//1eb////////////////////////////////
+        //9xq///AFv//wBf//9Ck///////////////////////////////////////////////////uNL//wBf
+        //8Ac///AFr//32x///////////////////////////////////u5+f/fAkJfXwJCX3u5+f//////4aw
+        //8XbP//////////////////qMn//wBG//+tz///1uP//wBd//8Aa///DXL//+zw////////5/L//wBJ
+        //9rn/////////////9enf//AFz//wBc//9Xm///////////////////////////////////cav//wBb
+        //8AX///QpP//////////////////////////////////////////////////7jS//8AX///AHP//wBa
+        //99sf//////////////////////////////////7ufn/3wJCX18CQl97ufn///////o7///0uH/////
+        ////////3uf//xBv//8ATf//wtj//9fk//8AXf//AGv//w1y///s8P///////+31//8Ycv//iLX/////
+        ////////Xp3//wBc//8AXP//V5v//////////////////////////////////3Gr//8AW///AF///0KT
+        //////////////////////////////////////////////////+40v//AF///wBz//8AWv//fbH/////
+        /////////////////////////////+7n5/98CQl9fAkJfe7n5///////////////////////3un//xJo
+        //8AXP//AGf///n1///L3v//AF3//wBr//8Ncv//7PD//////////////////////////////////16d
+        //8AXP//AFz//1eb//////////////////////////////////9xq///AFv//wBf//9Ck///////////
+        ////////////////////////////////////////uNL//wBf//8Ac///AFr//32x////////////////
+        ///////////////////u5+f/fAkJfXwJCX3u5+f//////////////////f3//ypz//8AWf//AGb//zGA
+        ////////udL//wBd//8Aa///DXL//+zw//////////////////////////////////9enf//AFz//wBc
+        //9Xm///////////////////////////////////cav//wBb//8AX///QpP/////////////////////
+        /////////////////////////////7jS//8AX///AHP//wBa//99sf//////////////////////////
+        ////////7ufn/3wJCX18CQl97ufn/////////////////3mk//8AUf//AHr//wBT//+Msv///////6/M
+        //8AXf//AGv//w1y///s8P//////////////////////////////////Xp3//wBc//8AXP//V5v/////
+        /////////////////////////////3Gr//8AW///AF///0KT////////////////////////////////
+        //////////////////+40v//AF///wBz//8AWv//fbH//////////////////////////////////+7n
+        5/98CQl9fAkJfe7n5////////////+Xq//8GZP//AG7//wBk//8Yav//8PT///////+uy///AF3//wBr
+        //8Ncv//7PD//////////////////////////////////16d//8AXP//AFz//1eb////////////////
+        //////////////////9xq///AFv//wBf//9Ck///////////////////////////////////////////
+        ////////uNL//wBf//8Ac///AFr//32x///////////////////////////////////u5+f/fAkJfXwJ
+        CX3u5+f///////////+Ms///AFb//wBx//8AVP//rMj/////////////rsv//wBd//8Aa///DXL//+zw
+        //////////////////////////////////9enf//AFz//wBc//9Xm///////////////////////////
+        ////////cav//wBb//8AX///QpP//////////////////////////////////////////////////7jS
+        //8AX///AHP//wBa//99sf//////////////////////////////////7ufn/3wJCX18CQl97ufn////
+        ////////RI3//wBb//8AUP//fav//////////////////67L//8AXf//AGv//w1y///s8P//////////
+        ////////////////////////Xp3//wBc//8AXP//V5v//////////////////////////////////3Gr
+        //8AW///AF///0KT//////////////////////////////////////////////////+40v//AF///wBz
+        //8AWv//fbH//////////////////////////////////+7n5/98CQl9fAkJfe7n5///////8vL//xF1
+        //8AUf//d6f///////////////7///////+uy///AF3//wBr//8Ncv//7PD/////////////////////
+        /////////////16d//8AXP//AFz//1eb//////////////////////////////////9xq///AFv//wBf
+        //9Ck///////////////////////////////////////////////////uNL//wBf//8Ac///AFr//32x
+        ///////////////////////////////////u5+f/fAkJfXwJCX3u5+f//////9rn//8AV///P43/////
+        /////////////0iN//+kxf//0OH//wBd//8Aa///DXL//+zw////////////////////////////////
+        //9enf//AFz//wBc//9Xm///////////////////////////////////cav//wBb//8AX///QpP/////
+        /////////////+Pu//9Ai///gbL//////////////////7jS//8AX///AHP//wBa//99sf//////////
+        ////////sdH//yl8///N7f////jn/3wJCX18CQl97ufn///////V6P//AFD//5C8////////////////
+        //8mc///i7T//9bm//8AXf//AGv//w1y///s8P//////////////////////////////////Xp3//wBc
+        //8AXP//V5v//////////////////////////////////3Gr//8AW///AF///0KT////////////////
+        ///S4f//ADn//zt9//////////////////+40v//AF///wBz//8AWv//fbH//////////////////4Cw
+        //8AH///pdH/////5/98CQl9fAkJfe7n5///////4+3//wBV//+GuP//////////////////Amf//5rF
+        ///W4///AF3//wBr//8Ncv//7PD//////////////////////////////////16d//8AXP//AFz//1eb
+        //////////////////////////////////9xq///AFv//wBf//9Ck///////////////////1eb//wBX
+        //9Aj///////////////////uNL//wBf//8Ac///AFr//32x//////////////////+Ku///AEH//67c
+        /////+f/fAkJfXwJCX3u5+f////////8//8AYP//YqP/////////////uND//wBH//+t0f//2OT//wBd
+        //8Aav//D3P//+7y//////////////////////////////////9in///AFv//wBc//9anf//////////
+        ////////////////////////da7//wBb//8AXv//R5b//////////////////9Xl//8AYf//DHP///P0
+        /////////////7jS//8AX///AHP//wBa//99sf//////////////////UJj//wBF//+v2//////n/3wJ
+        CX18CQl97ufn////////////KHf//zOC/////////////zaD//8ARf//tNP//9bi//8AXP//AGz//wtw
+        ///q7v//////////////////////////////////WZr//wBc//8AXf//Upf/////////////////////
+        /////////////2um//8AW///AGD//z6O///////////////////V5f//AG7//wBV//9onP//////////
+        ///D1///AGD//wBz//8AWf//gbP/////////////p8L//wBe//8AWf//r9v/////5/98CQl9fAkJfe7n
+        5////////////6bE//8AS///X6P//0uV//8AWf//AFr//4y5//9jpP//AGb//wB0//8AYv//dqz/////
+        ///////////////////n8P//mcL//wdw//8Aav//AGv//wBr//+hx///9/v/////////////+v3//7DQ
+        //8Kcf//AGj//wBt//8AZ///kb3/////////////1eX//wBt//8Ab///AGD//zKF//+Ht///Wp3//wBs
+        //8AdP//AGr//zuO//+Ouv//RpT//wBh//8Abf//AF3//6/b/////+f/fAkJfXwJCX3u5+f/////////
+        ////////TpD//wAt//8APP//K4H//zaI//8obv//B1D//wBf//8AXf//AFP//wBJ///d6f//////////
+        ////////ZJP//wA0//8AYf//AGn//wBp//8AYP//AD3//0GJ/////////////2Gb//8AOf//AF3//wBq
+        //8AaP//AGL//wA6//+hwP///////9Lh//8AVP//AFf//wBd//8AS///ADv//wBJ//8AYP//AFz//wBh
+        //8AUP//ADr//wBG//8AW///AF///wA///+m0f/////n/3wJCX18CQl97ufn//////////////////n9
+        //+Yy///hMD//+n1///7/v//w93//4+7//+ezP//odL//5vN//+fz///9Pr//////////////////93o
+        ///J4///2u///9js///Y7P//2u3//8rn///X7P/////////////c7v//yOX//9ru///Y7P//2Oz//9vv
+        ///I4f//5e3////////w+f//nc///5zO//+g0P//oND//6DT//+czP//lr7//5vH//+h0f//n9D//5/R
+        //+g0P//oND//6HT//+Nv///4vn////y5/98CQl9fAkJfe7n5////////f7+//n9/f/9//7////+////
+        /v////7////9/////f/////////9/////f////7////+//z+/v/7/v7/+/39//7+/v/////////9////
+        /v////7////+/////v////7////9///////9/f7//f39/////v////7////+/////v////3////9////
+        ///9/f7//P39/////v////7////+/////v////3////9//////////3////9/////v////7////+////
+        /v////3////9///////u5+f/fAkJfXwJCX3v5+f//////8Oamv9tAAD/hR8f/4QgIP+EICD/hR8f/24A
+        AP/Gn5///////6BcXP9xAQD/hCAg/4QgIP+EICD/gBcX/3wZGf/q3t7//////5pQUP90AwP/hCAg/4Qg
+        IP+EICD/dgcH/5ZHR///////5NXV/3cREf+CGRn/hCAg/4QgIP+FICD/bwAA/6doaP//////28bG/3QM
+        DP+DGxv/hCAg/4QgIP+FICD/bwAA/61zc///////0rW1/3IGBf+EHR3/hCAg/4QgIP+EICD/bwAA/7WB
+        gf//////7+jo/3wJCX18CQl97+fn//////+6h4f/VgAA/3EAAP9wAAD/cAAA/3EAAP9XAAD/vZCQ////
+        //+QQED/WgAA/3EAAP9wAAD/cAAA/2wAAP9nAAD/59fX//////+KNzf/XQAA/3AAAP9wAAD/cAAA/2AA
+        AP+FKyv//////+DOzv9hAAD/bgAA/3AAAP9wAAD/cQAA/1gAAP+ZTk7//////9S7u/9dAAD/bwAA/3AA
+        AP9wAAD/cQAA/1cAAP+gXV3//////8unp/9aAAD/cAAA/3AAAP9wAAD/cAAA/1cAAP+pbm7///////Dp
+        6f98CQl9fAkJfe/n5///////v46O/2MAAP98AAD/ewAA/3sAAP98AAD/ZAAA/8KTk///////mUdH/2cA
+        AP98AAD/ewAA/3sAAP93AAD/cgAA/+ja2v//////kzk5/2oAAP97AAD/ewAA/3sAAP9sAAD/ji4u////
+        ///i0dH/bQAA/3kAAP97AAD/ewAA/3wAAP9lAAD/oVVV///////Yv7//agAA/3oAAP97AAD/ewAA/3wA
+        AP9kAAD/p2Ji///////Pra3/ZwAA/3sAAP97AAD/ewAA/3sAAP9kAAD/sHFx///////w6Oj/fAkJfXwJ
+        CX3v5+f//////76MjP9gAAD/egAA/3kAAP95AAD/egAA/2EAAP/BkpL//////5dFRf9kAAD/egAA/3kA
+        AP95AAD/dQAA/3AAAP/o2dn//////5E4OP9oAAD/eQAA/3kAAP95AAD/agAA/4wuLv//////4tDQ/2sA
+        AP93AAD/eQAA/3kAAP96AAD/YwAA/59TU///////176+/2cAAP94AAD/eQAA/3kAAP96AAD/YQAA/6Zg
+        YP//////zqys/2UAAP95AAD/eQAA/3kAAP95AAD/YgAA/65wcP//////8Ojo/3wJCX18CQl97+fn////
+        //+5iIj/UwAA/28AAP9uAAD/bgAA/28AAP9VAAD/vJGR//////+PQkL/WAAA/24AAP9uAAD/bgAA/2oA
+        AP9kAAD/5tjY//////+INzf/WwAA/24AAP9uAAD/bgAA/14AAP+DLCz//////+DOzv9fAAD/bAAA/24A
+        AP9vAAD/cAAA/1cAAP+YUFD//////9S8vP9bAAD/bQAA/24AAP9uAAD/bwAA/1UAAP+eXl7//////8uo
+        qP9ZAAD/bgAA/24AAP9uAAD/bgAA/1UAAP+ob2////////Dp6f98CQl9fAkJfe7n5///////8+3t/+LT
+        0//n2dn/59nZ/+fZ2f/n2dn/4tPT//Tu7v//////6+Dg/+PU1P/n2dn/59nZ/+fZ2f/n2Nj/5dbW//r3
+        9///////49PT/9nBwf/dyMj/18TI/+/UyP//3sL/+N/R///////28/T/2MLD//fYx///4sj//d3I///k
+        yP/w0cD/49XY///////49fX/5NXV/+fY2P/n2dn/59nZ/+fZ2f/j09P/7+bm///////28fH/49PT/+fZ
+        2f/n2dn/59nZ/+fZ2f/j09P/8Onp///////v5+f/fAkJfXwJCX3u5+f/////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///////////////////K6v//nt3//+v+//////////////////+w3v//qOT//67i//97xf//yOz/////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////7ufn/3wJCX18CQl97+fn///////BlZX/ZwAA/4AWFv9/Fxf/fxcX/4AW
+        Fv9oAAD/wpeX//////+qbGz/aQAA/4AXF/9/Fxf/fxcX/3cICP9+Hx//8erq////////////3ej//+3z
+        ////////6vL//zeH//8CY///6PD/////////////xeH//wtk//9Xkv//OH7//zR3/////////////9fA
+        wP9vAgL/fhIS/38XF/9/Fxf/gBcX/2kAAP+qbGz//////9Gysv9sAAD/fxQU/38XF/9/Fxf/fxcX/2kA
+        AP+ye3v//////+/o6P98CQl9fAkJfe/n5///////uoiI/1gAAP9zAAD/cgAA/3IAAP9zAAD/WQAA/7yO
+        jv//////oV5e/1kAAP9zAAD/cgAA/3IAAP9qAAD/cgcH//Dm5v////////3//yRy//+Ar///////////
+        //+LvP//AEr//83c//////////////////8off//iLP//5O///8AYP//8PP////////TuLj/YAAA/3EA
+        AP9yAAD/cgAA/3MAAP9ZAAD/oV5e///////MqKj/XQAA/3IAAP9yAAD/cgAA/3IAAP9ZAAD/qm5u////
+        ///w6en/fAkJfXwJCX3v5+f//////7+Ojv9jAAD/fAAA/3sAAP97AAD/fAAA/2QAAP/AkJD//////6di
+        Yv9kAAD/fAAA/3sAAP97AAD/cwAA/3oMDP/x6ur///////////9Okf//o8L//2ij//8rg///E3j//wBs
+        //9Pl///qsn///////+zy///AFz//wV0//8AWf//dK3/////////////1ry8/2oAAP96AAD/ewAA/3sA
+        AP98AAD/ZAAA/6diYv//////z62t/2cAAP97AAD/ewAA/3sAAP97AAD/ZAAA/7Bxcf//////8Ojo/3wJ
+        CX18CQl97+fn//////+9i4v/XgAA/3gAAP93AAD/dwAA/3gAAP9fAAD/vo+P//////+lYGD/XwAA/3gA
+        AP93AAD/dwAA/28AAP92CQn/8Ojo////////////WZn//z6D//8ATf//AF7//wBt//8AeP//AFv//wBW
+        //8viP//KHr//wBq//8AcP//AF7//zKI/////////////9W6uv9lAAD/dgAA/3cAAP93AAD/eAAA/18A
+        AP+kYGD//////82rq/9jAAD/dwAA/3cAAP93AAD/dwAA/18AAP+tcHD///////Do6P98CQl9fAkJfe/n
+        5///////u4uL/1gAAP9zAAD/cgAA/3IAAP9zAAD/WQAA/7yPj///////oWBg/1kAAP9zAAD/cgAA/3IA
+        AP9qAAD/cQkJ/+/o6P///////fv//x18//8AXv//WJT//wpx//8AdP//AHP//wB1//8AdP//AGP//wBp
+        //8Ad///AHP//wB0//8AW///xdX////////Turr/YAAA/3EAAP9yAAD/cgAA/3MAAP9ZAAD/oWBg////
+        ///Mqqr/XQAA/3IAAP9yAAD/cgAA/3MAAP9ZAAD/qm9v///////w6en/fAkJfXwJCX3u5+f///////n2
+        9v/x6+v/8+/v//Pv7//z7+//8+/v//Hs7P/59/f///////Tv7//s4uL/7+bm/+/m5v/v5ub/7uTk/+/m
+        5v/9/Pz///////b4//8AaP//MIb///////8rdv//AF7//wB2//8AdP//AHP//wBg//8AW///AF7//wBp
+        //8AZP//EXP//+vz////////+vj4/+3j4//v5ub/7+bm/+/m5v/v5ub/7OLi//Tv7///////+fb2/+3i
+        4v/v5ub/7+bm/+/m5v/v5ub/7OLi//Xw8P//////7+fn/3wJCX18CQl97ufn///////+/f3/+/v7//z8
+        /P/8/Pz//Pz8//z8/P/8+/v//v39////////////////////////////////////////////////////
+        ///8+///AGD//2Oj////////xNT//whu//8AbP//AHD//wd0//9Mlv//WJ///1Sb//8hff//AFv//02X
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////+7n5/98CQl9fAkJfe/n5///////vo2N/18AAP95AgL/eAMD/3gD
+        A/95AgL/YAAA/76QkP//////rHBw/2wAAP+DHBz/ghwc/4IcHP97DQ3/gSQk//Hr6////////////xtz
+        //+Ht///xtz//yt///8mhf//AGz//wBt//8Hb///4+r////////39///7/H//+vz//9Zkv//z9//////
+        ///YwcH/cgcH/4EXF/+CHBz/ghwc/4McHP9sAAD/rHBw///////Ss7P/bwAA/4IaGv+CHBz/ghwc/4Ic
+        HP9sAAD/tH5+///////v6Oj/fAkJfXwJCX3v5+f//////7yKiv9bAAD/dgAA/3UAAP91AAD/dgAA/10A
+        AP+9j4///////6BeXv9YAAD/cgAA/3EAAP9xAAD/aQAA/3AGBv/v5ub///////////8wgf//ea3///D5
+        //8AXP//AGb//wB2//8Acf//FHj//2Gd//86jP//T5D//5rE//+jzf//TI7//7rS////////1Li4/14A
+        AP9wAAD/cQAA/3EAAP9yAAD/WAAA/6BeXv//////y6en/1wAAP9xAAD/cQAA/3EAAP9xAAD/WAAA/6pu
+        bv//////8Onp/3wJCX18CQl97+fn//////+/jo7/YwAA/3wAAP97AAD/ewAA/3wAAP9kAAD/wJCQ////
+        //+nYmL/ZAAA/3wAAP97AAD/ewAA/3MAAP96DAz/8erq////////////XJj//3Gn///w+P//AFj//wBX
+        //8AZ///AGb//wBd//8AR///T5D//+Dr//+wzP//LXr//2uh//+yzv///////9i9vP9qAAD/egAA/3sA
+        AP97AAD/fAAA/2QAAP+nYmL//////8+trf9nAAD/ewAA/3sAAP97AAD/ewAA/2QAAP+wcXH///////Do
+        6P98CQl9fAkJfe/n5///////vYuL/14AAP94AAD/dwAA/3cAAP94AAD/XwAA/7+Pj///////pWBg/18A
+        AP94AAD/dwAA/3cAAP9vAAD/dgoK//Do6P///////////5G3//9Vjv//4u///7HP//+Dtf//B27//yiB
+        //9Znf//Y6D//zuG//8RZf//H27//32s///////////////////Vurr/ZgAA/3YAAP93AAD/dwAA/3gA
+        AP9fAAD/pWBg///////Oq6v/YwAA/3cAAP93AAD/dwAA/3cAAP9fAAD/rnBw///////w6Oj/fAkJfXwJ
+        CX3v5+f//////7qJif9XAAD/cgAA/3EAAP9xAAD/cgAA/1cAAP+7jo7//////6BfX/9YAAD/cgAA/3EA
+        AP9xAAD/aQAA/3AHB//v5ub////////////u8///lbv///b7//////////////T3///3+P//////////
+        //+ZwP//cqv//9/s////////////////////////07m5/18AAP9wAAD/cQAA/3EAAP9yAAD/WAAA/6Bf
+        X///////y6io/1wAAP9xAAD/cQAA/3EAAP9xAAD/WAAA/6pvb///////8Onp/3wJCX19Cwt98Onp////
+        ///17+//5tPT/+rZ2f/q2dn/6tnZ/+rZ2f/m09P/9vDw///////x6en/5tPT/+rZ2f/q2dn/6tnZ/+nW
+        1v/q29v//f39////////////////////////////////////////////////////////////////////
+        //////////////////////////////n29v/n1tb/6tjY/+rZ2f/q2dn/6tnZ/+bT0//x6en///////j0
+        9P/n1dX/6tnZ/+rZ2f/q2dn/6tnZ/+bS0v/z7Oz///////Dp6f99Cwt9fAsLiezl5f///////v39////
+        //////////////////////////////79/f/7+fn//v7+//////////////////////////////////37
+        +//8+fn//Pr6//z6+v/+/Pr//Pr6//z6+v/8+vr//Pr6//z6+v/8+vr//Pr6//z6+v/8+vr//Pr6//z6
+        +v/8+vr//Pr6//z5+f/9/Pz//////////////////////////////////v7+//v5+f/+/f3/////////
+        /////////////////////////v7+///////s5eX/fAsLiX0BAUuLJSWejS0tiowpKYqMKSmKjCkpiowp
+        KYqMKSmKjCkpiowpKYqMKSmKjCkpiowpKYqMKSmKjCkpiowpKYqMKSmKjCkpiowpKYqMKSmKjCkpiowp
+        KYqMKSmKjCkpiowpKYqMKSmKjCkpiowpKYqMKSmKjCkpiowpKYqMKSmKjCkpiowpKYqMKSmKjCkpiowp
+        KYqMKSmKjCkpiowpKYqMKSmKjCkpiowpKYqMKSmKjCkpiowpKYqMKSmKjCkpiowpKYqMKSmKjCkpiowp
+        KYqMKSmKjCkpiowpKYqNLS2KiyUlnn0BAUv////B////wP///wB////A///8AB///8D///AAB///wP//
+        wAAA///A//8AAAA//8D//AAAAA//wP/gAAAAAf/A/4AAAAAAf8D/AAAAAAA/wP4AAAAAAB/A/AAAAAAA
+        D8D4AAAAAAAHwPAAAAAAAAPA4AAAAAAAAcDgAAAAAAABwMAAAAAAAADAwAAAAAAAAMCAAAAAAAAAQIAA
+        AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAA=
+</value>
+  </data>
 </root>

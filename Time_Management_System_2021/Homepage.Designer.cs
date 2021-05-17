@@ -294,6 +294,7 @@ namespace Time_Management_System_2021
             this.Controls.Add(this.btnLecturer);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Homepage";
             this.Load += new System.EventHandler(this.Homepage_Load);
             this.panel1.ResumeLayout(false);
