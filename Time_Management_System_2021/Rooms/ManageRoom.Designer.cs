@@ -33,6 +33,7 @@ namespace Time_Management_System_2021.Rooms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageRoom));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.C_sessionAdd = new System.Windows.Forms.Button();
             this.C_SessionRoomBtn = new System.Windows.Forms.Button();
             this.SesionClearBtn = new System.Windows.Forms.Button();
             this.AddLocationSession = new System.Windows.Forms.ComboBox();
@@ -47,6 +48,7 @@ namespace Time_Management_System_2021.Rooms
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.sessionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LecturerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sessionnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subjectNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subjectCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,8 +59,8 @@ namespace Time_Management_System_2021.Rooms
             this.startTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.endTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.consecutiveSessionsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.timeManagementSystem_DBDataSet24 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet24();
+            this.consecutiveSessionsBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.timeManagementSystem_DBDataSet28 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet28();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.addlocationParellel = new System.Windows.Forms.ComboBox();
             this.addcapacityparellel = new System.Windows.Forms.TextBox();
@@ -118,7 +120,6 @@ namespace Time_Management_System_2021.Rooms
             this.AddNotOverlapLocation = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.proomIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.psesstionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -193,6 +194,8 @@ namespace Time_Management_System_2021.Rooms
             this.label18 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
+            this.consecutiveSessionsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.timeManagementSystem_DBDataSet24 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet24();
             this.consecutiveSessionsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.timeManagementSystem_DBDataSet17 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet17();
             this.consecutiveRoomBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
@@ -244,11 +247,22 @@ namespace Time_Management_System_2021.Rooms
             this.consecutiveSessionRoomTableAdapter = new Time_Management_System_2021.TimeManagementSystem_DBDataSet23TableAdapters.ConsecutiveSessionRoomTableAdapter();
             this.consecutiveSessionRoomTableAdapter1 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet25TableAdapters.ConsecutiveSessionRoomTableAdapter();
             this.consecutive_SessionsTableAdapter4 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet24TableAdapters.consecutive_SessionsTableAdapter();
+            this.timeManagementSystem_DBDataSet26 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet26();
+            this.consecutiveSessionsBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.consecutive_SessionsTableAdapter5 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet26TableAdapters.consecutive_SessionsTableAdapter();
+            this.timeManagementSystem_DBDataSet27 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet27();
+            this.consecutiveSessionsBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.consecutive_SessionsTableAdapter6 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet27TableAdapters.consecutive_SessionsTableAdapter();
+            this.consecutive_SessionsTableAdapter7 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet28TableAdapters.consecutive_SessionsTableAdapter();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet28)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parellelSessionsBindingSource2)).BeginInit();
@@ -269,6 +283,8 @@ namespace Time_Management_System_2021.Rooms
             ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet25)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNRTR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveRoomBindingSource4)).BeginInit();
@@ -299,6 +315,10 @@ namespace Time_Management_System_2021.Rooms
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveRoomBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionRoomBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource6)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -318,6 +338,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.tabPage2.BackgroundImage = global::Time_Management_System_2021.Properties.Resources.background1;
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage2.Controls.Add(this.C_sessionAdd);
             this.tabPage2.Controls.Add(this.C_SessionRoomBtn);
             this.tabPage2.Controls.Add(this.SesionClearBtn);
             this.tabPage2.Controls.Add(this.AddLocationSession);
@@ -338,6 +359,19 @@ namespace Time_Management_System_2021.Rooms
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Add Room For Consecutive Session";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // C_sessionAdd
+            // 
+            this.C_sessionAdd.BackColor = System.Drawing.Color.ForestGreen;
+            this.C_sessionAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C_sessionAdd.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.C_sessionAdd.Location = new System.Drawing.Point(595, 433);
+            this.C_sessionAdd.Name = "C_sessionAdd";
+            this.C_sessionAdd.Size = new System.Drawing.Size(150, 60);
+            this.C_sessionAdd.TabIndex = 43;
+            this.C_sessionAdd.Text = "Add";
+            this.C_sessionAdd.UseVisualStyleBackColor = false;
+            this.C_sessionAdd.Click += new System.EventHandler(this.C_sessionAdd_Click);
             // 
             // C_SessionRoomBtn
             // 
@@ -428,7 +462,7 @@ namespace Time_Management_System_2021.Rooms
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(50, 36);
+            this.button6.Location = new System.Drawing.Point(20, 28);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(47, 37);
             this.button6.TabIndex = 31;
@@ -439,7 +473,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 98);
+            this.label1.Location = new System.Drawing.Point(17, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 18);
             this.label1.TabIndex = 5;
@@ -449,7 +483,7 @@ namespace Time_Management_System_2021.Rooms
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(225, 104);
+            this.textBox1.Location = new System.Drawing.Point(201, 101);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(237, 24);
             this.textBox1.TabIndex = 4;
@@ -460,7 +494,7 @@ namespace Time_Management_System_2021.Rooms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(159, 32);
+            this.label2.Location = new System.Drawing.Point(259, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(517, 33);
             this.label2.TabIndex = 3;
@@ -472,6 +506,7 @@ namespace Time_Management_System_2021.Rooms
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.sessionIDDataGridViewTextBoxColumn,
+            this.LecturerName,
             this.sessionnameDataGridViewTextBoxColumn,
             this.subjectNameDataGridViewTextBoxColumn,
             this.subjectCodeDataGridViewTextBoxColumn,
@@ -482,7 +517,7 @@ namespace Time_Management_System_2021.Rooms
             this.startTimeDataGridViewTextBoxColumn,
             this.endTimeDataGridViewTextBoxColumn,
             this.dayDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.consecutiveSessionsBindingSource4;
+            this.dataGridView1.DataSource = this.consecutiveSessionsBindingSource7;
             this.dataGridView1.Location = new System.Drawing.Point(20, 134);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(949, 222);
@@ -494,6 +529,12 @@ namespace Time_Management_System_2021.Rooms
             this.sessionIDDataGridViewTextBoxColumn.DataPropertyName = "SessionID";
             this.sessionIDDataGridViewTextBoxColumn.HeaderText = "SessionID";
             this.sessionIDDataGridViewTextBoxColumn.Name = "sessionIDDataGridViewTextBoxColumn";
+            // 
+            // LecturerName
+            // 
+            this.LecturerName.DataPropertyName = "LecturerName";
+            this.LecturerName.HeaderText = "LecturerName";
+            this.LecturerName.Name = "LecturerName";
             // 
             // sessionnameDataGridViewTextBoxColumn
             // 
@@ -555,15 +596,15 @@ namespace Time_Management_System_2021.Rooms
             this.dayDataGridViewTextBoxColumn.HeaderText = "Day";
             this.dayDataGridViewTextBoxColumn.Name = "dayDataGridViewTextBoxColumn";
             // 
-            // consecutiveSessionsBindingSource4
+            // consecutiveSessionsBindingSource7
             // 
-            this.consecutiveSessionsBindingSource4.DataMember = "consecutive_Sessions";
-            this.consecutiveSessionsBindingSource4.DataSource = this.timeManagementSystem_DBDataSet24;
+            this.consecutiveSessionsBindingSource7.DataMember = "consecutive_Sessions";
+            this.consecutiveSessionsBindingSource7.DataSource = this.timeManagementSystem_DBDataSet28;
             // 
-            // timeManagementSystem_DBDataSet24
+            // timeManagementSystem_DBDataSet28
             // 
-            this.timeManagementSystem_DBDataSet24.DataSetName = "TimeManagementSystem_DBDataSet24";
-            this.timeManagementSystem_DBDataSet24.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.timeManagementSystem_DBDataSet28.DataSetName = "TimeManagementSystem_DBDataSet28";
+            this.timeManagementSystem_DBDataSet28.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage1
             // 
@@ -681,7 +722,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(233, 98);
+            this.textBox2.Location = new System.Drawing.Point(213, 117);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(317, 20);
             this.textBox2.TabIndex = 34;
@@ -691,7 +732,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(29, 100);
+            this.label7.Location = new System.Drawing.Point(19, 116);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(178, 18);
             this.label7.TabIndex = 33;
@@ -702,7 +743,7 @@ namespace Time_Management_System_2021.Rooms
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(32, 41);
+            this.button1.Location = new System.Drawing.Point(22, 33);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 37);
             this.button1.TabIndex = 32;
@@ -714,7 +755,7 @@ namespace Time_Management_System_2021.Rooms
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(227, 37);
+            this.label6.Location = new System.Drawing.Point(265, 37);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(451, 33);
             this.label6.TabIndex = 4;
@@ -867,7 +908,7 @@ namespace Time_Management_System_2021.Rooms
             this.addNonOverlappingbtn.BackColor = System.Drawing.Color.ForestGreen;
             this.addNonOverlappingbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNonOverlappingbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.addNonOverlappingbtn.Location = new System.Drawing.Point(625, 412);
+            this.addNonOverlappingbtn.Location = new System.Drawing.Point(605, 412);
             this.addNonOverlappingbtn.Name = "addNonOverlappingbtn";
             this.addNonOverlappingbtn.Size = new System.Drawing.Size(150, 60);
             this.addNonOverlappingbtn.TabIndex = 44;
@@ -889,7 +930,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(27, 492);
+            this.label12.Location = new System.Drawing.Point(16, 495);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(240, 18);
             this.label12.TabIndex = 41;
@@ -899,7 +940,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(27, 457);
+            this.label13.Location = new System.Drawing.Point(16, 446);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(240, 18);
             this.label13.TabIndex = 40;
@@ -909,7 +950,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(27, 414);
+            this.label14.Location = new System.Drawing.Point(27, 395);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(225, 18);
             this.label14.TabIndex = 39;
@@ -920,7 +961,7 @@ namespace Time_Management_System_2021.Rooms
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(19, 45);
+            this.button4.Location = new System.Drawing.Point(19, 37);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(47, 37);
             this.button4.TabIndex = 33;
@@ -931,7 +972,7 @@ namespace Time_Management_System_2021.Rooms
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label11.Location = new System.Drawing.Point(252, 45);
+            this.label11.Location = new System.Drawing.Point(244, 41);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(571, 33);
             this.label11.TabIndex = 5;
@@ -1053,7 +1094,7 @@ namespace Time_Management_System_2021.Rooms
             // AddNotOverlapCapacity
             // 
             this.AddNotOverlapCapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddNotOverlapCapacity.Location = new System.Drawing.Point(296, 504);
+            this.AddNotOverlapCapacity.Location = new System.Drawing.Point(283, 492);
             this.AddNotOverlapCapacity.Name = "AddNotOverlapCapacity";
             this.AddNotOverlapCapacity.Size = new System.Drawing.Size(264, 24);
             this.AddNotOverlapCapacity.TabIndex = 3;
@@ -1061,7 +1102,7 @@ namespace Time_Management_System_2021.Rooms
             // addNotOverlapRoom
             // 
             this.addNotOverlapRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addNotOverlapRoom.Location = new System.Drawing.Point(296, 412);
+            this.addNotOverlapRoom.Location = new System.Drawing.Point(283, 389);
             this.addNotOverlapRoom.Name = "addNotOverlapRoom";
             this.addNotOverlapRoom.Size = new System.Drawing.Size(264, 24);
             this.addNotOverlapRoom.TabIndex = 2;
@@ -1084,7 +1125,7 @@ namespace Time_Management_System_2021.Rooms
             "New Building",
             "Engineering",
             "Bussiness Building"});
-            this.AddNotOverlapLocation.Location = new System.Drawing.Point(296, 454);
+            this.AddNotOverlapLocation.Location = new System.Drawing.Point(283, 438);
             this.AddNotOverlapLocation.Name = "AddNotOverlapLocation";
             this.AddNotOverlapLocation.Size = new System.Drawing.Size(264, 26);
             this.AddNotOverlapLocation.TabIndex = 0;
@@ -1093,6 +1134,9 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.tabPage4.BackgroundImage = global::Time_Management_System_2021.Properties.Resources.background1;
             this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage4.Controls.Add(this.label25);
+            this.tabPage4.Controls.Add(this.label24);
+            this.tabPage4.Controls.Add(this.label23);
             this.tabPage4.Controls.Add(this.button2);
             this.tabPage4.Controls.Add(this.label15);
             this.tabPage4.Controls.Add(this.dataGridView6);
@@ -1116,17 +1160,6 @@ namespace Time_Management_System_2021.Rooms
             this.button2.TabIndex = 34;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label15.Location = new System.Drawing.Point(267, 40);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(488, 33);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "View All The Rooms For Sessions";
             // 
             // dataGridView6
             // 
@@ -1715,7 +1748,7 @@ namespace Time_Management_System_2021.Rooms
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(23, 20);
+            this.button5.Location = new System.Drawing.Point(37, 37);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(34, 35);
             this.button5.TabIndex = 1;
@@ -1727,12 +1760,22 @@ namespace Time_Management_System_2021.Rooms
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label17.Location = new System.Drawing.Point(180, 39);
+            this.label17.Location = new System.Drawing.Point(210, 39);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(603, 33);
             this.label17.TabIndex = 0;
             this.label17.Text = "Allocate Non-Reservable Time for a Room";
             this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // consecutiveSessionsBindingSource4
+            // 
+            this.consecutiveSessionsBindingSource4.DataMember = "consecutive_Sessions";
+            this.consecutiveSessionsBindingSource4.DataSource = this.timeManagementSystem_DBDataSet24;
+            // 
+            // timeManagementSystem_DBDataSet24
+            // 
+            this.timeManagementSystem_DBDataSet24.DataSetName = "TimeManagementSystem_DBDataSet24";
+            this.timeManagementSystem_DBDataSet24.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // consecutiveSessionsBindingSource3
             // 
@@ -1968,6 +2011,82 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.consecutive_SessionsTableAdapter4.ClearBeforeFill = true;
             // 
+            // timeManagementSystem_DBDataSet26
+            // 
+            this.timeManagementSystem_DBDataSet26.DataSetName = "TimeManagementSystem_DBDataSet26";
+            this.timeManagementSystem_DBDataSet26.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // consecutiveSessionsBindingSource5
+            // 
+            this.consecutiveSessionsBindingSource5.DataMember = "consecutive_Sessions";
+            this.consecutiveSessionsBindingSource5.DataSource = this.timeManagementSystem_DBDataSet26;
+            // 
+            // consecutive_SessionsTableAdapter5
+            // 
+            this.consecutive_SessionsTableAdapter5.ClearBeforeFill = true;
+            // 
+            // timeManagementSystem_DBDataSet27
+            // 
+            this.timeManagementSystem_DBDataSet27.DataSetName = "TimeManagementSystem_DBDataSet27";
+            this.timeManagementSystem_DBDataSet27.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // consecutiveSessionsBindingSource6
+            // 
+            this.consecutiveSessionsBindingSource6.DataMember = "consecutive_Sessions";
+            this.consecutiveSessionsBindingSource6.DataSource = this.timeManagementSystem_DBDataSet27;
+            // 
+            // consecutive_SessionsTableAdapter6
+            // 
+            this.consecutive_SessionsTableAdapter6.ClearBeforeFill = true;
+            // 
+            // consecutive_SessionsTableAdapter7
+            // 
+            this.consecutive_SessionsTableAdapter7.ClearBeforeFill = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label15.Location = new System.Drawing.Point(269, 30);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(488, 33);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "View All The Rooms For Sessions";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Blue;
+            this.label23.Location = new System.Drawing.Point(30, 84);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(176, 18);
+            this.label23.TabIndex = 35;
+            this.label23.Text = "Consecutive Sessions";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Blue;
+            this.label24.Location = new System.Drawing.Point(30, 234);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(130, 18);
+            this.label24.TabIndex = 36;
+            this.label24.Text = "Parellel Session";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Blue;
+            this.label25.Location = new System.Drawing.Point(31, 393);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(129, 18);
+            this.label25.TabIndex = 37;
+            this.label25.Text = "Not Overlapping";
+            // 
             // ManageRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1981,8 +2100,8 @@ namespace Time_Management_System_2021.Rooms
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet28)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -2007,6 +2126,8 @@ namespace Time_Management_System_2021.Rooms
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNRTR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveRoomBindingSource4)).EndInit();
@@ -2037,6 +2158,10 @@ namespace Time_Management_System_2021.Rooms
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveRoomBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionRoomBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2053,17 +2178,6 @@ namespace Time_Management_System_2021.Rooms
         private TimeManagementSystem_DBDataSet3 timeManagementSystem_DBDataSet3;
         private System.Windows.Forms.BindingSource consecutiveRoomBindingSource;
         private TimeManagementSystem_DBDataSet3TableAdapters.ConsecutiveRoomTableAdapter consecutiveRoomTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sessionIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sessionnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn subjectNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn subjectCodeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn groupNumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn studentCountDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn durationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn startTimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn endTimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dayDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button6;
@@ -2154,7 +2268,6 @@ namespace Time_Management_System_2021.Rooms
         private System.Windows.Forms.BindingSource notoverlappingSessionsBindingSource2;
         private TimeManagementSystem_DBDataSet13TableAdapters.not_overlapping_SessionsTableAdapter not_overlapping_SessionsTableAdapter2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dataGridView6;
         private System.Windows.Forms.DataGridView dataGridView4;
         private TimeManagementSystem_DBDataSet14 timeManagementSystem_DBDataSet14;
@@ -2256,5 +2369,31 @@ namespace Time_Management_System_2021.Rooms
         private System.Windows.Forms.TextBox txtStartTime;
         private System.Windows.Forms.Button btnDeleteNRTR;
         private System.Windows.Forms.Button btnUpdateNRTR;
+        private System.Windows.Forms.Button C_sessionAdd;
+        private TimeManagementSystem_DBDataSet26 timeManagementSystem_DBDataSet26;
+        private System.Windows.Forms.BindingSource consecutiveSessionsBindingSource5;
+        private TimeManagementSystem_DBDataSet26TableAdapters.consecutive_SessionsTableAdapter consecutive_SessionsTableAdapter5;
+        private TimeManagementSystem_DBDataSet27 timeManagementSystem_DBDataSet27;
+        private System.Windows.Forms.BindingSource consecutiveSessionsBindingSource6;
+        private TimeManagementSystem_DBDataSet27TableAdapters.consecutive_SessionsTableAdapter consecutive_SessionsTableAdapter6;
+        private TimeManagementSystem_DBDataSet28 timeManagementSystem_DBDataSet28;
+        private System.Windows.Forms.BindingSource consecutiveSessionsBindingSource7;
+        private TimeManagementSystem_DBDataSet28TableAdapters.consecutive_SessionsTableAdapter consecutive_SessionsTableAdapter7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessionIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LecturerName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessionnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectCodeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentCountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn durationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dayDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label15;
     }
 }

@@ -29,7 +29,6 @@ namespace Time_Management_System_2021.Working_days_and_hours
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectLecturerForm));
             this.lblSelectLecturerInForm = new System.Windows.Forms.Label();
             this.cmbBoxSelectLecturerInForm = new System.Windows.Forms.ComboBox();
             this.btnSelectLecturerInForm = new System.Windows.Forms.Button();
@@ -59,7 +58,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnSelectLecturerInForm
             // 
             this.btnSelectLecturerInForm.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnSelectLecturerInForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnSelectLecturerInForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectLecturerInForm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSelectLecturerInForm.Location = new System.Drawing.Point(119, 187);
             this.btnSelectLecturerInForm.Name = "btnSelectLecturerInForm";
@@ -72,7 +71,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnCancelInForm
             // 
             this.btnCancelInForm.BackColor = System.Drawing.Color.Maroon;
-            this.btnCancelInForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnCancelInForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelInForm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCancelInForm.Location = new System.Drawing.Point(274, 187);
             this.btnCancelInForm.Name = "btnCancelInForm";
@@ -87,7 +86,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Time_Management_System_2021.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(519, 272);
             this.Controls.Add(this.btnCancelInForm);

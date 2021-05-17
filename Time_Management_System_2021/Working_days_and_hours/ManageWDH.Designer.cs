@@ -95,11 +95,11 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.Controls.Add(this.tabPage5);
-            this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tabControl.Location = new System.Drawing.Point(0, 0);
+            this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl.Location = new System.Drawing.Point(-3, 2);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(973, 601);
+            this.tabControl.Size = new System.Drawing.Size(990, 562);
             this.tabControl.TabIndex = 3;
             // 
             // tabPage3
@@ -123,9 +123,9 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.tabPage3.Controls.Add(this.dgvMWD);
             this.tabPage3.Controls.Add(this.lblTopicMWD);
             this.tabPage3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(965, 572);
+            this.tabPage3.Size = new System.Drawing.Size(982, 536);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Manage working days";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -158,7 +158,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.btnHomeMWD.FlatAppearance.BorderSize = 0;
             this.btnHomeMWD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHomeMWD.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeMWD.Image")));
-            this.btnHomeMWD.Location = new System.Drawing.Point(8, 14);
+            this.btnHomeMWD.Location = new System.Drawing.Point(28, 44);
             this.btnHomeMWD.Name = "btnHomeMWD";
             this.btnHomeMWD.Size = new System.Drawing.Size(47, 37);
             this.btnHomeMWD.TabIndex = 13;
@@ -307,11 +307,11 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // lblTopicMWD
             // 
             this.lblTopicMWD.AutoSize = true;
-            this.lblTopicMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
+            this.lblTopicMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTopicMWD.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblTopicMWD.Location = new System.Drawing.Point(299, 32);
+            this.lblTopicMWD.Location = new System.Drawing.Point(324, 44);
             this.lblTopicMWD.Name = "lblTopicMWD";
-            this.lblTopicMWD.Size = new System.Drawing.Size(325, 36);
+            this.lblTopicMWD.Size = new System.Drawing.Size(317, 33);
             this.lblTopicMWD.TabIndex = 0;
             this.lblTopicMWD.Text = "Manage working days";
             // 
@@ -331,9 +331,9 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.tabPage4.Controls.Add(this.lblHours);
             this.tabPage4.Controls.Add(this.lblWTPerDay);
             this.tabPage4.Controls.Add(this.lblTopicWTPerDay);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(965, 572);
+            this.tabPage4.Size = new System.Drawing.Size(982, 536);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Working time per day";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -343,7 +343,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.btnHomeWTPerDay.FlatAppearance.BorderSize = 0;
             this.btnHomeWTPerDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHomeWTPerDay.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeWTPerDay.Image")));
-            this.btnHomeWTPerDay.Location = new System.Drawing.Point(8, 17);
+            this.btnHomeWTPerDay.Location = new System.Drawing.Point(21, 42);
             this.btnHomeWTPerDay.Name = "btnHomeWTPerDay";
             this.btnHomeWTPerDay.Size = new System.Drawing.Size(51, 37);
             this.btnHomeWTPerDay.TabIndex = 11;
@@ -379,7 +379,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnResetWTPerDay
             // 
             this.btnResetWTPerDay.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnResetWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnResetWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnResetWTPerDay.Location = new System.Drawing.Point(685, 240);
             this.btnResetWTPerDay.Name = "btnResetWTPerDay";
@@ -392,7 +392,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnDeleteWTPerDay
             // 
             this.btnDeleteWTPerDay.BackColor = System.Drawing.Color.Maroon;
-            this.btnDeleteWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnDeleteWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDeleteWTPerDay.Location = new System.Drawing.Point(506, 240);
             this.btnDeleteWTPerDay.Name = "btnDeleteWTPerDay";
@@ -405,7 +405,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnEditWTPerDay
             // 
             this.btnEditWTPerDay.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnEditWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnEditWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEditWTPerDay.Location = new System.Drawing.Point(327, 240);
             this.btnEditWTPerDay.Name = "btnEditWTPerDay";
@@ -418,7 +418,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnAddWTPerDay
             // 
             this.btnAddWTPerDay.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnAddWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnAddWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAddWTPerDay.Location = new System.Drawing.Point(148, 240);
             this.btnAddWTPerDay.Name = "btnAddWTPerDay";
@@ -461,11 +461,11 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // lblTopicWTPerDay
             // 
             this.lblTopicWTPerDay.AutoSize = true;
-            this.lblTopicWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
+            this.lblTopicWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTopicWTPerDay.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblTopicWTPerDay.Location = new System.Drawing.Point(308, 43);
+            this.lblTopicWTPerDay.Location = new System.Drawing.Point(321, 42);
             this.lblTopicWTPerDay.Name = "lblTopicWTPerDay";
-            this.lblTopicWTPerDay.Size = new System.Drawing.Size(316, 36);
+            this.lblTopicWTPerDay.Size = new System.Drawing.Size(311, 33);
             this.lblTopicWTPerDay.TabIndex = 0;
             this.lblTopicWTPerDay.Text = "Working time per day";
             // 
@@ -486,9 +486,9 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.tabPage5.Controls.Add(this.lblEndTime);
             this.tabPage5.Controls.Add(this.lblStartTime);
             this.tabPage5.Controls.Add(this.lblTopicTimeSlots);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(965, 572);
+            this.tabPage5.Size = new System.Drawing.Size(982, 536);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Time slots";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -499,7 +499,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.btnHomeTimeSlots.FlatAppearance.BorderSize = 0;
             this.btnHomeTimeSlots.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHomeTimeSlots.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeTimeSlots.Image")));
-            this.btnHomeTimeSlots.Location = new System.Drawing.Point(8, 14);
+            this.btnHomeTimeSlots.Location = new System.Drawing.Point(28, 40);
             this.btnHomeTimeSlots.Name = "btnHomeTimeSlots";
             this.btnHomeTimeSlots.Size = new System.Drawing.Size(51, 38);
             this.btnHomeTimeSlots.TabIndex = 12;
@@ -629,11 +629,11 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // lblTopicTimeSlots
             // 
             this.lblTopicTimeSlots.AutoSize = true;
-            this.lblTopicTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold);
+            this.lblTopicTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTopicTimeSlots.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblTopicTimeSlots.Location = new System.Drawing.Point(407, 38);
+            this.lblTopicTimeSlots.Location = new System.Drawing.Point(391, 45);
             this.lblTopicTimeSlots.Name = "lblTopicTimeSlots";
-            this.lblTopicTimeSlots.Size = new System.Drawing.Size(159, 36);
+            this.lblTopicTimeSlots.Size = new System.Drawing.Size(160, 33);
             this.lblTopicTimeSlots.TabIndex = 0;
             this.lblTopicTimeSlots.Text = "Time slots";
             // 

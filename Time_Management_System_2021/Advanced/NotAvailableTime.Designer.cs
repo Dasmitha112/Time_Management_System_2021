@@ -239,7 +239,7 @@ namespace Time_Management_System_2021.Advanced
             this.btnHomeSNAT.FlatAppearance.BorderSize = 0;
             this.btnHomeSNAT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHomeSNAT.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeSNAT.Image")));
-            this.btnHomeSNAT.Location = new System.Drawing.Point(32, 29);
+            this.btnHomeSNAT.Location = new System.Drawing.Point(33, 39);
             this.btnHomeSNAT.Name = "btnHomeSNAT";
             this.btnHomeSNAT.Size = new System.Drawing.Size(35, 33);
             this.btnHomeSNAT.TabIndex = 1;

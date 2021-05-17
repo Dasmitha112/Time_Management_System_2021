@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddLecturerForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Ltab0 = new System.Windows.Forms.TabPage();
+            this.backhomeL1 = new System.Windows.Forms.Button();
             this.SearchName = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.filterlevel = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             this.SearchDept = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Ltab1 = new System.Windows.Forms.TabPage();
+            this.backhomeL2 = new System.Windows.Forms.Button();
             this.Lsave = new System.Windows.Forms.Button();
             this.Lclear = new System.Windows.Forms.Button();
             this.deptBox = new System.Windows.Forms.ComboBox();
@@ -57,6 +59,7 @@
             this.LAdd = new System.Windows.Forms.Label();
             this.LName = new System.Windows.Forms.Label();
             this.Ltab2 = new System.Windows.Forms.TabPage();
+            this.backhomeL3 = new System.Windows.Forms.Button();
             this.UPdelete = new System.Windows.Forms.Button();
             this.UPadd = new System.Windows.Forms.Button();
             this.LUPbuildingbox = new System.Windows.Forms.ComboBox();
@@ -72,11 +75,8 @@
             this.LUPdept = new System.Windows.Forms.Label();
             this.LUPname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.backhomeL1 = new System.Windows.Forms.Button();
             this.addLecturerFormBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addLecturerFormBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.backhomeL2 = new System.Windows.Forms.Button();
-            this.backhomeL3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Ltab0.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -119,18 +119,30 @@
             this.Ltab0.Text = "View Lecturers Details";
             this.Ltab0.Click += new System.EventHandler(this.Ltab0_Click);
             // 
+            // backhomeL1
+            // 
+            this.backhomeL1.FlatAppearance.BorderSize = 0;
+            this.backhomeL1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backhomeL1.Image = ((System.Drawing.Image)(resources.GetObject("backhomeL1.Image")));
+            this.backhomeL1.Location = new System.Drawing.Point(42, 25);
+            this.backhomeL1.Name = "backhomeL1";
+            this.backhomeL1.Size = new System.Drawing.Size(34, 34);
+            this.backhomeL1.TabIndex = 9;
+            this.backhomeL1.UseVisualStyleBackColor = true;
+            this.backhomeL1.Click += new System.EventHandler(this.backhomeL1_Click);
+            // 
             // SearchName
             // 
-            this.SearchName.Location = new System.Drawing.Point(784, 78);
+            this.SearchName.Location = new System.Drawing.Point(784, 129);
             this.SearchName.Name = "SearchName";
-            this.SearchName.Size = new System.Drawing.Size(144, 20);
+            this.SearchName.Size = new System.Drawing.Size(133, 20);
             this.SearchName.TabIndex = 8;
             this.SearchName.TextChanged += new System.EventHandler(this.SearchName_TextChanged);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(63, 171);
+            this.dataGridView1.Location = new System.Drawing.Point(80, 200);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(801, 248);
             this.dataGridView1.TabIndex = 7;
@@ -140,7 +152,7 @@
             // 
             this.filterlevel.AutoSize = true;
             this.filterlevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filterlevel.Location = new System.Drawing.Point(380, 80);
+            this.filterlevel.Location = new System.Drawing.Point(362, 132);
             this.filterlevel.Name = "filterlevel";
             this.filterlevel.Size = new System.Drawing.Size(99, 18);
             this.filterlevel.TabIndex = 6;
@@ -150,7 +162,7 @@
             // 
             this.searchlecture.AutoSize = true;
             this.searchlecture.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchlecture.Location = new System.Drawing.Point(658, 80);
+            this.searchlecture.Location = new System.Drawing.Point(658, 132);
             this.searchlecture.Name = "searchlecture";
             this.searchlecture.Size = new System.Drawing.Size(120, 18);
             this.searchlecture.TabIndex = 5;
@@ -161,7 +173,7 @@
             // 
             this.filterDepartment.AutoSize = true;
             this.filterDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filterDepartment.Location = new System.Drawing.Point(39, 76);
+            this.filterDepartment.Location = new System.Drawing.Point(39, 128);
             this.filterDepartment.Name = "filterDepartment";
             this.filterDepartment.Size = new System.Drawing.Size(142, 18);
             this.filterDepartment.TabIndex = 4;
@@ -177,9 +189,9 @@
             "Senior Lecturer",
             "Lecturer",
             "Assistant Lecturer"});
-            this.SearchLevel.Location = new System.Drawing.Point(482, 80);
+            this.SearchLevel.Location = new System.Drawing.Point(482, 125);
             this.SearchLevel.Name = "SearchLevel";
-            this.SearchLevel.Size = new System.Drawing.Size(170, 21);
+            this.SearchLevel.Size = new System.Drawing.Size(153, 21);
             this.SearchLevel.TabIndex = 3;
             this.SearchLevel.SelectedIndexChanged += new System.EventHandler(this.SearchLevel_SelectedIndexChanged);
             // 
@@ -192,9 +204,9 @@
             "CN",
             "IM",
             "Cyber Sequrity"});
-            this.SearchDept.Location = new System.Drawing.Point(187, 77);
+            this.SearchDept.Location = new System.Drawing.Point(187, 125);
             this.SearchDept.Name = "SearchDept";
-            this.SearchDept.Size = new System.Drawing.Size(169, 21);
+            this.SearchDept.Size = new System.Drawing.Size(152, 21);
             this.SearchDept.TabIndex = 2;
             this.SearchDept.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -203,7 +215,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(377, 26);
+            this.label2.Location = new System.Drawing.Point(374, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(188, 33);
             this.label2.TabIndex = 1;
@@ -236,6 +248,18 @@
             this.Ltab1.TabIndex = 1;
             this.Ltab1.Text = "Add lecturers Details";
             this.Ltab1.UseVisualStyleBackColor = true;
+            // 
+            // backhomeL2
+            // 
+            this.backhomeL2.FlatAppearance.BorderSize = 0;
+            this.backhomeL2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backhomeL2.Image = ((System.Drawing.Image)(resources.GetObject("backhomeL2.Image")));
+            this.backhomeL2.Location = new System.Drawing.Point(33, 35);
+            this.backhomeL2.Name = "backhomeL2";
+            this.backhomeL2.Size = new System.Drawing.Size(34, 34);
+            this.backhomeL2.TabIndex = 18;
+            this.backhomeL2.UseVisualStyleBackColor = true;
+            this.backhomeL2.Click += new System.EventHandler(this.backhomeL2_Click);
             // 
             // Lsave
             // 
@@ -331,7 +355,7 @@
             // 
             this.Llevels.AutoSize = true;
             this.Llevels.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Llevels.Location = new System.Drawing.Point(565, 238);
+            this.Llevels.Location = new System.Drawing.Point(570, 238);
             this.Llevels.Name = "Llevels";
             this.Llevels.Size = new System.Drawing.Size(50, 18);
             this.Llevels.TabIndex = 9;
@@ -372,7 +396,7 @@
             this.buildingBox.Items.AddRange(new object[] {
             "New Building",
             "Main Building"});
-            this.buildingBox.Location = new System.Drawing.Point(568, 198);
+            this.buildingBox.Location = new System.Drawing.Point(568, 191);
             this.buildingBox.Name = "buildingBox";
             this.buildingBox.Size = new System.Drawing.Size(196, 21);
             this.buildingBox.TabIndex = 5;
@@ -387,7 +411,7 @@
             "Faculty Of Bussiness",
             "Faculty Of Humanties",
             "Faculty Of Engineering"});
-            this.facultybox.Location = new System.Drawing.Point(568, 126);
+            this.facultybox.Location = new System.Drawing.Point(568, 119);
             this.facultybox.Name = "facultybox";
             this.facultybox.Size = new System.Drawing.Size(196, 21);
             this.facultybox.TabIndex = 4;
@@ -398,7 +422,7 @@
             this.LAdd.AutoSize = true;
             this.LAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LAdd.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.LAdd.Location = new System.Drawing.Point(354, 36);
+            this.LAdd.Location = new System.Drawing.Point(374, 36);
             this.LAdd.Name = "LAdd";
             this.LAdd.Size = new System.Drawing.Size(219, 33);
             this.LAdd.TabIndex = 3;
@@ -441,6 +465,18 @@
             this.Ltab2.Text = "Manage Details";
             this.Ltab2.UseVisualStyleBackColor = true;
             // 
+            // backhomeL3
+            // 
+            this.backhomeL3.FlatAppearance.BorderSize = 0;
+            this.backhomeL3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backhomeL3.Image = ((System.Drawing.Image)(resources.GetObject("backhomeL3.Image")));
+            this.backhomeL3.Location = new System.Drawing.Point(34, 28);
+            this.backhomeL3.Name = "backhomeL3";
+            this.backhomeL3.Size = new System.Drawing.Size(34, 34);
+            this.backhomeL3.TabIndex = 20;
+            this.backhomeL3.UseVisualStyleBackColor = true;
+            this.backhomeL3.Click += new System.EventHandler(this.backhomeL3_Click);
+            // 
             // UPdelete
             // 
             this.UPdelete.BackColor = System.Drawing.Color.Maroon;
@@ -473,7 +509,7 @@
             this.LUPbuildingbox.Items.AddRange(new object[] {
             "New Building",
             "Main Building"});
-            this.LUPbuildingbox.Location = new System.Drawing.Point(572, 218);
+            this.LUPbuildingbox.Location = new System.Drawing.Point(577, 199);
             this.LUPbuildingbox.Name = "LUPbuildingbox";
             this.LUPbuildingbox.Size = new System.Drawing.Size(196, 21);
             this.LUPbuildingbox.TabIndex = 12;
@@ -488,7 +524,7 @@
             "Senior Lecturer",
             "Lecturer",
             "Assistant Lecturer"});
-            this.UPlevel.Location = new System.Drawing.Point(572, 299);
+            this.UPlevel.Location = new System.Drawing.Point(577, 277);
             this.UPlevel.Name = "UPlevel";
             this.UPlevel.Size = new System.Drawing.Size(196, 21);
             this.UPlevel.TabIndex = 11;
@@ -500,7 +536,7 @@
             this.UPcenter.Items.AddRange(new object[] {
             "Malabe",
             "Metro"});
-            this.UPcenter.Location = new System.Drawing.Point(139, 299);
+            this.UPcenter.Location = new System.Drawing.Point(139, 277);
             this.UPcenter.Name = "UPcenter";
             this.UPcenter.Size = new System.Drawing.Size(196, 21);
             this.UPcenter.TabIndex = 10;
@@ -514,7 +550,7 @@
             "CN",
             "Cyber Sequrity",
             "BM"});
-            this.LUPdeptbox.Location = new System.Drawing.Point(139, 218);
+            this.LUPdeptbox.Location = new System.Drawing.Point(139, 199);
             this.LUPdeptbox.Name = "LUPdeptbox";
             this.LUPdeptbox.Size = new System.Drawing.Size(196, 21);
             this.LUPdeptbox.TabIndex = 9;
@@ -564,7 +600,7 @@
             // 
             this.LUPcenter.AutoSize = true;
             this.LUPcenter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LUPcenter.Location = new System.Drawing.Point(136, 268);
+            this.LUPcenter.Location = new System.Drawing.Point(136, 256);
             this.LUPcenter.Name = "LUPcenter";
             this.LUPcenter.Size = new System.Drawing.Size(52, 18);
             this.LUPcenter.TabIndex = 4;
@@ -574,7 +610,7 @@
             // 
             this.LUPlevel.AutoSize = true;
             this.LUPlevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LUPlevel.Location = new System.Drawing.Point(574, 268);
+            this.LUPlevel.Location = new System.Drawing.Point(574, 256);
             this.LUPlevel.Name = "LUPlevel";
             this.LUPlevel.Size = new System.Drawing.Size(50, 18);
             this.LUPlevel.TabIndex = 3;
@@ -607,23 +643,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(309, 34);
+            this.label1.Location = new System.Drawing.Point(295, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(355, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Lecturer Details";
-            // 
-            // backhomeL1
-            // 
-            this.backhomeL1.FlatAppearance.BorderSize = 0;
-            this.backhomeL1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backhomeL1.Image = ((System.Drawing.Image)(resources.GetObject("backhomeL1.Image")));
-            this.backhomeL1.Location = new System.Drawing.Point(28, 25);
-            this.backhomeL1.Name = "backhomeL1";
-            this.backhomeL1.Size = new System.Drawing.Size(34, 34);
-            this.backhomeL1.TabIndex = 9;
-            this.backhomeL1.UseVisualStyleBackColor = true;
-            this.backhomeL1.Click += new System.EventHandler(this.backhomeL1_Click);
             // 
             // addLecturerFormBindingSource
             // 
@@ -632,30 +656,6 @@
             // addLecturerFormBindingSource1
             // 
             this.addLecturerFormBindingSource1.DataSource = typeof(Time_Management_System_2021.Lecturers.AddLecturerForm);
-            // 
-            // backhomeL2
-            // 
-            this.backhomeL2.FlatAppearance.BorderSize = 0;
-            this.backhomeL2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backhomeL2.Image = ((System.Drawing.Image)(resources.GetObject("backhomeL2.Image")));
-            this.backhomeL2.Location = new System.Drawing.Point(20, 22);
-            this.backhomeL2.Name = "backhomeL2";
-            this.backhomeL2.Size = new System.Drawing.Size(34, 34);
-            this.backhomeL2.TabIndex = 18;
-            this.backhomeL2.UseVisualStyleBackColor = true;
-            this.backhomeL2.Click += new System.EventHandler(this.backhomeL2_Click);
-            // 
-            // backhomeL3
-            // 
-            this.backhomeL3.FlatAppearance.BorderSize = 0;
-            this.backhomeL3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backhomeL3.Image = ((System.Drawing.Image)(resources.GetObject("backhomeL3.Image")));
-            this.backhomeL3.Location = new System.Drawing.Point(30, 28);
-            this.backhomeL3.Name = "backhomeL3";
-            this.backhomeL3.Size = new System.Drawing.Size(34, 34);
-            this.backhomeL3.TabIndex = 20;
-            this.backhomeL3.UseVisualStyleBackColor = true;
-            this.backhomeL3.Click += new System.EventHandler(this.backhomeL3_Click);
             // 
             // AddLecturerForm
             // 

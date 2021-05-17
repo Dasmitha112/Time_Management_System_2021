@@ -40,13 +40,13 @@ namespace Time_Management_System_2021.Statistics
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.topic = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button2 = new System.Windows.Forms.Button();
-            this.topic = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -60,13 +60,13 @@ namespace Time_Management_System_2021.Statistics
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(115, 131);
+            this.chart1.Location = new System.Drawing.Point(221, 91);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Lecturer";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(495, 363);
+            this.chart1.Size = new System.Drawing.Size(570, 339);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -75,7 +75,7 @@ namespace Time_Management_System_2021.Statistics
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(741, 434);
+            this.button1.Location = new System.Drawing.Point(427, 449);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 60);
             this.button1.TabIndex = 1;
@@ -109,12 +109,23 @@ namespace Time_Management_System_2021.Statistics
             this.tabPage1.Text = "Lecturers VS Years";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // topic
+            // 
+            this.topic.AutoSize = true;
+            this.topic.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topic.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.topic.Location = new System.Drawing.Point(349, 34);
+            this.topic.Name = "topic";
+            this.topic.Size = new System.Drawing.Size(286, 33);
+            this.topic.TabIndex = 9;
+            this.topic.Text = "Lecturers VS Years";
+            // 
             // button4
             // 
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(31, 34);
+            this.button4.Location = new System.Drawing.Point(36, 34);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(33, 29);
             this.button4.TabIndex = 2;
@@ -137,12 +148,24 @@ namespace Time_Management_System_2021.Statistics
             this.tabPage2.Text = "Students VS Years";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(347, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(277, 33);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Students VS Years";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // button3
             // 
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(24, 32);
+            this.button3.Location = new System.Drawing.Point(33, 36);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(35, 29);
             this.button3.TabIndex = 4;
@@ -155,13 +178,13 @@ namespace Time_Management_System_2021.Statistics
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(115, 132);
+            this.chart2.Location = new System.Drawing.Point(229, 82);
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Student";
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(552, 375);
+            this.chart2.Size = new System.Drawing.Size(529, 354);
             this.chart2.TabIndex = 2;
             this.chart2.Text = "chart2";
             // 
@@ -170,36 +193,13 @@ namespace Time_Management_System_2021.Statistics
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(757, 447);
+            this.button2.Location = new System.Drawing.Point(426, 454);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 60);
             this.button2.TabIndex = 3;
             this.button2.Text = "Load Chart";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // topic
-            // 
-            this.topic.AutoSize = true;
-            this.topic.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.topic.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.topic.Location = new System.Drawing.Point(361, 26);
-            this.topic.Name = "topic";
-            this.topic.Size = new System.Drawing.Size(286, 33);
-            this.topic.TabIndex = 9;
-            this.topic.Text = "Lecturers VS Years";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(347, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 33);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Students VS Years";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Static
             // 
