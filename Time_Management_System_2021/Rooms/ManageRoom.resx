@@ -118,60 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
-        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
-        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
-        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
-        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
-        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
-        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <metadata name="consecutiveSessionsBindingSource4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>811, 446</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet24.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>547, 446</value>
-  </metadata>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
-        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
-        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
-        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
-        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
-        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
-        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <metadata name="parellelSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 212</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>996, 173</value>
-  </metadata>
-  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
-        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
-        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
-        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
-        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
-        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
-        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <metadata name="notoverlappingSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>726, 212</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>462, 212</value>
-  </metadata>
   <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
@@ -187,20 +133,11 @@
   <metadata name="parellelRoomBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1006, 368</value>
   </metadata>
-  <metadata name="timeManagementSystem_DBDataSet20.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>742, 368</value>
-  </metadata>
   <metadata name="nonParellelRoomBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1006, 251</value>
   </metadata>
-  <metadata name="timeManagementSystem_DBDataSet15.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>742, 251</value>
-  </metadata>
   <metadata name="consecutiveSessionRoomBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>283, 485</value>
-  </metadata>
-  <metadata name="timeManagementSystem_DBDataSet25.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>19, 485</value>
   </metadata>
   <data name="tabPage5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -495,6 +432,111 @@
         wASqGJ9AAKNWB2AAxQAACs9wtrYAAWnI8qAAHZAAAf/Z
 </value>
   </data>
+  <data name="button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
+        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
+        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
+        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
+        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
+        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
+        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="LecturerName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="consecutiveSessionsBindingSource7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>281, 563</value>
+  </metadata>
+  <metadata name="LecturerName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="consecutiveSessionsBindingSource7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>281, 563</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet28.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 563</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet28.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 563</value>
+  </metadata>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
+        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
+        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
+        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
+        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
+        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
+        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="parellelSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 212</value>
+  </metadata>
+  <metadata name="parellelSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 212</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>996, 173</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>996, 173</value>
+  </metadata>
+  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
+        1s0rRFEYx/GrbLAgQt5jp5TsLGUt/8BsLeZPmN1kJTZ2LCgvscfWzsLChigbmg0pWZGXJC/f3+XqdpyT
+        c801SfdXn+aeeuZ56s49506Q5S+mFXl0hKsKpYBXTIarCqQIDYxM49dSjXnEB0ZWUYtUU4cN2AZGttGA
+        VNKGHdgGmfbQg7LSj33YBrgcYxA/yhAuYWv8nWsMI1FGcQNbQ18PGIdXcniCrVFSz5iAMzWYg+3L5VrB
+        lydbx9oIlqHNPoMr2Br40u86iyksYQy9+Iw2tvZiVbh6v96FrZmvI7Qgiu6kONMI11a5QAlnH5/neIFZ
+        d4IueKcJBzAbibaSoruh9OEeZt0pUhuqAyOedtzCrEt16ADi6cQdzLpsqDNJhqqx60HqhneacQizkZhD
+        1fgRZp22U6LXnDaxTpMtLGARa9BxpvdrPDreVLMO1el6E/qXUY8s/z5B8AYeFAnoir9PNQAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <metadata name="notoverlappingSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>726, 212</value>
+  </metadata>
+  <metadata name="notoverlappingSessionsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>726, 212</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>462, 212</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>462, 212</value>
+  </metadata>
+  <metadata name="parellelRoomBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1006, 368</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet20.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>742, 368</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet20.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>742, 368</value>
+  </metadata>
+  <metadata name="nonParellelRoomBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1006, 251</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet15.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>742, 251</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet15.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>742, 251</value>
+  </metadata>
+  <metadata name="consecutiveSessionRoomBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>283, 485</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet25.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>19, 485</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet25.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>19, 485</value>
+  </metadata>
   <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAABGdBTUEAALGPC/xhBQAAAV9JREFUSEvt
@@ -507,8 +549,20 @@
         rkJggg==
 </value>
   </data>
+  <metadata name="consecutiveSessionsBindingSource4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>811, 446</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet24.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>547, 446</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet24.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>547, 446</value>
+  </metadata>
   <metadata name="consecutiveSessionsBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 329</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet17.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>899, 290</value>
   </metadata>
   <metadata name="timeManagementSystem_DBDataSet17.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>899, 290</value>
@@ -519,8 +573,14 @@
   <metadata name="timeManagementSystem_DBDataSet21.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>221, 407</value>
   </metadata>
+  <metadata name="timeManagementSystem_DBDataSet21.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 407</value>
+  </metadata>
   <metadata name="consecutiveSessionsBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>275, 134</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
   </metadata>
   <metadata name="timeManagementSystem_DBDataSet8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 134</value>
@@ -531,8 +591,14 @@
   <metadata name="timeManagementSystem_DBDataSet9.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>768, 134</value>
   </metadata>
+  <metadata name="timeManagementSystem_DBDataSet9.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>768, 134</value>
+  </metadata>
   <metadata name="notoverlappingSessionsBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>707, 95</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>449, 95</value>
   </metadata>
   <metadata name="timeManagementSystem_DBDataSet7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>449, 95</value>
@@ -543,8 +609,14 @@
   <metadata name="timeManagementSystem_DBDataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>723, 17</value>
   </metadata>
+  <metadata name="timeManagementSystem_DBDataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>723, 17</value>
+  </metadata>
   <metadata name="parellelSessionsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 95</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1039, 56</value>
   </metadata>
   <metadata name="timeManagementSystem_DBDataSet6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1039, 56</value>
@@ -659,6 +731,27 @@
   </metadata>
   <metadata name="consecutive_SessionsTableAdapter4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1058, 446</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet26.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>826, 485</value>
+  </metadata>
+  <metadata name="consecutiveSessionsBindingSource5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 524</value>
+  </metadata>
+  <metadata name="consecutive_SessionsTableAdapter5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>264, 524</value>
+  </metadata>
+  <metadata name="timeManagementSystem_DBDataSet27.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>510, 524</value>
+  </metadata>
+  <metadata name="consecutiveSessionsBindingSource6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>774, 524</value>
+  </metadata>
+  <metadata name="consecutive_SessionsTableAdapter6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1021, 524</value>
+  </metadata>
+  <metadata name="consecutive_SessionsTableAdapter7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>528, 563</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>29</value>

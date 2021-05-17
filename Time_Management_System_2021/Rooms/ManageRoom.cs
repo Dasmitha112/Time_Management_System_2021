@@ -25,11 +25,16 @@ namespace Time_Management_System_2021.Rooms
 
         private void ManageRoom_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'timeManagementSystem_DBDataSet28.consecutive_Sessions' table. You can move, or remove it, as needed.
+            this.consecutive_SessionsTableAdapter7.Fill(this.timeManagementSystem_DBDataSet28.consecutive_Sessions);
+            DataGridViewCheckBoxColumn chckbox = new DataGridViewCheckBoxColumn();
+          
+           
             // TODO: This line of code loads data into the 'timeManagementSystem_DBDataSet25.ConsecutiveSessionRoom' table. You can move, or remove it, as needed.
             this.consecutiveSessionRoomTableAdapter1.Fill(this.timeManagementSystem_DBDataSet25.ConsecutiveSessionRoom);
 
-            this.consecutive_SessionsTableAdapter4.Fill(this.timeManagementSystem_DBDataSet24.consecutive_Sessions);
-            DataGridViewCheckBoxColumn chckbox = new DataGridViewCheckBoxColumn();
+            //this.consecutive_SessionsTableAdapter4.Fill(this.timeManagementSystem_DBDataSet24.consecutive_Sessions);
+            //DataGridViewCheckBoxColumn chckbox = new DataGridViewCheckBoxColumn();
             this.parellelRoomTableAdapter1.Fill(this.timeManagementSystem_DBDataSet20.ParellelRoom);
             this.parellelRoomTableAdapter.Fill(this.timeManagementSystem_DBDataSet16.ParellelRoom);
             this.nonParellelRoomTableAdapter.Fill(this.timeManagementSystem_DBDataSet15.NonParellelRoom);
@@ -106,46 +111,7 @@ namespace Time_Management_System_2021.Rooms
 
         private void C_SessionRoomBtn_Click(object sender, EventArgs e)
         {
-            string mainconn = ConfigurationManager.ConnectionStrings["Time_Management_System_2021.Properties.Settings.TimeManagementSystem_DBConnectionString"].ConnectionString;
-            SqlConnection sqlconn = new SqlConnection(mainconn);
-            String Room_Name = AddRoomSession.Text;
-            String Building_Name = AddLocationSession.Text;
-            String Capacity = AddCapacitySession.Text;
-
-            /*foreach (DataGridViewRow dr in dataGridView1.Rows)
-            {
-                bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn"].Value);
-                if (chackboxselected)
-                {
-                    string Sqlquery = "INSERT INTO [dbo].[ConsecutiveSessionRoom] VALUES (@C_sesstionID, @SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day, @Room_Name, @Building_Name, @Capacity)";
-                    SqlCommand sqlcomm = new SqlCommand(Sqlquery, sqlconn);
-
-
-                    sqlcomm.Parameters.AddWithValue("@C_sesstionID", dr.Cells[0].Value);
-                    sqlcomm.Parameters.AddWithValue("@SessionID", dr.Cells[1].Value);
-                    sqlcomm.Parameters.AddWithValue("@session_name", dr.Cells[2].Value);
-                    sqlcomm.Parameters.AddWithValue("@LecturerName", dr.Cells[3].Value);
-                    sqlcomm.Parameters.AddWithValue("@SubjectName", dr.Cells[4].Value);
-                    sqlcomm.Parameters.AddWithValue("@SubjectCode", dr.Cells[5].Value);
-                    sqlcomm.Parameters.AddWithValue("@Tag", dr.Cells[6].Value);
-                    sqlcomm.Parameters.AddWithValue("@GroupNumber", dr.Cells[7].Value);
-                    sqlcomm.Parameters.AddWithValue("@StudentCount", dr.Cells[8].Value);
-                    sqlcomm.Parameters.AddWithValue("@Duration", dr.Cells[9].Value);
-                    sqlcomm.Parameters.AddWithValue("@StartTime", dr.Cells[10].Value);
-                    sqlcomm.Parameters.AddWithValue("@EndTime", dr.Cells[11].Value);
-                    sqlcomm.Parameters.AddWithValue("@Day", dr.Cells[12].Value);
-                    sqlcomm.Parameters.AddWithValue("@Room_Name", Room_Name);
-                    sqlcomm.Parameters.AddWithValue("@Building_Name", Building_Name);
-                    sqlcomm.Parameters.AddWithValue("@Capacity", Capacity);
-
-                    sqlconn.Open();
-                    sqlcomm.ExecuteNonQuery();
-                    sqlconn.Close();
-
-
-                }
-            }*/
-            MessageBox.Show("Add Room for Consecutive Session successfully", "Successfully");
+          
 
         }
 
@@ -466,6 +432,51 @@ namespace Time_Management_System_2021.Rooms
             }
         }
 
+        private void C_sessionAdd_Click(object sender, EventArgs e)
+        {
+            string mainconn = ConfigurationManager.ConnectionStrings["Time_Management_System_2021.Properties.Settings.TimeManagementSystem_DBConnectionString"].ConnectionString;
+            SqlConnection sqlconn = new SqlConnection(mainconn);
+            String Room_Name = AddRoomSession.Text;
+            String Building_Name = AddLocationSession.Text;
+            String Capacity = AddCapacitySession.Text;
+
+            foreach (DataGridViewRow dr in dataGridView1.Rows)
+            {
+                bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn"].Value);
+                if (chackboxselected)
+                {
+                    string Sqlquery = "INSERT INTO [dbo].[ConsecutiveSessionRoom] VALUES (@C_sesstionID, @SessionID, @session_name, @LectureName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day, @Room_Name, @Building_Name, @Capacity)";
+                    SqlCommand sqlcomm = new SqlCommand(Sqlquery, sqlconn);
+
+
+                    sqlcomm.Parameters.AddWithValue("@C_sesstionID", dr.Cells[0].Value);
+                    sqlcomm.Parameters.AddWithValue("@SessionID", dr.Cells[1].Value);
+                    sqlcomm.Parameters.AddWithValue("@session_name", dr.Cells[2].Value);
+                    sqlcomm.Parameters.AddWithValue("@LectureName", dr.Cells[3].Value);
+                    sqlcomm.Parameters.AddWithValue("@SubjectName", dr.Cells[4].Value);
+                    sqlcomm.Parameters.AddWithValue("@SubjectCode", dr.Cells[5].Value);
+                    sqlcomm.Parameters.AddWithValue("@Tag", dr.Cells[6].Value);
+                    sqlcomm.Parameters.AddWithValue("@GroupNumber", dr.Cells[7].Value);
+                    sqlcomm.Parameters.AddWithValue("@StudentCount", dr.Cells[8].Value);
+                    sqlcomm.Parameters.AddWithValue("@Duration", dr.Cells[9].Value);
+                    sqlcomm.Parameters.AddWithValue("@StartTime", dr.Cells[10].Value);
+                    sqlcomm.Parameters.AddWithValue("@EndTime", dr.Cells[11].Value);
+                    sqlcomm.Parameters.AddWithValue("@Day", dr.Cells[12].Value);
+                    sqlcomm.Parameters.AddWithValue("@Room_Name", Room_Name);
+                    sqlcomm.Parameters.AddWithValue("@Building_Name", Building_Name);
+                    sqlcomm.Parameters.AddWithValue("@Capacity", Capacity);
+
+                    sqlconn.Open();
+                    sqlcomm.ExecuteNonQuery();
+                    sqlconn.Close();
+
+
+                }
+            }
+            MessageBox.Show("Add Room for Consecutive Session successfully", "Successfully");
+
+
+        }
     }
 }
     
