@@ -247,6 +247,7 @@ namespace Time_Management_System_2021
             this.btnAdvanced.Text = "Advanced";
             this.btnAdvanced.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAdvanced.UseVisualStyleBackColor = true;
+            this.btnAdvanced.Click += new System.EventHandler(this.btnAdvanced_Click);
             // 
             // btnSession
             // 
