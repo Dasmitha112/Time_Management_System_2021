@@ -198,8 +198,6 @@ namespace Time_Management_System_2021.Rooms
             this.label18 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.consecutiveSessionsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.timeManagementSystem_DBDataSet24 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet24();
             this.consecutiveSessionsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.timeManagementSystem_DBDataSet17 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet17();
             this.consecutiveRoomBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
@@ -250,7 +248,6 @@ namespace Time_Management_System_2021.Rooms
             this.consecutiveSessionRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.consecutiveSessionRoomTableAdapter = new Time_Management_System_2021.TimeManagementSystem_DBDataSet23TableAdapters.ConsecutiveSessionRoomTableAdapter();
             this.consecutiveSessionRoomTableAdapter1 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet25TableAdapters.ConsecutiveSessionRoomTableAdapter();
-            this.consecutive_SessionsTableAdapter4 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet24TableAdapters.consecutive_SessionsTableAdapter();
             this.timeManagementSystem_DBDataSet26 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet26();
             this.consecutiveSessionsBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.consecutive_SessionsTableAdapter5 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet26TableAdapters.consecutive_SessionsTableAdapter();
@@ -258,6 +255,11 @@ namespace Time_Management_System_2021.Rooms
             this.consecutiveSessionsBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.consecutive_SessionsTableAdapter6 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet27TableAdapters.consecutive_SessionsTableAdapter();
             this.consecutive_SessionsTableAdapter7 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet28TableAdapters.consecutive_SessionsTableAdapter();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.consecutiveSessionsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.timeManagementSystem_DBDataSet24 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet24();
+            this.consecutive_SessionsTableAdapter4 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet24TableAdapters.consecutive_SessionsTableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -283,8 +285,6 @@ namespace Time_Management_System_2021.Rooms
             ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet25)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNRTR)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveRoomBindingSource4)).BeginInit();
@@ -319,6 +319,8 @@ namespace Time_Management_System_2021.Rooms
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet24)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -966,6 +968,7 @@ namespace Time_Management_System_2021.Rooms
             this.button4.Size = new System.Drawing.Size(47, 37);
             this.button4.TabIndex = 33;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label11
             // 
@@ -1612,6 +1615,8 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.tabPage5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage5.BackgroundImage")));
             this.tabPage5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage5.Controls.Add(this.txtSearch);
+            this.tabPage5.Controls.Add(this.label26);
             this.tabPage5.Controls.Add(this.btnDeleteNRTR);
             this.tabPage5.Controls.Add(this.btnUpdateNRTR);
             this.tabPage5.Controls.Add(this.txtEndTime);
@@ -1641,7 +1646,7 @@ namespace Time_Management_System_2021.Rooms
             this.btnDeleteNRTR.BackColor = System.Drawing.Color.Maroon;
             this.btnDeleteNRTR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteNRTR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDeleteNRTR.Location = new System.Drawing.Point(521, 436);
+            this.btnDeleteNRTR.Location = new System.Drawing.Point(521, 450);
             this.btnDeleteNRTR.Name = "btnDeleteNRTR";
             this.btnDeleteNRTR.Size = new System.Drawing.Size(150, 60);
             this.btnDeleteNRTR.TabIndex = 17;
@@ -1654,7 +1659,7 @@ namespace Time_Management_System_2021.Rooms
             this.btnUpdateNRTR.BackColor = System.Drawing.Color.DarkBlue;
             this.btnUpdateNRTR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateNRTR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdateNRTR.Location = new System.Drawing.Point(340, 436);
+            this.btnUpdateNRTR.Location = new System.Drawing.Point(340, 450);
             this.btnUpdateNRTR.Name = "btnUpdateNRTR";
             this.btnUpdateNRTR.Size = new System.Drawing.Size(150, 60);
             this.btnUpdateNRTR.TabIndex = 16;
@@ -1664,14 +1669,14 @@ namespace Time_Management_System_2021.Rooms
             // 
             // txtEndTime
             // 
-            this.txtEndTime.Location = new System.Drawing.Point(713, 210);
+            this.txtEndTime.Location = new System.Drawing.Point(713, 183);
             this.txtEndTime.Name = "txtEndTime";
             this.txtEndTime.Size = new System.Drawing.Size(100, 20);
             this.txtEndTime.TabIndex = 15;
             // 
             // txtStartTime
             // 
-            this.txtStartTime.Location = new System.Drawing.Point(453, 210);
+            this.txtStartTime.Location = new System.Drawing.Point(453, 183);
             this.txtStartTime.Name = "txtStartTime";
             this.txtStartTime.Size = new System.Drawing.Size(100, 20);
             this.txtStartTime.TabIndex = 14;
@@ -1680,7 +1685,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(636, 213);
+            this.label22.Location = new System.Drawing.Point(636, 186);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(71, 18);
             this.label22.TabIndex = 13;
@@ -1690,7 +1695,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(371, 213);
+            this.label21.Location = new System.Drawing.Point(371, 186);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(76, 18);
             this.label21.TabIndex = 12;
@@ -1700,7 +1705,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(148, 213);
+            this.label20.Location = new System.Drawing.Point(148, 186);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(34, 18);
             this.label20.TabIndex = 11;
@@ -1711,7 +1716,7 @@ namespace Time_Management_System_2021.Rooms
             this.btnResetNRTR.BackColor = System.Drawing.Color.DarkOrange;
             this.btnResetNRTR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetNRTR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnResetNRTR.Location = new System.Drawing.Point(702, 436);
+            this.btnResetNRTR.Location = new System.Drawing.Point(702, 450);
             this.btnResetNRTR.Name = "btnResetNRTR";
             this.btnResetNRTR.Size = new System.Drawing.Size(150, 60);
             this.btnResetNRTR.TabIndex = 10;
@@ -1724,7 +1729,7 @@ namespace Time_Management_System_2021.Rooms
             this.btnAllocateNRTR.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAllocateNRTR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllocateNRTR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAllocateNRTR.Location = new System.Drawing.Point(159, 436);
+            this.btnAllocateNRTR.Location = new System.Drawing.Point(159, 450);
             this.btnAllocateNRTR.Name = "btnAllocateNRTR";
             this.btnAllocateNRTR.Size = new System.Drawing.Size(150, 60);
             this.btnAllocateNRTR.TabIndex = 9;
@@ -1743,7 +1748,7 @@ namespace Time_Management_System_2021.Rooms
             "Friday",
             "Saturday",
             "Sunday"});
-            this.cmbDay.Location = new System.Drawing.Point(188, 210);
+            this.cmbDay.Location = new System.Drawing.Point(188, 183);
             this.cmbDay.Name = "cmbDay";
             this.cmbDay.Size = new System.Drawing.Size(121, 21);
             this.cmbDay.TabIndex = 6;
@@ -1753,7 +1758,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.cmbRoomNRRT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRoomNRRT.FormattingEnabled = true;
-            this.cmbRoomNRRT.Location = new System.Drawing.Point(128, 122);
+            this.cmbRoomNRRT.Location = new System.Drawing.Point(128, 107);
             this.cmbRoomNRRT.Name = "cmbRoomNRRT";
             this.cmbRoomNRRT.Size = new System.Drawing.Size(121, 21);
             this.cmbRoomNRRT.TabIndex = 5;
@@ -1761,7 +1766,7 @@ namespace Time_Management_System_2021.Rooms
             // dgvNRTR
             // 
             this.dgvNRTR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNRTR.Location = new System.Drawing.Point(218, 258);
+            this.dgvNRTR.Location = new System.Drawing.Point(218, 282);
             this.dgvNRTR.Name = "dgvNRTR";
             this.dgvNRTR.Size = new System.Drawing.Size(542, 150);
             this.dgvNRTR.TabIndex = 4;
@@ -1771,7 +1776,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(68, 174);
+            this.label19.Location = new System.Drawing.Point(68, 147);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(145, 18);
             this.label19.TabIndex = 3;
@@ -1781,7 +1786,7 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(68, 122);
+            this.label18.Location = new System.Drawing.Point(68, 107);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(54, 18);
             this.label18.TabIndex = 2;
@@ -1810,16 +1815,6 @@ namespace Time_Management_System_2021.Rooms
             this.label17.TabIndex = 0;
             this.label17.Text = "Allocate Non-Reservable Time for a Room";
             this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // consecutiveSessionsBindingSource4
-            // 
-            this.consecutiveSessionsBindingSource4.DataMember = "consecutive_Sessions";
-            this.consecutiveSessionsBindingSource4.DataSource = this.timeManagementSystem_DBDataSet24;
-            // 
-            // timeManagementSystem_DBDataSet24
-            // 
-            this.timeManagementSystem_DBDataSet24.DataSetName = "TimeManagementSystem_DBDataSet24";
-            this.timeManagementSystem_DBDataSet24.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // consecutiveSessionsBindingSource3
             // 
@@ -2051,10 +2046,6 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.consecutiveSessionRoomTableAdapter1.ClearBeforeFill = true;
             // 
-            // consecutive_SessionsTableAdapter4
-            // 
-            this.consecutive_SessionsTableAdapter4.ClearBeforeFill = true;
-            // 
             // timeManagementSystem_DBDataSet26
             // 
             this.timeManagementSystem_DBDataSet26.DataSetName = "TimeManagementSystem_DBDataSet26";
@@ -2086,6 +2077,38 @@ namespace Time_Management_System_2021.Rooms
             // consecutive_SessionsTableAdapter7
             // 
             this.consecutive_SessionsTableAdapter7.ClearBeforeFill = true;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(218, 251);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(164, 18);
+            this.label26.TabIndex = 18;
+            this.label26.Text = "Search by Room Name";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(388, 252);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(212, 20);
+            this.txtSearch.TabIndex = 19;
+            this.txtSearch.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // consecutiveSessionsBindingSource4
+            // 
+            this.consecutiveSessionsBindingSource4.DataMember = "consecutive_Sessions";
+            this.consecutiveSessionsBindingSource4.DataSource = this.timeManagementSystem_DBDataSet24;
+            // 
+            // timeManagementSystem_DBDataSet24
+            // 
+            this.timeManagementSystem_DBDataSet24.DataSetName = "TimeManagementSystem_DBDataSet24";
+            this.timeManagementSystem_DBDataSet24.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // consecutive_SessionsTableAdapter4
+            // 
+            this.consecutive_SessionsTableAdapter4.ClearBeforeFill = true;
             // 
             // ManageRoom
             // 
@@ -2127,8 +2150,6 @@ namespace Time_Management_System_2021.Rooms
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNRTR)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveRoomBindingSource4)).EndInit();
@@ -2163,6 +2184,8 @@ namespace Time_Management_System_2021.Rooms
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consecutiveSessionsBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeManagementSystem_DBDataSet24)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2396,5 +2419,7 @@ namespace Time_Management_System_2021.Rooms
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Label label26;
     }
 }

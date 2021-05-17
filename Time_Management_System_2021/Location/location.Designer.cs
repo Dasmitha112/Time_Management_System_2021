@@ -269,7 +269,7 @@ namespace Time_Management_System_2021.Location
             // 
             // Search1
             // 
-            this.Search1.Location = new System.Drawing.Point(212, 176);
+            this.Search1.Location = new System.Drawing.Point(391, 175);
             this.Search1.Name = "Search1";
             this.Search1.Size = new System.Drawing.Size(267, 22);
             this.Search1.TabIndex = 2;
@@ -279,7 +279,7 @@ namespace Time_Management_System_2021.Location
             // 
             this.Search.AutoSize = true;
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search.Location = new System.Drawing.Point(22, 180);
+            this.Search.Location = new System.Drawing.Point(201, 179);
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(175, 18);
             this.Search.TabIndex = 1;
@@ -288,9 +288,9 @@ namespace Time_Management_System_2021.Location
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 218);
+            this.dataGridView1.Location = new System.Drawing.Point(204, 209);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(922, 266);
+            this.dataGridView1.Size = new System.Drawing.Size(540, 266);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
