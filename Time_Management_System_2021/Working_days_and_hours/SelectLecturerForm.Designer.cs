@@ -29,6 +29,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectLecturerForm));
             this.lblSelectLecturerInForm = new System.Windows.Forms.Label();
             this.cmbBoxSelectLecturerInForm = new System.Windows.Forms.ComboBox();
             this.btnSelectLecturerInForm = new System.Windows.Forms.Button();
@@ -93,6 +94,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             this.Controls.Add(this.btnSelectLecturerInForm);
             this.Controls.Add(this.cmbBoxSelectLecturerInForm);
             this.Controls.Add(this.lblSelectLecturerInForm);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SelectLecturerForm";
             this.Text = "SelectLecturerForm";
             this.Load += new System.EventHandler(this.SelectLecturerForm_Load);

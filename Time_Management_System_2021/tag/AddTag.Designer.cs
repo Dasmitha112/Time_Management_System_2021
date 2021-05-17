@@ -70,7 +70,7 @@ namespace Time_Management_System_2021.tag
             "tute",
             "prac"});
             this.tagname.Location = new System.Drawing.Point(137, 149);
-            this.tagname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tagname.Margin = new System.Windows.Forms.Padding(2);
             this.tagname.Name = "tagname";
             this.tagname.Size = new System.Drawing.Size(215, 24);
             this.tagname.TabIndex = 1;
@@ -103,7 +103,7 @@ namespace Time_Management_System_2021.tag
             // 
             this.tagcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tagcode.Location = new System.Drawing.Point(137, 236);
-            this.tagcode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tagcode.Margin = new System.Windows.Forms.Padding(2);
             this.tagcode.Name = "tagcode";
             this.tagcode.Size = new System.Drawing.Size(215, 23);
             this.tagcode.TabIndex = 4;
@@ -129,7 +129,7 @@ namespace Time_Management_System_2021.tag
             "tutorial",
             "practical"});
             this.relatedTag.Location = new System.Drawing.Point(137, 321);
-            this.relatedTag.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.relatedTag.Margin = new System.Windows.Forms.Padding(2);
             this.relatedTag.Name = "relatedTag";
             this.relatedTag.Size = new System.Drawing.Size(215, 24);
             this.relatedTag.TabIndex = 6;
@@ -140,7 +140,7 @@ namespace Time_Management_System_2021.tag
             this.tagDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tagDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tagDelete.Location = new System.Drawing.Point(736, 429);
-            this.tagDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tagDelete.Margin = new System.Windows.Forms.Padding(2);
             this.tagDelete.Name = "tagDelete";
             this.tagDelete.Size = new System.Drawing.Size(150, 60);
             this.tagDelete.TabIndex = 16;
@@ -154,7 +154,7 @@ namespace Time_Management_System_2021.tag
             this.tagEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tagEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tagEdit.Location = new System.Drawing.Point(530, 429);
-            this.tagEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tagEdit.Margin = new System.Windows.Forms.Padding(2);
             this.tagEdit.Name = "tagEdit";
             this.tagEdit.Size = new System.Drawing.Size(150, 60);
             this.tagEdit.TabIndex = 15;
@@ -168,7 +168,7 @@ namespace Time_Management_System_2021.tag
             this.AddClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.AddClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AddClear.Location = new System.Drawing.Point(324, 429);
-            this.AddClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddClear.Margin = new System.Windows.Forms.Padding(2);
             this.AddClear.Name = "AddClear";
             this.AddClear.Size = new System.Drawing.Size(150, 60);
             this.AddClear.TabIndex = 14;
@@ -182,7 +182,7 @@ namespace Time_Management_System_2021.tag
             this.tagADD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tagADD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tagADD.Location = new System.Drawing.Point(118, 429);
-            this.tagADD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tagADD.Margin = new System.Windows.Forms.Padding(2);
             this.tagADD.Name = "tagADD";
             this.tagADD.Size = new System.Drawing.Size(150, 60);
             this.tagADD.TabIndex = 13;
@@ -194,7 +194,7 @@ namespace Time_Management_System_2021.tag
             // 
             this.dataGridView_manageTag.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_manageTag.Location = new System.Drawing.Point(390, 149);
-            this.dataGridView_manageTag.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView_manageTag.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView_manageTag.Name = "dataGridView_manageTag";
             this.dataGridView_manageTag.RowHeadersWidth = 51;
             this.dataGridView_manageTag.RowTemplate.Height = 24;
@@ -218,7 +218,7 @@ namespace Time_Management_System_2021.tag
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.textBox1.Location = new System.Drawing.Point(558, 110);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(215, 24);
             this.textBox1.TabIndex = 18;
@@ -260,7 +260,8 @@ namespace Time_Management_System_2021.tag
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tagname);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddTag";
             this.Text = "tag";
             this.Load += new System.EventHandler(this.AddTag_Load);

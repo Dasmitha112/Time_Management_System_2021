@@ -119,7 +119,11 @@ namespace Time_Management_System_2021.Rooms
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.AddNotOverlapLocation = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.proomIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.psesstionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -254,10 +258,6 @@ namespace Time_Management_System_2021.Rooms
             this.consecutiveSessionsBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.consecutive_SessionsTableAdapter6 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet27TableAdapters.consecutive_SessionsTableAdapter();
             this.consecutive_SessionsTableAdapter7 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet28TableAdapters.consecutive_SessionsTableAdapter();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -1149,6 +1149,39 @@ namespace Time_Management_System_2021.Rooms
             this.tabPage4.Text = "View Rooms For Sessions";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Blue;
+            this.label25.Location = new System.Drawing.Point(31, 393);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(129, 18);
+            this.label25.TabIndex = 37;
+            this.label25.Text = "Not Overlapping";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Blue;
+            this.label24.Location = new System.Drawing.Point(30, 234);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(130, 18);
+            this.label24.TabIndex = 36;
+            this.label24.Text = "Parellel Session";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Blue;
+            this.label23.Location = new System.Drawing.Point(30, 84);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(176, 18);
+            this.label23.TabIndex = 35;
+            this.label23.Text = "Consecutive Sessions";
+            // 
             // button2
             // 
             this.button2.FlatAppearance.BorderSize = 0;
@@ -1160,6 +1193,17 @@ namespace Time_Management_System_2021.Rooms
             this.button2.TabIndex = 34;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label15.Location = new System.Drawing.Point(269, 30);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(488, 33);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "View All The Rooms For Sessions";
             // 
             // dataGridView6
             // 
@@ -2043,56 +2087,13 @@ namespace Time_Management_System_2021.Rooms
             // 
             this.consecutive_SessionsTableAdapter7.ClearBeforeFill = true;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label15.Location = new System.Drawing.Point(269, 30);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(488, 33);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "View All The Rooms For Sessions";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Blue;
-            this.label23.Location = new System.Drawing.Point(30, 84);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(176, 18);
-            this.label23.TabIndex = 35;
-            this.label23.Text = "Consecutive Sessions";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Blue;
-            this.label24.Location = new System.Drawing.Point(30, 234);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(130, 18);
-            this.label24.TabIndex = 36;
-            this.label24.Text = "Parellel Session";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Blue;
-            this.label25.Location = new System.Drawing.Point(31, 393);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(129, 18);
-            this.label25.TabIndex = 37;
-            this.label25.Text = "Not Overlapping";
-            // 
             // ManageRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManageRoom";
             this.Text = "ManageRoom";
             this.Load += new System.EventHandler(this.ManageRoom_Load);

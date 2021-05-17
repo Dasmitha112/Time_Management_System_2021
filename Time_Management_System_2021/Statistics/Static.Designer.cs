@@ -207,6 +207,7 @@ namespace Time_Management_System_2021.Statistics
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Static";
             this.Text = "Statistics";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

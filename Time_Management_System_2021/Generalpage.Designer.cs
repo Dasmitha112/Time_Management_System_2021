@@ -92,6 +92,7 @@ namespace Time_Management_System_2021
             this.Controls.Add(this.btnGetStart);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Generalpage";
             this.ResumeLayout(false);
             this.PerformLayout();
