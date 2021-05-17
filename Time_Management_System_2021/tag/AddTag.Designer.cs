@@ -198,7 +198,7 @@ namespace Time_Management_System_2021.tag
             this.dataGridView_manageTag.Name = "dataGridView_manageTag";
             this.dataGridView_manageTag.RowHeadersWidth = 51;
             this.dataGridView_manageTag.RowTemplate.Height = 24;
-            this.dataGridView_manageTag.Size = new System.Drawing.Size(529, 210);
+            this.dataGridView_manageTag.Size = new System.Drawing.Size(465, 210);
             this.dataGridView_manageTag.TabIndex = 12;
             this.dataGridView_manageTag.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_manageTag_CellContentClick);
             // 

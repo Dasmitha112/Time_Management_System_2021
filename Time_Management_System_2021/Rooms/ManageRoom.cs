@@ -477,6 +477,30 @@ namespace Time_Management_System_2021.Rooms
 
 
         }
+
+
+        static string myconnstring = ConfigurationManager.ConnectionStrings["connstring"].ConnectionString;
+
+        //Search method
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = txtSearch.Text;
+
+            //database connection
+            SqlConnection conn = new SqlConnection(myconnstring);
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM RoomNonReservableTime WHERE Room_name LIKE '%" + keyword + "%'", conn);
+
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dgvNRTR.DataSource = dt;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Homepage hp = new Homepage();
+            hp.ShowDialog();
+        }
     }
 }
     
