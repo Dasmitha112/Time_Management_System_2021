@@ -60,6 +60,7 @@ namespace Time_Management_System_2021
             // 
             this.btnGetStart.BackColor = System.Drawing.Color.ForestGreen;
             this.btnGetStart.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnGetStart.FlatAppearance.BorderSize = 0;
             this.btnGetStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGetStart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11F);
             this.btnGetStart.ForeColor = System.Drawing.Color.White;
@@ -94,6 +95,7 @@ namespace Time_Management_System_2021
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Generalpage";
+            this.Load += new System.EventHandler(this.Generalpage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -106,6 +106,7 @@ namespace Time_Management_System_2021.Location
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add Location";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // button1
             // 
@@ -122,6 +123,8 @@ namespace Time_Management_System_2021.Location
             // reset
             // 
             this.reset.BackColor = System.Drawing.Color.Maroon;
+            this.reset.FlatAppearance.BorderSize = 0;
+            this.reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reset.ForeColor = System.Drawing.Color.White;
             this.reset.Location = new System.Drawing.Point(538, 434);
@@ -135,6 +138,8 @@ namespace Time_Management_System_2021.Location
             // Add
             // 
             this.Add.BackColor = System.Drawing.Color.ForestGreen;
+            this.Add.FlatAppearance.BorderSize = 0;
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add.ForeColor = System.Drawing.Color.White;
             this.Add.Location = new System.Drawing.Point(263, 434);
@@ -335,6 +340,8 @@ namespace Time_Management_System_2021.Location
             // Reset2
             // 
             this.Reset2.BackColor = System.Drawing.Color.DarkOrange;
+            this.Reset2.FlatAppearance.BorderSize = 0;
+            this.Reset2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Reset2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reset2.ForeColor = System.Drawing.Color.White;
             this.Reset2.Location = new System.Drawing.Point(646, 390);
@@ -348,6 +355,8 @@ namespace Time_Management_System_2021.Location
             // Delete
             // 
             this.Delete.BackColor = System.Drawing.Color.Maroon;
+            this.Delete.FlatAppearance.BorderSize = 0;
+            this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Delete.ForeColor = System.Drawing.Color.White;
             this.Delete.Location = new System.Drawing.Point(399, 390);
@@ -361,6 +370,8 @@ namespace Time_Management_System_2021.Location
             // Update
             // 
             this.Update.BackColor = System.Drawing.Color.DarkBlue;
+            this.Update.FlatAppearance.BorderSize = 0;
+            this.Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Update.ForeColor = System.Drawing.Color.White;
             this.Update.Location = new System.Drawing.Point(161, 390);

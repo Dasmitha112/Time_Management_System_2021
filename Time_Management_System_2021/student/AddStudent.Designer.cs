@@ -168,9 +168,11 @@ namespace Time_Management_System_2021.student
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(667, 316);
+            this.button2.Location = new System.Drawing.Point(717, 314);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 60);
@@ -182,9 +184,11 @@ namespace Time_Management_System_2021.student
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(667, 162);
+            this.button1.Location = new System.Drawing.Point(717, 165);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 60);
@@ -240,6 +244,8 @@ namespace Time_Management_System_2021.student
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.DarkOrange;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Location = new System.Drawing.Point(562, 428);
@@ -254,6 +260,8 @@ namespace Time_Management_System_2021.student
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.ForestGreen;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Location = new System.Drawing.Point(285, 428);
@@ -488,14 +496,16 @@ namespace Time_Management_System_2021.student
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.Transparent;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.Location = new System.Drawing.Point(32, 24);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(47, 37);
             this.button6.TabIndex = 30;
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label21
@@ -647,6 +657,8 @@ namespace Time_Management_System_2021.student
             // S_reset_Button
             // 
             this.S_reset_Button.BackColor = System.Drawing.Color.DarkOrange;
+            this.S_reset_Button.FlatAppearance.BorderSize = 0;
+            this.S_reset_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.S_reset_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.S_reset_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.S_reset_Button.Location = new System.Drawing.Point(675, 444);
@@ -661,6 +673,8 @@ namespace Time_Management_System_2021.student
             // S_update_button
             // 
             this.S_update_button.BackColor = System.Drawing.Color.DarkBlue;
+            this.S_update_button.FlatAppearance.BorderSize = 0;
+            this.S_update_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.S_update_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.S_update_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.S_update_button.Location = new System.Drawing.Point(187, 444);
@@ -675,6 +689,8 @@ namespace Time_Management_System_2021.student
             // S_delete_Button
             // 
             this.S_delete_Button.BackColor = System.Drawing.Color.Maroon;
+            this.S_delete_Button.FlatAppearance.BorderSize = 0;
+            this.S_delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.S_delete_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.S_delete_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.S_delete_Button.Location = new System.Drawing.Point(442, 444);
@@ -689,9 +705,11 @@ namespace Time_Management_System_2021.student
             // EDITSGgroupid_button
             // 
             this.EDITSGgroupid_button.BackColor = System.Drawing.Color.Black;
+            this.EDITSGgroupid_button.FlatAppearance.BorderSize = 0;
+            this.EDITSGgroupid_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EDITSGgroupid_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.EDITSGgroupid_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EDITSGgroupid_button.Location = new System.Drawing.Point(675, 321);
+            this.EDITSGgroupid_button.Location = new System.Drawing.Point(699, 321);
             this.EDITSGgroupid_button.Margin = new System.Windows.Forms.Padding(2);
             this.EDITSGgroupid_button.Name = "EDITSGgroupid_button";
             this.EDITSGgroupid_button.Size = new System.Drawing.Size(150, 60);
@@ -812,9 +830,11 @@ namespace Time_Management_System_2021.student
             // EditGgroupID
             // 
             this.EditGgroupID.BackColor = System.Drawing.Color.Black;
+            this.EditGgroupID.FlatAppearance.BorderSize = 0;
+            this.EditGgroupID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditGgroupID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.EditGgroupID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EditGgroupID.Location = new System.Drawing.Point(675, 163);
+            this.EditGgroupID.Location = new System.Drawing.Point(699, 162);
             this.EditGgroupID.Margin = new System.Windows.Forms.Padding(2);
             this.EditGgroupID.Name = "EditGgroupID";
             this.EditGgroupID.Size = new System.Drawing.Size(150, 60);
@@ -923,6 +943,7 @@ namespace Time_Management_System_2021.student
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddStudent";
             this.Text = "AddStudent";
+            this.Load += new System.EventHandler(this.AddStudent_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

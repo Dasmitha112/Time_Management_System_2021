@@ -10,11 +10,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Time_Management_System_2021.Configuration;
+using System.Runtime.InteropServices;
 
 namespace Time_Management_System_2021.Sessions
 {
     public partial class AddSessionForm : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeft,
+            int nTop,
+            int nRight,
+            int nBottom,
+            int nWidthElipse,
+            int nHeightElipse
+        );
+
+
         public AddSessionForm()
         {
             InitializeComponent();
@@ -613,6 +626,20 @@ namespace Time_Management_System_2021.Sessions
 
         private void AddSessionForm_Load(object sender, EventArgs e)
         {
+            SessionAddBtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, SessionAddBtn.Width, SessionAddBtn.Height, 20, 20));
+            SesionClearBtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, SesionClearBtn.Width, SesionClearBtn.Height, 20, 20));
+            SMupdate.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, SMupdate.Width, SMupdate.Height, 20, 20));
+            SMdelete.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, SMdelete.Width, SMdelete.Height, 20, 20));
+            button5.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button5.Width, button5.Height, 20, 20));
+            button4.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button4.Width, button4.Height, 20, 20));
+            button7.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button7.Width, button7.Height, 20, 20));
+            button6.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button6.Width, button6.Height, 20, 20));
+            button9.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button9.Width, button9.Height, 20, 20));
+            button8.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button8.Width, button8.Height, 20, 20));
+
+
+
+
             // TODO: This line of code loads data into the 'timeManagementSystem_DBDataSet2.Sessions' table. You can move, or remove it, as needed.
             this.sessionsTableAdapter2.Fill(this.timeManagementSystem_DBDataSet2.Sessions);
             DataGridViewCheckBoxColumn chckbox = new DataGridViewCheckBoxColumn();

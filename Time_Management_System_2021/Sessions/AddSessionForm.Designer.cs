@@ -34,6 +34,8 @@ namespace Time_Management_System_2021.Sessions
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddSessionForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.SessionViewTab = new System.Windows.Forms.TabPage();
+            this.LectureSessionTxt = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.backhomesession = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewSession = new System.Windows.Forms.DataGridView();
@@ -88,6 +90,10 @@ namespace Time_Management_System_2021.Sessions
             this.MSL = new System.Windows.Forms.Label();
             this.sessionM = new System.Windows.Forms.Label();
             this.consecutiveSesstionTab = new System.Windows.Forms.TabPage();
+            this.label9 = new System.Windows.Forms.Label();
+            this.SubjectNameTxt = new System.Windows.Forms.TextBox();
+            this.LectureNameTxt = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.consective_TXT = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -109,6 +115,10 @@ namespace Time_Management_System_2021.Sessions
             this.timeManagementSystem_DBDataSet = new Time_Management_System_2021.TimeManagementSystem_DBDataSet();
             this.label4 = new System.Windows.Forms.Label();
             this.parallelSessionsTab = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.TTxt = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.SubjectTxt = new System.Windows.Forms.TextBox();
             this.Parallel_TxT = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
@@ -130,6 +140,10 @@ namespace Time_Management_System_2021.Sessions
             this.timeManagementSystem_DBDataSet1 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet1();
             this.label5 = new System.Windows.Forms.Label();
             this.notOverlappingSessionsTab = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
+            this.TagTxt = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.subjectNameFilter = new System.Windows.Forms.TextBox();
             this.overlappingTxT = new System.Windows.Forms.Label();
             this.NOT_overlapping_Session_nameTXT = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
@@ -153,20 +167,6 @@ namespace Time_Management_System_2021.Sessions
             this.sessionsTableAdapter = new Time_Management_System_2021.TimeManagementSystem_DBDataSetTableAdapters.SessionsTableAdapter();
             this.sessionsTableAdapter1 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet1TableAdapters.SessionsTableAdapter();
             this.sessionsTableAdapter2 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet2TableAdapters.SessionsTableAdapter();
-            this.label8 = new System.Windows.Forms.Label();
-            this.LectureNameTxt = new System.Windows.Forms.TextBox();
-            this.SubjectNameTxt = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.SubjectTxt = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.subjectNameFilter = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.TagTxt = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.TTxt = new System.Windows.Forms.TextBox();
-            this.LectureSessionTxt = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.SessionViewTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSession)).BeginInit();
@@ -221,6 +221,24 @@ namespace Time_Management_System_2021.Sessions
             this.SessionViewTab.TabIndex = 0;
             this.SessionViewTab.Text = "View Sessions";
             this.SessionViewTab.UseVisualStyleBackColor = true;
+            // 
+            // LectureSessionTxt
+            // 
+            this.LectureSessionTxt.Location = new System.Drawing.Point(196, 112);
+            this.LectureSessionTxt.Name = "LectureSessionTxt";
+            this.LectureSessionTxt.Size = new System.Drawing.Size(212, 20);
+            this.LectureSessionTxt.TabIndex = 27;
+            this.LectureSessionTxt.TextChanged += new System.EventHandler(this.LectureSessionTxt_TextChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(17, 111);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(173, 18);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "Search By Lecture Name";
             // 
             // backhomesession
             // 
@@ -368,6 +386,8 @@ namespace Time_Management_System_2021.Sessions
             // SesionClearBtn
             // 
             this.SesionClearBtn.BackColor = System.Drawing.Color.DarkOrange;
+            this.SesionClearBtn.FlatAppearance.BorderSize = 0;
+            this.SesionClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SesionClearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SesionClearBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.SesionClearBtn.Location = new System.Drawing.Point(804, 410);
@@ -381,6 +401,8 @@ namespace Time_Management_System_2021.Sessions
             // SessionAddBtn
             // 
             this.SessionAddBtn.BackColor = System.Drawing.Color.ForestGreen;
+            this.SessionAddBtn.FlatAppearance.BorderSize = 0;
+            this.SessionAddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SessionAddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SessionAddBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.SessionAddBtn.Location = new System.Drawing.Point(624, 410);
@@ -646,6 +668,8 @@ namespace Time_Management_System_2021.Sessions
             // SMdelete
             // 
             this.SMdelete.BackColor = System.Drawing.Color.Maroon;
+            this.SMdelete.FlatAppearance.BorderSize = 0;
+            this.SMdelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SMdelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SMdelete.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.SMdelete.Location = new System.Drawing.Point(785, 397);
@@ -659,6 +683,8 @@ namespace Time_Management_System_2021.Sessions
             // SMupdate
             // 
             this.SMupdate.BackColor = System.Drawing.Color.DarkBlue;
+            this.SMupdate.FlatAppearance.BorderSize = 0;
+            this.SMupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SMupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SMupdate.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.SMupdate.Location = new System.Drawing.Point(598, 399);
@@ -827,6 +853,42 @@ namespace Time_Management_System_2021.Sessions
             this.consecutiveSesstionTab.Text = "consecutive  session";
             this.consecutiveSesstionTab.UseVisualStyleBackColor = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(487, 119);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(173, 18);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Search By Subject Name";
+            // 
+            // SubjectNameTxt
+            // 
+            this.SubjectNameTxt.Location = new System.Drawing.Point(677, 117);
+            this.SubjectNameTxt.Name = "SubjectNameTxt";
+            this.SubjectNameTxt.Size = new System.Drawing.Size(247, 20);
+            this.SubjectNameTxt.TabIndex = 26;
+            this.SubjectNameTxt.TextChanged += new System.EventHandler(this.SubjectNameTxt_TextChanged);
+            // 
+            // LectureNameTxt
+            // 
+            this.LectureNameTxt.Location = new System.Drawing.Point(206, 120);
+            this.LectureNameTxt.Name = "LectureNameTxt";
+            this.LectureNameTxt.Size = new System.Drawing.Size(212, 20);
+            this.LectureNameTxt.TabIndex = 25;
+            this.LectureNameTxt.TextChanged += new System.EventHandler(this.LectureNameTxt_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(27, 119);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(173, 18);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Search By Lecture Name";
+            // 
             // consective_TXT
             // 
             this.consective_TXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -850,6 +912,8 @@ namespace Time_Management_System_2021.Sessions
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.DarkOrange;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button4.Location = new System.Drawing.Point(490, 413);
@@ -863,6 +927,8 @@ namespace Time_Management_System_2021.Sessions
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.ForestGreen;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button5.Location = new System.Drawing.Point(310, 413);
@@ -1043,6 +1109,42 @@ namespace Time_Management_System_2021.Sessions
             this.parallelSessionsTab.Text = "parallel sessions";
             this.parallelSessionsTab.UseVisualStyleBackColor = true;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(551, 109);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(105, 18);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "Search By Tag";
+            // 
+            // TTxt
+            // 
+            this.TTxt.Location = new System.Drawing.Point(676, 107);
+            this.TTxt.Name = "TTxt";
+            this.TTxt.Size = new System.Drawing.Size(210, 20);
+            this.TTxt.TabIndex = 30;
+            this.TTxt.TextChanged += new System.EventHandler(this.TTxt_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(24, 109);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(173, 18);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "Search By Subject Name";
+            // 
+            // SubjectTxt
+            // 
+            this.SubjectTxt.Location = new System.Drawing.Point(215, 110);
+            this.SubjectTxt.Name = "SubjectTxt";
+            this.SubjectTxt.Size = new System.Drawing.Size(213, 20);
+            this.SubjectTxt.TabIndex = 28;
+            this.SubjectTxt.TextChanged += new System.EventHandler(this.SubjectTxt_TextChanged);
+            // 
             // Parallel_TxT
             // 
             this.Parallel_TxT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1066,6 +1168,8 @@ namespace Time_Management_System_2021.Sessions
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.DarkOrange;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button6.Location = new System.Drawing.Point(492, 444);
@@ -1079,6 +1183,8 @@ namespace Time_Management_System_2021.Sessions
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.ForestGreen;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button7.Location = new System.Drawing.Point(312, 444);
@@ -1259,6 +1365,42 @@ namespace Time_Management_System_2021.Sessions
             this.notOverlappingSessionsTab.Text = "not overlapping sessions";
             this.notOverlappingSessionsTab.UseVisualStyleBackColor = true;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(576, 119);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(105, 18);
+            this.label12.TabIndex = 33;
+            this.label12.Text = "Search By Tag";
+            // 
+            // TagTxt
+            // 
+            this.TagTxt.Location = new System.Drawing.Point(687, 119);
+            this.TagTxt.Name = "TagTxt";
+            this.TagTxt.Size = new System.Drawing.Size(213, 20);
+            this.TagTxt.TabIndex = 32;
+            this.TagTxt.TextChanged += new System.EventHandler(this.TagTxt_TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(21, 120);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(173, 18);
+            this.label11.TabIndex = 31;
+            this.label11.Text = "Search By Subject Name";
+            // 
+            // subjectNameFilter
+            // 
+            this.subjectNameFilter.Location = new System.Drawing.Point(205, 120);
+            this.subjectNameFilter.Name = "subjectNameFilter";
+            this.subjectNameFilter.Size = new System.Drawing.Size(171, 20);
+            this.subjectNameFilter.TabIndex = 30;
+            this.subjectNameFilter.TextChanged += new System.EventHandler(this.subjectNameFilter_TextChanged);
+            // 
             // overlappingTxT
             // 
             this.overlappingTxT.AutoSize = true;
@@ -1282,6 +1424,8 @@ namespace Time_Management_System_2021.Sessions
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.DarkOrange;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button8.Location = new System.Drawing.Point(500, 436);
@@ -1295,6 +1439,8 @@ namespace Time_Management_System_2021.Sessions
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.ForestGreen;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button9.Location = new System.Drawing.Point(320, 436);
@@ -1464,132 +1610,6 @@ namespace Time_Management_System_2021.Sessions
             // sessionsTableAdapter2
             // 
             this.sessionsTableAdapter2.ClearBeforeFill = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(27, 119);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(173, 18);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Search By Lecture Name";
-            // 
-            // LectureNameTxt
-            // 
-            this.LectureNameTxt.Location = new System.Drawing.Point(206, 120);
-            this.LectureNameTxt.Name = "LectureNameTxt";
-            this.LectureNameTxt.Size = new System.Drawing.Size(212, 20);
-            this.LectureNameTxt.TabIndex = 25;
-            this.LectureNameTxt.TextChanged += new System.EventHandler(this.LectureNameTxt_TextChanged);
-            // 
-            // SubjectNameTxt
-            // 
-            this.SubjectNameTxt.Location = new System.Drawing.Point(677, 117);
-            this.SubjectNameTxt.Name = "SubjectNameTxt";
-            this.SubjectNameTxt.Size = new System.Drawing.Size(247, 20);
-            this.SubjectNameTxt.TabIndex = 26;
-            this.SubjectNameTxt.TextChanged += new System.EventHandler(this.SubjectNameTxt_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(487, 119);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(173, 18);
-            this.label9.TabIndex = 27;
-            this.label9.Text = "Search By Subject Name";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(24, 109);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(173, 18);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "Search By Subject Name";
-            // 
-            // SubjectTxt
-            // 
-            this.SubjectTxt.Location = new System.Drawing.Point(215, 110);
-            this.SubjectTxt.Name = "SubjectTxt";
-            this.SubjectTxt.Size = new System.Drawing.Size(213, 20);
-            this.SubjectTxt.TabIndex = 28;
-            this.SubjectTxt.TextChanged += new System.EventHandler(this.SubjectTxt_TextChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(21, 120);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(173, 18);
-            this.label11.TabIndex = 31;
-            this.label11.Text = "Search By Subject Name";
-            // 
-            // subjectNameFilter
-            // 
-            this.subjectNameFilter.Location = new System.Drawing.Point(205, 120);
-            this.subjectNameFilter.Name = "subjectNameFilter";
-            this.subjectNameFilter.Size = new System.Drawing.Size(171, 20);
-            this.subjectNameFilter.TabIndex = 30;
-            this.subjectNameFilter.TextChanged += new System.EventHandler(this.subjectNameFilter_TextChanged);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(576, 119);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 18);
-            this.label12.TabIndex = 33;
-            this.label12.Text = "Search By Tag";
-            // 
-            // TagTxt
-            // 
-            this.TagTxt.Location = new System.Drawing.Point(687, 119);
-            this.TagTxt.Name = "TagTxt";
-            this.TagTxt.Size = new System.Drawing.Size(213, 20);
-            this.TagTxt.TabIndex = 32;
-            this.TagTxt.TextChanged += new System.EventHandler(this.TagTxt_TextChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(551, 109);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(105, 18);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "Search By Tag";
-            // 
-            // TTxt
-            // 
-            this.TTxt.Location = new System.Drawing.Point(676, 107);
-            this.TTxt.Name = "TTxt";
-            this.TTxt.Size = new System.Drawing.Size(210, 20);
-            this.TTxt.TabIndex = 30;
-            this.TTxt.TextChanged += new System.EventHandler(this.TTxt_TextChanged);
-            // 
-            // LectureSessionTxt
-            // 
-            this.LectureSessionTxt.Location = new System.Drawing.Point(196, 112);
-            this.LectureSessionTxt.Name = "LectureSessionTxt";
-            this.LectureSessionTxt.Size = new System.Drawing.Size(212, 20);
-            this.LectureSessionTxt.TabIndex = 27;
-            this.LectureSessionTxt.TextChanged += new System.EventHandler(this.LectureSessionTxt_TextChanged);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(17, 111);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(173, 18);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "Search By Lecture Name";
             // 
             // AddSessionForm
             // 

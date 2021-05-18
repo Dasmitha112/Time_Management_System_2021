@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,19 @@ namespace Time_Management_System_2021.Advanced
 {
     public partial class NotAvailableTime : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeft,
+            int nTop,
+            int nRight,
+            int nBottom,
+            int nWidthElipse,
+            int nHeightElipse
+        );
+
+
+
         public NotAvailableTime()
         {
             InitializeComponent();
@@ -39,6 +53,12 @@ namespace Time_Management_System_2021.Advanced
         //Page loading method
         private void NotAvailableTime_Load(object sender, EventArgs e)
         {
+
+            button1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button1.Width, button1.Height, 20, 20));
+            button3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button3.Width, button3.Height, 20, 20));
+            button4.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button4.Width, button4.Height, 20, 20));
+            button2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button2.Width, button2.Height, 20, 20));
+
 
             //Load SetNotAvailableTime data on data gridview
             DataTable dtNAT = snat.displaySetNotAvailableTimeData();

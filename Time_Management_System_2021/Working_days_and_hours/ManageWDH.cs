@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,18 @@ namespace Time_Management_System_2021.Working_days_and_hours
 {
     public partial class ManageWDH : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeft,
+            int nTop,
+            int nRight,
+            int nBottom,
+            int nWidthElipse,
+            int nHeightElipse
+        );
+
+
 
         //variables
         public string passedEmployeeID, tableEmployeeID;
@@ -87,6 +100,21 @@ namespace Time_Management_System_2021.Working_days_and_hours
 
         private void ManageWDH_Load(object sender, EventArgs e)
         {
+
+            btnAddMWD.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAddMWD.Width, btnAddMWD.Height, 20, 20));
+            btnEditMWD.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnEditMWD.Width, btnEditMWD.Height, 20, 20));
+            btnDeleteMWD.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnDeleteMWD.Width, btnDeleteMWD.Height, 20, 20));
+            btnResetMWD.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnResetMWD.Width, btnResetMWD.Height, 20, 20));
+            btnAddWTPerDay.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAddWTPerDay.Width, btnAddWTPerDay.Height, 20, 20));
+            btnEditWTPerDay.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnEditWTPerDay.Width, btnEditWTPerDay.Height, 20, 20));
+            btnDeleteWTPerDay.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnDeleteWTPerDay.Width, btnDeleteWTPerDay.Height, 20, 20));
+            btnResetWTPerDay.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnResetWTPerDay.Width, btnResetWTPerDay.Height, 20, 20));
+            btnAddTimeSlots.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAddTimeSlots.Width, btnAddTimeSlots.Height, 20, 20));
+            btnEditTimeSlots.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnEditTimeSlots.Width, btnEditTimeSlots.Height, 20, 20));
+            btnDeleteTimeSlots.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnDeleteTimeSlots.Width, btnDeleteTimeSlots.Height, 20, 20));
+            btnResetTimeSlots.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnResetTimeSlots.Width, btnResetTimeSlots.Height, 20, 20));
+
+
             //Load time slots data on data gridview
             DataTable dtTS = ts.displayTimeSlotsData();
             dgvTimeSlots.DataSource = dtTS;

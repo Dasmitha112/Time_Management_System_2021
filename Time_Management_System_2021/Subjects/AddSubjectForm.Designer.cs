@@ -287,6 +287,8 @@
             // Bclear
             // 
             this.Bclear.BackColor = System.Drawing.Color.DarkOrange;
+            this.Bclear.FlatAppearance.BorderSize = 0;
+            this.Bclear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bclear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bclear.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.Bclear.Location = new System.Drawing.Point(259, 412);
@@ -299,6 +301,8 @@
             // Badd
             // 
             this.Badd.BackColor = System.Drawing.Color.ForestGreen;
+            this.Badd.FlatAppearance.BorderSize = 0;
+            this.Badd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Badd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Badd.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.Badd.Location = new System.Drawing.Point(549, 412);
@@ -506,6 +510,8 @@
             // Sdelete
             // 
             this.Sdelete.BackColor = System.Drawing.Color.Maroon;
+            this.Sdelete.FlatAppearance.BorderSize = 0;
+            this.Sdelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sdelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sdelete.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.Sdelete.Location = new System.Drawing.Point(586, 400);
@@ -519,6 +525,8 @@
             // Supdate
             // 
             this.Supdate.BackColor = System.Drawing.Color.DarkBlue;
+            this.Supdate.FlatAppearance.BorderSize = 0;
+            this.Supdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Supdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Supdate.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.Supdate.Location = new System.Drawing.Point(309, 400);
@@ -724,6 +732,7 @@
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddSubjectForm";
+            this.Load += new System.EventHandler(this.AddSubjectForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.TabSubjectview.ResumeLayout(false);
             this.TabSubjectview.PerformLayout();

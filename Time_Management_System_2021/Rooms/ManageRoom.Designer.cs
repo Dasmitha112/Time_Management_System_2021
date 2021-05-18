@@ -182,6 +182,8 @@ namespace Time_Management_System_2021.Rooms
             this.consecutiveSessionRoomBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.timeManagementSystem_DBDataSet25 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet25();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.btnDeleteNRTR = new System.Windows.Forms.Button();
             this.btnUpdateNRTR = new System.Windows.Forms.Button();
             this.txtEndTime = new System.Windows.Forms.TextBox();
@@ -255,8 +257,6 @@ namespace Time_Management_System_2021.Rooms
             this.consecutiveSessionsBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.consecutive_SessionsTableAdapter6 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet27TableAdapters.consecutive_SessionsTableAdapter();
             this.consecutive_SessionsTableAdapter7 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet28TableAdapters.consecutive_SessionsTableAdapter();
-            this.label26 = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.consecutiveSessionsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.timeManagementSystem_DBDataSet24 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet24();
             this.consecutive_SessionsTableAdapter4 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet24TableAdapters.consecutive_SessionsTableAdapter();
@@ -365,6 +365,8 @@ namespace Time_Management_System_2021.Rooms
             // C_sessionAdd
             // 
             this.C_sessionAdd.BackColor = System.Drawing.Color.ForestGreen;
+            this.C_sessionAdd.FlatAppearance.BorderSize = 0;
+            this.C_sessionAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C_sessionAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C_sessionAdd.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.C_sessionAdd.Location = new System.Drawing.Point(595, 433);
@@ -391,6 +393,8 @@ namespace Time_Management_System_2021.Rooms
             // SesionClearBtn
             // 
             this.SesionClearBtn.BackColor = System.Drawing.Color.DarkOrange;
+            this.SesionClearBtn.FlatAppearance.BorderSize = 0;
+            this.SesionClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SesionClearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SesionClearBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.SesionClearBtn.Location = new System.Drawing.Point(777, 435);
@@ -666,6 +670,8 @@ namespace Time_Management_System_2021.Rooms
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DarkOrange;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button3.Location = new System.Drawing.Point(808, 420);
@@ -679,6 +685,8 @@ namespace Time_Management_System_2021.Rooms
             // AddParellelRoom
             // 
             this.AddParellelRoom.BackColor = System.Drawing.Color.ForestGreen;
+            this.AddParellelRoom.FlatAppearance.BorderSize = 0;
+            this.AddParellelRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddParellelRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddParellelRoom.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.AddParellelRoom.Location = new System.Drawing.Point(604, 420);
@@ -895,6 +903,8 @@ namespace Time_Management_System_2021.Rooms
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.DarkOrange;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button7.Location = new System.Drawing.Point(799, 412);
@@ -908,6 +918,8 @@ namespace Time_Management_System_2021.Rooms
             // addNonOverlappingbtn
             // 
             this.addNonOverlappingbtn.BackColor = System.Drawing.Color.ForestGreen;
+            this.addNonOverlappingbtn.FlatAppearance.BorderSize = 0;
+            this.addNonOverlappingbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addNonOverlappingbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNonOverlappingbtn.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.addNonOverlappingbtn.Location = new System.Drawing.Point(605, 412);
@@ -1641,9 +1653,29 @@ namespace Time_Management_System_2021.Rooms
             this.tabPage5.UseVisualStyleBackColor = true;
             this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(388, 252);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(212, 20);
+            this.txtSearch.TabIndex = 19;
+            this.txtSearch.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(218, 251);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(164, 18);
+            this.label26.TabIndex = 18;
+            this.label26.Text = "Search by Room Name";
+            // 
             // btnDeleteNRTR
             // 
             this.btnDeleteNRTR.BackColor = System.Drawing.Color.Maroon;
+            this.btnDeleteNRTR.FlatAppearance.BorderSize = 0;
+            this.btnDeleteNRTR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteNRTR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteNRTR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDeleteNRTR.Location = new System.Drawing.Point(521, 450);
@@ -1657,6 +1689,8 @@ namespace Time_Management_System_2021.Rooms
             // btnUpdateNRTR
             // 
             this.btnUpdateNRTR.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnUpdateNRTR.FlatAppearance.BorderSize = 0;
+            this.btnUpdateNRTR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateNRTR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateNRTR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnUpdateNRTR.Location = new System.Drawing.Point(340, 450);
@@ -1714,6 +1748,8 @@ namespace Time_Management_System_2021.Rooms
             // btnResetNRTR
             // 
             this.btnResetNRTR.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnResetNRTR.FlatAppearance.BorderSize = 0;
+            this.btnResetNRTR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetNRTR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetNRTR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnResetNRTR.Location = new System.Drawing.Point(702, 450);
@@ -1727,6 +1763,8 @@ namespace Time_Management_System_2021.Rooms
             // btnAllocateNRTR
             // 
             this.btnAllocateNRTR.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAllocateNRTR.FlatAppearance.BorderSize = 0;
+            this.btnAllocateNRTR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAllocateNRTR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllocateNRTR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAllocateNRTR.Location = new System.Drawing.Point(159, 450);
@@ -2077,24 +2115,6 @@ namespace Time_Management_System_2021.Rooms
             // consecutive_SessionsTableAdapter7
             // 
             this.consecutive_SessionsTableAdapter7.ClearBeforeFill = true;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(218, 251);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(164, 18);
-            this.label26.TabIndex = 18;
-            this.label26.Text = "Search by Room Name";
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(388, 252);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(212, 20);
-            this.txtSearch.TabIndex = 19;
-            this.txtSearch.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // consecutiveSessionsBindingSource4
             // 

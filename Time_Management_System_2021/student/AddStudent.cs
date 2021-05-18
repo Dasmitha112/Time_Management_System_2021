@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,18 @@ namespace Time_Management_System_2021.student
 {
     public partial class AddStudent : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeft,
+            int nTop,
+            int nRight,
+            int nBottom,
+            int nWidthElipse,
+            int nHeightElipse
+        );
+
+
         public AddStudent()
         {
             InitializeComponent();
@@ -493,6 +506,19 @@ namespace Time_Management_System_2021.student
             this.Hide();
             Homepage hp = new Homepage();
             hp.ShowDialog();
+        }
+
+        private void AddStudent_Load(object sender, EventArgs e)
+        {
+            button3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button3.Width, button3.Height, 20, 20));
+            button4.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button4.Width, button4.Height, 20, 20));
+            button1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button1.Width, button1.Height, 20, 20));
+            button2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button2.Width, button2.Height, 20, 20));
+            EditGgroupID.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, EditGgroupID.Width, EditGgroupID.Height, 20, 20));
+            EDITSGgroupid_button.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, EDITSGgroupid_button.Width, EDITSGgroupid_button.Height, 20, 20));
+            S_update_button.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, S_update_button.Width, S_update_button.Height, 20, 20));
+            S_delete_Button.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, S_delete_Button.Width, S_delete_Button.Height, 20, 20));
+            S_reset_Button.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, S_reset_Button.Width, S_reset_Button.Height, 20, 20));
         }
     }
 }

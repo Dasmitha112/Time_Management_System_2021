@@ -9,12 +9,25 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using Time_Management_System_2021.Configuration;
+using System.Runtime.InteropServices;
 
 namespace Time_Management_System_2021.Lecturers
 {
 
     public partial class AddLecturerForm : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeft,
+            int nTop,
+            int nRight,
+            int nBottom,
+            int nWidthElipse,
+            int nHeightElipse
+        );
+
+
         public AddLecturerForm()
         {
             InitializeComponent();
@@ -455,6 +468,19 @@ namespace Time_Management_System_2021.Lecturers
         private void buildingBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Ltab1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddLecturerForm_Load(object sender, EventArgs e)
+        {
+            Lsave.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Lsave.Width, Lsave.Height, 20, 20));
+            Lclear.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Lclear.Width, Lclear.Height, 20, 20));
+            UPadd.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, UPadd.Width, UPadd.Height, 20, 20));
+            UPdelete.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, UPdelete.Width, UPdelete.Height, 20, 20));
         }
     }
 }
