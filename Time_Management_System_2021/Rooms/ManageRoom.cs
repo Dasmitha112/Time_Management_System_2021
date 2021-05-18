@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,18 @@ namespace Time_Management_System_2021.Rooms
 {
     public partial class ManageRoom : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeft,
+            int nTop,
+            int nRight,
+            int nBottom,
+            int nWidthElipse,
+            int nHeightElipse
+        );
+
+
         private SqlConnection conn;
 
         public ManageRoom()
@@ -25,6 +38,20 @@ namespace Time_Management_System_2021.Rooms
 
         private void ManageRoom_Load(object sender, EventArgs e)
         {
+
+            C_sessionAdd.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, C_sessionAdd.Width, C_sessionAdd.Height, 20, 20));
+            SesionClearBtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, SesionClearBtn.Width, SesionClearBtn.Height, 20, 20));
+            AddParellelRoom.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, AddParellelRoom.Width, AddParellelRoom.Height, 20, 20));
+            button3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button3.Width, button3.Height, 20, 20));
+            addNonOverlappingbtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, addNonOverlappingbtn.Width, addNonOverlappingbtn.Height, 20, 20));
+            button7.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button7.Width, button7.Height, 20, 20));
+            btnAllocateNRTR.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAllocateNRTR.Width, btnAllocateNRTR.Height, 20, 20));
+            btnUpdateNRTR.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnUpdateNRTR.Width, btnUpdateNRTR.Height, 20, 20));
+            btnDeleteNRTR.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnDeleteNRTR.Width, btnDeleteNRTR.Height, 20, 20));
+            btnResetNRTR.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnResetNRTR.Width, btnResetNRTR.Height, 20, 20));
+
+
+
             // TODO: This line of code loads data into the 'timeManagementSystem_DBDataSet28.consecutive_Sessions' table. You can move, or remove it, as needed.
             this.consecutive_SessionsTableAdapter7.Fill(this.timeManagementSystem_DBDataSet28.consecutive_Sessions);
             DataGridViewCheckBoxColumn chckbox = new DataGridViewCheckBoxColumn();

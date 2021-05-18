@@ -174,6 +174,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnResetMWD
             // 
             this.btnResetMWD.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnResetMWD.FlatAppearance.BorderSize = 0;
+            this.btnResetMWD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnResetMWD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnResetMWD.Location = new System.Drawing.Point(678, 443);
@@ -187,6 +189,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnDeleteMWD
             // 
             this.btnDeleteMWD.BackColor = System.Drawing.Color.Maroon;
+            this.btnDeleteMWD.FlatAppearance.BorderSize = 0;
+            this.btnDeleteMWD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnDeleteMWD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDeleteMWD.Location = new System.Drawing.Point(497, 443);
@@ -200,6 +204,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnEditMWD
             // 
             this.btnEditMWD.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditMWD.FlatAppearance.BorderSize = 0;
+            this.btnEditMWD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnEditMWD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEditMWD.Location = new System.Drawing.Point(316, 443);
@@ -213,6 +219,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnAddMWD
             // 
             this.btnAddMWD.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAddMWD.FlatAppearance.BorderSize = 0;
+            this.btnAddMWD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddMWD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnAddMWD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAddMWD.Location = new System.Drawing.Point(135, 443);
@@ -417,6 +425,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnResetWTPerDay
             // 
             this.btnResetWTPerDay.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnResetWTPerDay.FlatAppearance.BorderSize = 0;
+            this.btnResetWTPerDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnResetWTPerDay.Location = new System.Drawing.Point(685, 240);
@@ -430,6 +440,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnDeleteWTPerDay
             // 
             this.btnDeleteWTPerDay.BackColor = System.Drawing.Color.Maroon;
+            this.btnDeleteWTPerDay.FlatAppearance.BorderSize = 0;
+            this.btnDeleteWTPerDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDeleteWTPerDay.Location = new System.Drawing.Point(506, 240);
@@ -443,6 +455,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnEditWTPerDay
             // 
             this.btnEditWTPerDay.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditWTPerDay.FlatAppearance.BorderSize = 0;
+            this.btnEditWTPerDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEditWTPerDay.Location = new System.Drawing.Point(327, 240);
@@ -456,6 +470,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnAddWTPerDay
             // 
             this.btnAddWTPerDay.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAddWTPerDay.FlatAppearance.BorderSize = 0;
+            this.btnAddWTPerDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddWTPerDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddWTPerDay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAddWTPerDay.Location = new System.Drawing.Point(148, 240);
@@ -601,6 +617,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnResetTimeSlots
             // 
             this.btnResetTimeSlots.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnResetTimeSlots.FlatAppearance.BorderSize = 0;
+            this.btnResetTimeSlots.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnResetTimeSlots.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnResetTimeSlots.Location = new System.Drawing.Point(706, 253);
@@ -614,6 +632,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnDeleteTimeSlots
             // 
             this.btnDeleteTimeSlots.BackColor = System.Drawing.Color.Maroon;
+            this.btnDeleteTimeSlots.FlatAppearance.BorderSize = 0;
+            this.btnDeleteTimeSlots.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnDeleteTimeSlots.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDeleteTimeSlots.Location = new System.Drawing.Point(526, 253);
@@ -627,6 +647,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnEditTimeSlots
             // 
             this.btnEditTimeSlots.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEditTimeSlots.FlatAppearance.BorderSize = 0;
+            this.btnEditTimeSlots.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnEditTimeSlots.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEditTimeSlots.Location = new System.Drawing.Point(346, 253);
@@ -640,6 +662,8 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnAddTimeSlots
             // 
             this.btnAddTimeSlots.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAddTimeSlots.FlatAppearance.BorderSize = 0;
+            this.btnAddTimeSlots.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddTimeSlots.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.btnAddTimeSlots.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAddTimeSlots.Location = new System.Drawing.Point(166, 253);
@@ -695,7 +719,7 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.tabControl);

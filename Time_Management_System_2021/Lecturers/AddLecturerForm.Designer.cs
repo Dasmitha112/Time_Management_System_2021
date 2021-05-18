@@ -91,7 +91,7 @@
             this.tabControl1.Controls.Add(this.Ltab0);
             this.tabControl1.Controls.Add(this.Ltab1);
             this.tabControl1.Controls.Add(this.Ltab2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 12);
+            this.tabControl1.Location = new System.Drawing.Point(1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(982, 590);
@@ -248,6 +248,7 @@
             this.Ltab1.TabIndex = 1;
             this.Ltab1.Text = "Add lecturers Details";
             this.Ltab1.UseVisualStyleBackColor = true;
+            this.Ltab1.Click += new System.EventHandler(this.Ltab1_Click);
             // 
             // backhomeL2
             // 
@@ -264,9 +265,11 @@
             // Lsave
             // 
             this.Lsave.BackColor = System.Drawing.Color.ForestGreen;
+            this.Lsave.FlatAppearance.BorderSize = 0;
+            this.Lsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Lsave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lsave.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Lsave.Location = new System.Drawing.Point(273, 342);
+            this.Lsave.Location = new System.Drawing.Point(274, 359);
             this.Lsave.Name = "Lsave";
             this.Lsave.Size = new System.Drawing.Size(150, 60);
             this.Lsave.TabIndex = 17;
@@ -277,9 +280,11 @@
             // Lclear
             // 
             this.Lclear.BackColor = System.Drawing.Color.DarkOrange;
+            this.Lclear.FlatAppearance.BorderSize = 0;
+            this.Lclear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Lclear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lclear.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Lclear.Location = new System.Drawing.Point(465, 342);
+            this.Lclear.Location = new System.Drawing.Point(470, 359);
             this.Lclear.Name = "Lclear";
             this.Lclear.Size = new System.Drawing.Size(150, 60);
             this.Lclear.TabIndex = 16;
@@ -480,6 +485,8 @@
             // UPdelete
             // 
             this.UPdelete.BackColor = System.Drawing.Color.Maroon;
+            this.UPdelete.FlatAppearance.BorderSize = 0;
+            this.UPdelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UPdelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UPdelete.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.UPdelete.Location = new System.Drawing.Point(500, 353);
@@ -493,6 +500,8 @@
             // UPadd
             // 
             this.UPadd.BackColor = System.Drawing.Color.DarkBlue;
+            this.UPadd.FlatAppearance.BorderSize = 0;
+            this.UPadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UPadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UPadd.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.UPadd.Location = new System.Drawing.Point(273, 353);
@@ -665,6 +674,7 @@
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddLecturerForm";
+            this.Load += new System.EventHandler(this.AddLecturerForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.Ltab0.ResumeLayout(false);
             this.Ltab0.PerformLayout();

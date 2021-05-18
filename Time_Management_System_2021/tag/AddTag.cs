@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,18 @@ namespace Time_Management_System_2021.tag
 {
     public partial class AddTag : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeft,
+            int nTop,
+            int nRight,
+            int nBottom,
+            int nWidthElipse,
+            int nHeightElipse
+        );
+
+
         public AddTag()
         {
             InitializeComponent();
@@ -123,7 +136,10 @@ namespace Time_Management_System_2021.tag
 
         private void AddTag_Load(object sender, EventArgs e)
         {
-
+            tagADD.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, tagADD.Width, tagADD.Height, 20, 20));
+            AddClear.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, AddClear.Width, AddClear.Height, 20, 20));
+            tagEdit.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, tagEdit.Width, tagEdit.Height, 20, 20));
+            tagDelete.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, tagDelete.Width, tagDelete.Height, 20, 20));
         }
 
         private void tagEdit_Click(object sender, EventArgs e)

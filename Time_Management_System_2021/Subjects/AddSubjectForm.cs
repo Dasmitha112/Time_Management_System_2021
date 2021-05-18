@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,18 @@ namespace Time_Management_System_2021.Subjects
 {
     public partial class AddSubjectForm : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeft,
+            int nTop,
+            int nRight,
+            int nBottom,
+            int nWidthElipse,
+            int nHeightElipse
+        );
+
+
         public AddSubjectForm()
         {
             InitializeComponent();
@@ -304,6 +317,14 @@ namespace Time_Management_System_2021.Subjects
             this.Hide();
             Homepage hp = new Homepage();
             hp.ShowDialog();
+        }
+
+        private void AddSubjectForm_Load(object sender, EventArgs e)
+        {
+            Bclear.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Bclear.Width, Bclear.Height, 20, 20));
+            Badd.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Badd.Width, Badd.Height, 20, 20));
+            Supdate.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Supdate.Width, Supdate.Height, 20, 20));
+            Sdelete.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Sdelete.Width, Sdelete.Height, 20, 20));
         }
     }
 }

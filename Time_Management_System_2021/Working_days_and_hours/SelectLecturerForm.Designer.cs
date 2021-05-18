@@ -59,11 +59,13 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnSelectLecturerInForm
             // 
             this.btnSelectLecturerInForm.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnSelectLecturerInForm.FlatAppearance.BorderSize = 0;
+            this.btnSelectLecturerInForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectLecturerInForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectLecturerInForm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSelectLecturerInForm.Location = new System.Drawing.Point(119, 187);
             this.btnSelectLecturerInForm.Name = "btnSelectLecturerInForm";
-            this.btnSelectLecturerInForm.Size = new System.Drawing.Size(120, 55);
+            this.btnSelectLecturerInForm.Size = new System.Drawing.Size(111, 46);
             this.btnSelectLecturerInForm.TabIndex = 2;
             this.btnSelectLecturerInForm.Text = "SELECT";
             this.btnSelectLecturerInForm.UseVisualStyleBackColor = false;
@@ -72,11 +74,13 @@ namespace Time_Management_System_2021.Working_days_and_hours
             // btnCancelInForm
             // 
             this.btnCancelInForm.BackColor = System.Drawing.Color.Maroon;
+            this.btnCancelInForm.FlatAppearance.BorderSize = 0;
+            this.btnCancelInForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelInForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelInForm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelInForm.Location = new System.Drawing.Point(274, 187);
+            this.btnCancelInForm.Location = new System.Drawing.Point(270, 187);
             this.btnCancelInForm.Name = "btnCancelInForm";
-            this.btnCancelInForm.Size = new System.Drawing.Size(120, 55);
+            this.btnCancelInForm.Size = new System.Drawing.Size(111, 46);
             this.btnCancelInForm.TabIndex = 3;
             this.btnCancelInForm.Text = "CANCEL";
             this.btnCancelInForm.UseVisualStyleBackColor = false;

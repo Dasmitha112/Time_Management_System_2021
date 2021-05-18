@@ -137,6 +137,8 @@ namespace Time_Management_System_2021.tag
             // tagDelete
             // 
             this.tagDelete.BackColor = System.Drawing.Color.Maroon;
+            this.tagDelete.FlatAppearance.BorderSize = 0;
+            this.tagDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tagDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tagDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tagDelete.Location = new System.Drawing.Point(736, 429);
@@ -151,6 +153,8 @@ namespace Time_Management_System_2021.tag
             // tagEdit
             // 
             this.tagEdit.BackColor = System.Drawing.Color.DarkBlue;
+            this.tagEdit.FlatAppearance.BorderSize = 0;
+            this.tagEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tagEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tagEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tagEdit.Location = new System.Drawing.Point(530, 429);
@@ -165,6 +169,8 @@ namespace Time_Management_System_2021.tag
             // AddClear
             // 
             this.AddClear.BackColor = System.Drawing.Color.DarkOrange;
+            this.AddClear.FlatAppearance.BorderSize = 0;
+            this.AddClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.AddClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AddClear.Location = new System.Drawing.Point(324, 429);
@@ -179,6 +185,8 @@ namespace Time_Management_System_2021.tag
             // tagADD
             // 
             this.tagADD.BackColor = System.Drawing.Color.ForestGreen;
+            this.tagADD.FlatAppearance.BorderSize = 0;
+            this.tagADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tagADD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tagADD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tagADD.Location = new System.Drawing.Point(118, 429);

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,6 +23,18 @@ namespace Time_Management_System_2021
 {
     public partial class Homepage : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeft,
+            int nTop,
+            int nRight,
+            int nBottom,
+            int nWidthElipse,
+            int nHeightElipse
+        );
+
+
         public Homepage()
         {
             InitializeComponent();
@@ -31,7 +44,14 @@ namespace Time_Management_System_2021
 
         private void Homepage_Load(object sender, EventArgs e)
         {
-
+            btnLecturer.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnLecturer.Width, btnLecturer.Height, 20, 20));
+            btnStudent.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnStudent.Width, btnStudent.Height, 20, 20));
+            btnModule.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnModule.Width, btnModule.Height, 20, 20));
+            btnTags.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnTags.Width, btnTags.Height, 20, 20));
+            btnLocations.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnLocations.Width, btnLocations.Height, 20, 20));
+            btnRooms.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnRooms.Width, btnRooms.Height, 20, 20));
+            btnStatistics.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnStatistics.Width, btnStatistics.Height, 20, 20));
+            btnWDH.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnWDH.Width, btnWDH.Height, 20, 20));
         }
 
         private void button8_Click(object sender, EventArgs e)

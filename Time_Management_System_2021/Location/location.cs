@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,19 @@ namespace Time_Management_System_2021.Location
 {
     public partial class location : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeft,
+            int nTop,
+            int nRight,
+            int nBottom,
+            int nWidthElipse,
+            int nHeightElipse
+        );
+
+
+
         public location()
         {
             InitializeComponent();
@@ -220,7 +234,11 @@ namespace Time_Management_System_2021.Location
 
         private void location_Load(object sender, EventArgs e)
         {
-
+            Add.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Add.Width, Add.Height, 20, 20));
+            reset.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, reset.Width, reset.Height, 20, 20));
+            Update.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Update.Width, Update.Height, 20, 20));
+            Delete.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Delete.Width, Delete.Height, 20, 20));
+            Reset2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Reset2.Width, Reset2.Height, 20, 20));
         }
 
         private void Reset2_Click(object sender, EventArgs e)
@@ -252,6 +270,11 @@ namespace Time_Management_System_2021.Location
             this.Hide();
             Homepage hp = new Homepage();
             hp.ShowDialog();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

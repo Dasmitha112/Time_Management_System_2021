@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,17 @@ namespace Time_Management_System_2021.Statistics
 {
     public partial class Static : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeft,
+            int nTop,
+            int nRight,
+            int nBottom,
+            int nWidthElipse,
+            int nHeightElipse
+        );
+
         public Static()
         {
             InitializeComponent();
@@ -56,6 +68,12 @@ namespace Time_Management_System_2021.Statistics
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void Static_Load(object sender, EventArgs e)
+        {
+            button1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button1.Width, button1.Height, 20, 20));
+            button2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button2.Width, button2.Height, 20, 20));
         }
     }
 }
