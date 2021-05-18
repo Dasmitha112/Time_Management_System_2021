@@ -230,6 +230,7 @@ namespace Time_Management_System_2021
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGenerate.UseVisualStyleBackColor = true;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // btnAdvanced
             // 

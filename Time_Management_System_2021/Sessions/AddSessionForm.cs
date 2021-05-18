@@ -125,6 +125,7 @@ namespace Time_Management_System_2021.Sessions
             this.dataGridViewSession.Columns["SessionID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewSession.Columns["SubjectName"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewSession.Columns["SubjectCode"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            //this.dataGridViewSession.Columns["GroupNumber"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewSession.Columns["GroupNumber"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewSession.Columns["Tag"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
               this.dataGridViewSession.Columns["StudentCount"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -182,7 +183,8 @@ namespace Time_Management_System_2021.Sessions
 
                 cmd2.CommandType = CommandType.Text;
 
-                cmd2.CommandText = "SELECT GroupNumber FROM Student order by GroupNumber";
+                //cmd2.CommandText = "SELECT GroupNumber FROM Student order by GroupNumber";
+                cmd2.CommandText = "SELECT GroupID FROM Student order by GroupID";
 
                 cmd2.ExecuteNonQuery();
 
@@ -194,11 +196,13 @@ namespace Time_Management_System_2021.Sessions
 
                 foreach (DataRow dr in dtgroups.Rows)
                 {
-                    SessionGroupBox.Items.Add(dr["GroupNumber"].ToString());
+                    //SessionGroupBox.Items.Add(dr["GroupNumber"].ToString());
+                    SessionGroupBox.Items.Add(dr["GroupID"].ToString());
                 }
                 foreach (DataRow dr in dtgroups.Rows)
                 {
-                    MBoxGroup.Items.Add(dr["GroupNumber"].ToString());
+                    //MBoxGroup.Items.Add(dr["GroupNumber"].ToString());
+                    MBoxGroup.Items.Add(dr["GroupID"].ToString());
                 }
 
                 con.Close();
@@ -211,7 +215,8 @@ namespace Time_Management_System_2021.Sessions
 
                 cmd.CommandType = CommandType.Text;
 
-                cmd.CommandText = "SELECT GroupNumber FROM Student order by GroupNumber";
+                //cmd.CommandText = "SELECT GroupNumber FROM Student order by GroupNumber";
+                cmd.CommandText = "SELECT GroupID FROM Student order by GroupID";
 
                 cmd.ExecuteNonQuery();
 
@@ -223,11 +228,13 @@ namespace Time_Management_System_2021.Sessions
 
                 foreach (DataRow dr in dtgroups.Rows)
                 {
-                    SessionGroupBox.Items.Add(dr["GroupNumber"].ToString());
+                    //SessionGroupBox.Items.Add(dr["GroupNumber"].ToString());
+                    SessionGroupBox.Items.Add(dr["GroupID"].ToString());
                 }
                 foreach (DataRow dr in dtgroups.Rows)
                 {
-                    MBoxGroup.Items.Add(dr["GroupNumber"].ToString());
+                    //MBoxGroup.Items.Add(dr["GroupNumber"].ToString());
+                    MBoxGroup.Items.Add(dr["GroupID"].ToString());
                 }
 
                 con.Close();
@@ -333,6 +340,7 @@ namespace Time_Management_System_2021.Sessions
                 cmd.Parameters.AddWithValue("@SubjectName", SessionSubNBox.Text);
                 cmd.Parameters.AddWithValue("@SubjectCode", SessionSubCodeBox.Text);
                 cmd.Parameters.AddWithValue("@Tag", SessionTagBox.Text);
+                //cmd.Parameters.AddWithValue("@GroupNumber", SessionGroupBox.Text);
                 cmd.Parameters.AddWithValue("@GroupNumber", SessionGroupBox.Text);
                 cmd.Parameters.AddWithValue("@StudentCount", SessionStucountBox.Text);
                 cmd.Parameters.AddWithValue("@Duration", SesionDurationBox.Text);
@@ -393,7 +401,6 @@ namespace Time_Management_System_2021.Sessions
         private void ClearFieldsAfterAdd()
         {
             SessionLecBox.SelectedIndex = -1;
-
 
             SessionSubNBox.SelectedIndex = -1;
             //tags = "";
@@ -463,6 +470,7 @@ namespace Time_Management_System_2021.Sessions
             {
                 if (IsValidUpdate())
                 {
+                    //SqlCommand cmd = new SqlCommand("UPDATE Sessions SET LecturerName = @LecturerName, SubjectName = @SubjectName, SubjectCode = @SubjectCode, Tag = @Tag, GroupID = @GroupID, StudentCount = @StudentCount, Duration = @Duration, StartTime = @StartTime, EndTime= @EndTime, Day = @Day WHERE SessionID = @SessionID", con);
                     SqlCommand cmd = new SqlCommand("UPDATE Sessions SET LecturerName = @LecturerName, SubjectName = @SubjectName, SubjectCode = @SubjectCode, Tag = @Tag, GroupNumber = @GroupNumber, StudentCount = @StudentCount, Duration = @Duration, StartTime = @StartTime, EndTime= @EndTime, Day = @Day WHERE SessionID = @SessionID", con);
 
                     cmd.CommandType = CommandType.Text;
@@ -470,6 +478,7 @@ namespace Time_Management_System_2021.Sessions
                     cmd.Parameters.AddWithValue("@SubjectName", MBoxName.Text);
                     cmd.Parameters.AddWithValue("@SubjectCode", MBoxCode.Text);
                     cmd.Parameters.AddWithValue("@Tag", MBoxtag.Text);
+                    //cmd.Parameters.AddWithValue("@GroupNumber", MBoxGroup.Text);
                     cmd.Parameters.AddWithValue("@GroupNumber", MBoxGroup.Text);
                     cmd.Parameters.AddWithValue("@StudentCount", numericMCOUNT.Text);
                     cmd.Parameters.AddWithValue("@Duration", numericMDuration.Text);
@@ -664,6 +673,24 @@ namespace Time_Management_System_2021.Sessions
 
         }
 
+        private void clearFields()
+        {
+            consective_TXT.Text = "";
+
+            foreach (DataGridViewRow dr in dataGridView2.Rows)
+            {
+                bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn2"].Value);
+                if (chackboxselected)
+                {                 
+                
+                    dr.Cells["CheckboxClumn2"].Value = false;
+
+
+                }
+            }
+
+        }
+
         private void button9_Click(object sender, EventArgs e)
         {
             
@@ -677,7 +704,9 @@ namespace Time_Management_System_2021.Sessions
                 bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn"].Value);
                 if (chackboxselected) 
                 {
-                    string Sqlquery = "INSERT INTO [dbo].[not_overlapping_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
+                    //string Sqlquery = "INSERT INTO [dbo].[not_overlapping_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
+                    string Sqlquery = "INSERT INTO [dbo].[not_overlapping_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupID, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
+
                     SqlCommand sqlcomm = new SqlCommand(Sqlquery, sqlconn);
                     
                     sqlcomm.Parameters.AddWithValue("@SessionID", dr.Cells[1].Value);
@@ -686,6 +715,7 @@ namespace Time_Management_System_2021.Sessions
                     sqlcomm.Parameters.AddWithValue("@SubjectName", dr.Cells[3].Value);
                     sqlcomm.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
                     sqlcomm.Parameters.AddWithValue("@Tag", dr.Cells[5].Value);
+                    //sqlcomm.Parameters.AddWithValue("@GroupNumber", dr.Cells[6].Value);
                     sqlcomm.Parameters.AddWithValue("@GroupNumber", dr.Cells[6].Value);
                     sqlcomm.Parameters.AddWithValue("@StudentCount", dr.Cells[7].Value);
                     sqlcomm.Parameters.AddWithValue("@Duration", dr.Cells[8].Value);
@@ -733,7 +763,9 @@ namespace Time_Management_System_2021.Sessions
                 bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn2"].Value);
                 if (chackboxselected)
                 {
+                    //string Sqlquery = "INSERT INTO [dbo].[consecutive_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
                     string Sqlquery = "INSERT INTO [dbo].[consecutive_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
+
                     SqlCommand sqlcomm = new SqlCommand(Sqlquery, sqlconn);
 
                     sqlcomm.Parameters.AddWithValue("@SessionID", dr.Cells[1].Value);
@@ -742,6 +774,7 @@ namespace Time_Management_System_2021.Sessions
                     sqlcomm.Parameters.AddWithValue("@SubjectName", dr.Cells[3].Value);
                     sqlcomm.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
                     sqlcomm.Parameters.AddWithValue("@Tag", dr.Cells[5].Value);
+                    //sqlcomm.Parameters.AddWithValue("@GroupNumber", dr.Cells[6].Value);
                     sqlcomm.Parameters.AddWithValue("@GroupNumber", dr.Cells[6].Value);
                     sqlcomm.Parameters.AddWithValue("@StudentCount", dr.Cells[7].Value);
                     sqlcomm.Parameters.AddWithValue("@Duration", dr.Cells[8].Value);
@@ -751,11 +784,15 @@ namespace Time_Management_System_2021.Sessions
                     sqlconn.Open();
                     sqlcomm.ExecuteNonQuery();
                     sqlconn.Close();
-                   
-                   
+
+                    dr.Cells["CheckboxClumn2"].Value = false;
+                    consective_TXT.Text = "";
+
                 }
             }
             MessageBox.Show("created consecutive session successfully", "Successfully");
+
+            
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -770,7 +807,9 @@ namespace Time_Management_System_2021.Sessions
                 bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn1"].Value);
                 if (chackboxselected)
                 {
-                    string Sqlquery = "INSERT INTO [dbo].[parellel_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
+                    //string Sqlquery = "INSERT INTO [dbo].[parellel_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
+                    string Sqlquery = "INSERT INTO [dbo].[parellel_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupID, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
+
                     SqlCommand sqlcomm = new SqlCommand(Sqlquery, sqlconn);
 
                     sqlcomm.Parameters.AddWithValue("@SessionID", dr.Cells[1].Value);
@@ -779,7 +818,8 @@ namespace Time_Management_System_2021.Sessions
                     sqlcomm.Parameters.AddWithValue("@SubjectName", dr.Cells[3].Value);
                     sqlcomm.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
                     sqlcomm.Parameters.AddWithValue("@Tag", dr.Cells[5].Value);
-                    sqlcomm.Parameters.AddWithValue("@GroupNumber", dr.Cells[6].Value);
+                    //sqlcomm.Parameters.AddWithValue("@GroupNumber", dr.Cells[6].Value);
+                    sqlcomm.Parameters.AddWithValue("@GroupID", dr.Cells[6].Value);
                     sqlcomm.Parameters.AddWithValue("@StudentCount", dr.Cells[7].Value);
                     sqlcomm.Parameters.AddWithValue("@Duration", dr.Cells[8].Value);
                     sqlcomm.Parameters.AddWithValue("@StartTime", dr.Cells[9].Value);
@@ -803,7 +843,7 @@ namespace Time_Management_System_2021.Sessions
 
         private void button4_Click(object sender, EventArgs e)
         {
-            consective_TXT.Text = string.Empty;
+            clearFields();
         }
 
         private void LectureNameTxt_TextChanged(object sender, EventArgs e)

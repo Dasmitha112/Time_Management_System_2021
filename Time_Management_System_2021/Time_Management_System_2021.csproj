@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -61,6 +67,12 @@
     </Compile>
     <Compile Include="Generalpage.Designer.cs">
       <DependentUpon>Generalpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generate\GenerateTimeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generate\GenerateTimeTable.Designer.cs">
+      <DependentUpon>GenerateTimeTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Homepage.cs">
       <SubType>Form</SubType>
@@ -287,6 +299,9 @@
     <EmbeddedResource Include="Generalpage.resx">
       <DependentUpon>Generalpage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Generate\GenerateTimeTable.resx">
+      <DependentUpon>GenerateTimeTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
@@ -330,6 +345,7 @@
     <EmbeddedResource Include="Working_days_and_hours\SelectLecturerForm.resx">
       <DependentUpon>SelectLecturerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

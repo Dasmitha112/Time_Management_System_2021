@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Time_Management_System_2021.Advanced;
+using Time_Management_System_2021.Generate;
 using Time_Management_System_2021.Lecturers;
 using Time_Management_System_2021.Location;
 using Time_Management_System_2021.Rooms;
@@ -127,6 +128,13 @@ namespace Time_Management_System_2021
             this.Hide();
             NotAvailableTime nat = new NotAvailableTime();
             nat.ShowDialog();
+        }
+
+        private void btnGenerate_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GenerateTimeTable gtt = new GenerateTimeTable();
+            gtt.ShowDialog();
         }
     }
 }
