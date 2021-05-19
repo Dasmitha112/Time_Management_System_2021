@@ -217,7 +217,10 @@ namespace Time_Management_System_2021.Rooms
                     sqlcomm.ExecuteNonQuery();
                     sqlconn.Close();
 
-
+                    dr.Cells["CheckboxClumn2"].Value = false;
+                    addroomparellel.Text = "";
+                    addlocationParellel.Text = "";
+                    addcapacityparellel.Text = "";
                 }
             }
             MessageBox.Show("Add Room for Parallel Session successfully", "Successfully");
@@ -259,7 +262,10 @@ namespace Time_Management_System_2021.Rooms
                     sqlconn.Open();
                     sqlcomm.ExecuteNonQuery();
                     sqlconn.Close();
-
+                    dr.Cells["CheckboxClumn1"].Value = false;
+                    addNotOverlapRoom.Text = "";
+                    AddNotOverlapLocation.Text = "";
+                    AddNotOverlapCapacity.Text = "";
 
                 }
             }
@@ -559,7 +565,10 @@ namespace Time_Management_System_2021.Rooms
                     sqlcomm.ExecuteNonQuery();
                     sqlconn.Close();
 
-
+                    dr.Cells["CheckboxClumn"].Value = false;
+                    AddRoomSession.Text = "";
+                    AddLocationSession.Text = "";
+                    AddCapacitySession.Text = "";
                 }
             }
             MessageBox.Show("Add Room for Consecutive Session successfully", "Successfully");

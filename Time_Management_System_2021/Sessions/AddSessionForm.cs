@@ -691,7 +691,7 @@ namespace Time_Management_System_2021.Sessions
 
         }
 
-
+        //insert not overlapping sessions
         private void button9_Click(object sender, EventArgs e)
         {
             
@@ -706,7 +706,7 @@ namespace Time_Management_System_2021.Sessions
                 if (chackboxselected) 
                 {
                     //string Sqlquery = "INSERT INTO [dbo].[not_overlapping_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
-                    string Sqlquery = "INSERT INTO [dbo].[not_overlapping_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupID, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
+                    string Sqlquery = "INSERT INTO [dbo].[not_overlapping_Sessions] VALUES (@SessionID, @session_name, @LecturerName, @SubjectName, @SubjectCode, @Tag, @GroupNumber, @StudentCount, @Duration, @StartTime, @EndTime, @Day)";
 
                     SqlCommand sqlcomm = new SqlCommand(Sqlquery, sqlconn);
                     
@@ -726,10 +726,11 @@ namespace Time_Management_System_2021.Sessions
                     sqlconn.Open();
                     sqlcomm.ExecuteNonQuery();
                     sqlconn.Close();
-                  
-                 
 
-              
+
+                    dr.Cells["CheckboxClumn"].Value = false;
+                    NOT_overlapping_Session_nameTXT.Text = "";
+
 
 
                 }
@@ -739,19 +740,30 @@ namespace Time_Management_System_2021.Sessions
         }
 
       
-
+        //clear not overlapping sessions
         private void button8_Click(object sender, EventArgs e)
         {
-            NOT_overlapping_Session_nameTXT.Text = string.Empty;
-            clearcheckbox1();
+            clearFields2();
 
         }
 
-        private void clearcheckbox1()
+        private void clearFields2()
         {
-            
-        }
+            NOT_overlapping_Session_nameTXT.Text = "";
 
+            foreach (DataGridViewRow dr in dataGridView1.Rows)
+            {
+                bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn"].Value);
+                if (chackboxselected)
+                {
+
+                    dr.Cells["CheckboxClumn"].Value = false;
+
+
+                }
+            }
+        }
+        //insert consective sessions
         private void button5_Click(object sender, EventArgs e)
         {
             string mainconn = ConfigurationManager.ConnectionStrings["Time_Management_System_2021.Properties.Settings.TimeManagementSystem_DBConnectionString"].ConnectionString;
@@ -796,6 +808,8 @@ namespace Time_Management_System_2021.Sessions
             
         }
 
+
+        //insert parellel sessions
         private void button7_Click(object sender, EventArgs e)
         {
             string mainconn = ConfigurationManager.ConnectionStrings["Time_Management_System_2021.Properties.Settings.TimeManagementSystem_DBConnectionString"].ConnectionString;
@@ -830,23 +844,44 @@ namespace Time_Management_System_2021.Sessions
                     sqlcomm.ExecuteNonQuery();
                     sqlconn.Close();
 
-                  
+                    dr.Cells["CheckboxClumn1"].Value = false;
+                    Parallel_TxT.Text = "";
 
                 }
             }
             MessageBox.Show("created parellel session successfully", "Successfully");
         }
 
+
+
+        //clear parellel sessions
         private void button6_Click(object sender, EventArgs e)
         {
-            Parallel_TxT.Text = string.Empty;
+            clearFields1();
+        }
+
+        private void clearFields1()
+        {
+            Parallel_TxT.Text = "";
+
+            foreach (DataGridViewRow dr in dataGridView3.Rows)
+            {
+                bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn1"].Value);
+                if (chackboxselected)
+                {
+
+                    dr.Cells["CheckboxClumn1"].Value = false;
+
+
+                }
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             clearFields();
         }
-
+         //filters 
         private void LectureNameTxt_TextChanged(object sender, EventArgs e)
         {
             BindingSource bs = new BindingSource();
@@ -854,7 +889,8 @@ namespace Time_Management_System_2021.Sessions
             bs.Filter = "Convert(LecturerName, 'System.String') Like '%" + LectureNameTxt.Text + "%'";
             dataGridView1.DataSource = bs;
         }
-
+        
+        //filters 
         private void SubjectNameTxt_TextChanged(object sender, EventArgs e)
         {
             BindingSource bs = new BindingSource();
@@ -863,6 +899,7 @@ namespace Time_Management_System_2021.Sessions
             dataGridView1.DataSource = bs;
         }
 
+        //filters 
         private void SubjectTxt_TextChanged(object sender, EventArgs e)
         {
             BindingSource bs = new BindingSource();
@@ -871,6 +908,7 @@ namespace Time_Management_System_2021.Sessions
             dataGridView1.DataSource = bs;
         }
 
+        //filters 
         private void subjectNameFilter_TextChanged(object sender, EventArgs e)
         {
             BindingSource bs = new BindingSource();
@@ -879,6 +917,7 @@ namespace Time_Management_System_2021.Sessions
             dataGridView1.DataSource = bs;
         }
 
+        //filters 
         private void TagTxt_TextChanged(object sender, EventArgs e)
         {
             BindingSource bs = new BindingSource();
@@ -887,6 +926,7 @@ namespace Time_Management_System_2021.Sessions
             dataGridView1.DataSource = bs;
         }
 
+        //filters 
         private void TTxt_TextChanged(object sender, EventArgs e)
         {
             BindingSource bs = new BindingSource();
@@ -895,6 +935,7 @@ namespace Time_Management_System_2021.Sessions
             dataGridView1.DataSource = bs;
         }
 
+        //filters 
         private void LectureSessionTxt_TextChanged(object sender, EventArgs e)
         {
             
