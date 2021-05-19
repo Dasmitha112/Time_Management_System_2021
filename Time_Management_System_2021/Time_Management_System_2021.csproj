@@ -86,6 +86,12 @@
     <Compile Include="Lecturers\AddLecturerForm.Designer.cs">
       <DependentUpon>AddLecturerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoadingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingPage.Designer.cs">
+      <DependentUpon>LoadingPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Location\location.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -307,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lecturers\AddLecturerForm.resx">
       <DependentUpon>AddLecturerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingPage.resx">
+      <DependentUpon>LoadingPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Location\location.resx">
       <DependentUpon>location.cs</DependentUpon>
