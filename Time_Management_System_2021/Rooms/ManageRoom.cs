@@ -35,7 +35,7 @@ namespace Time_Management_System_2021.Rooms
         }
 
         NonReservableTimeRoom nrtr = new NonReservableTimeRoom();
-
+        
         private void ManageRoom_Load(object sender, EventArgs e)
         {
 
@@ -50,7 +50,7 @@ namespace Time_Management_System_2021.Rooms
             btnDeleteNRTR.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnDeleteNRTR.Width, btnDeleteNRTR.Height, 20, 20));
             btnResetNRTR.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnResetNRTR.Width, btnResetNRTR.Height, 20, 20));
 
-
+            //data grid view for the sessions
 
             // TODO: This line of code loads data into the 'timeManagementSystem_DBDataSet28.consecutive_Sessions' table. You can move, or remove it, as needed.
             this.consecutive_SessionsTableAdapter7.Fill(this.timeManagementSystem_DBDataSet28.consecutive_Sessions);
@@ -71,6 +71,8 @@ namespace Time_Management_System_2021.Rooms
             this.parellel_SessionsTableAdapter.Fill(this.timeManagementSystem_DBDataSet6.parellel_Sessions);
             DataGridViewCheckBoxColumn chckbox2 = new DataGridViewCheckBoxColumn();
             
+            //checkboxclumn and grid view names
+
             chckbox.HeaderText = "";
             chckbox.Width = 30;
             chckbox.Name = "CheckboxClumn";
@@ -116,6 +118,7 @@ namespace Time_Management_System_2021.Rooms
 
         }
 
+        //search by session name
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             BindingSource bs = new BindingSource();
@@ -124,6 +127,7 @@ namespace Time_Management_System_2021.Rooms
             dataGridView1.DataSource = bs;
         }
 
+        //button for return home page
         private void button6_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -156,7 +160,7 @@ namespace Time_Management_System_2021.Rooms
         {
 
         }
-
+        //search by session name
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             BindingSource bs = new BindingSource();
@@ -164,7 +168,7 @@ namespace Time_Management_System_2021.Rooms
             bs.Filter = "Convert(session_name, 'System.String') Like '%" + textBox2.Text + "%'";
             dataGridView2.DataSource = bs;
         }
-
+        //button for return home page
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -172,6 +176,7 @@ namespace Time_Management_System_2021.Rooms
             hp.ShowDialog();
         }
 
+        //data insert to parellel room
         private void AddParellelRoom_Click(object sender, EventArgs e)
         {
             string mainconn = ConfigurationManager.ConnectionStrings["Time_Management_System_2021.Properties.Settings.TimeManagementSystem_DBConnectionString"].ConnectionString;
@@ -218,7 +223,7 @@ namespace Time_Management_System_2021.Rooms
             MessageBox.Show("Add Room for Parallel Session successfully", "Successfully");
 
         }
-
+        //data insert to NonParellelRoom room
         private void addNonOverlappingbtn_Click(object sender, EventArgs e)
         {
             string mainconn = ConfigurationManager.ConnectionStrings["Time_Management_System_2021.Properties.Settings.TimeManagementSystem_DBConnectionString"].ConnectionString;
@@ -266,7 +271,7 @@ namespace Time_Management_System_2021.Rooms
         {
 
         }
-
+        //button for return home page
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -284,25 +289,82 @@ namespace Time_Management_System_2021.Rooms
             
         }
 
+        //consecutive_Session
+        private void clearFields()
+        {
+            AddRoomSession.Text = "";
+            AddLocationSession.Text = "";
+            AddCapacitySession.Text = "";
+
+            foreach (DataGridViewRow dr in dataGridView1.Rows)
+            {
+                bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn"].Value);
+                if (chackboxselected)
+                {
+
+                    dr.Cells["CheckboxClumn"].Value = false;
+
+
+                }
+            }
+
+        }
+        //clear field
         private void SesionClearBtn_Click(object sender, EventArgs e)
         {
-            AddRoomSession.Text = string.Empty;
-            AddLocationSession.Text= string.Empty;
-            AddCapacitySession.Text = string.Empty;
+            clearFields();
+        }
+        //parellelSession clear
+        private void clearFields2()
+        {
+            addroomparellel.Text = "";
+            addlocationParellel.Text = "";
+            addcapacityparellel.Text = "";
+
+            foreach (DataGridViewRow dr in dataGridView2.Rows)
+            {
+                bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn2"].Value);
+                if (chackboxselected)
+                {
+
+                    dr.Cells["CheckboxClumn2"].Value = false;
+
+
+                }
+            }
+
+        }
+        //not overlapingSession clear 
+
+        private void clearFields3()
+        {
+            addNotOverlapRoom.Text = "";
+            AddNotOverlapLocation.Text = "";
+            AddNotOverlapCapacity.Text = "";
+
+            foreach (DataGridViewRow dr in dataGridView3.Rows)
+            {
+                bool chackboxselected = Convert.ToBoolean(dr.Cells["CheckboxClumn1"].Value);
+                if (chackboxselected)
+                {
+
+                    dr.Cells["CheckboxClumn1"].Value = false;
+
+
+                }
+            }
+
         }
 
+        //parellel session clear button
         private void button3_Click(object sender, EventArgs e)
         {
-            AddRoomSession.Text = string.Empty;
-            AddLocationSession.Text = string.Empty;
-            AddCapacitySession.Text = string.Empty;
+            clearFields2();
         }
-
+        //not overlapingSession session clear button
         private void button7_Click(object sender, EventArgs e)
         {
-            AddRoomSession.Text = string.Empty;
-            AddLocationSession.Text = string.Empty;
-            AddCapacitySession.Text = string.Empty;
+            clearFields3();
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -458,7 +520,7 @@ namespace Time_Management_System_2021.Rooms
                 MessageBox.Show("Failed to delete non reservable room time...");
             }
         }
-
+        //data insert to ConsecutiveSessionRoom
         private void C_sessionAdd_Click(object sender, EventArgs e)
         {
             string mainconn = ConfigurationManager.ConnectionStrings["Time_Management_System_2021.Properties.Settings.TimeManagementSystem_DBConnectionString"].ConnectionString;
@@ -521,7 +583,7 @@ namespace Time_Management_System_2021.Rooms
             sda.Fill(dt);
             dgvNRTR.DataSource = dt;
         }
-
+        //home page button
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
