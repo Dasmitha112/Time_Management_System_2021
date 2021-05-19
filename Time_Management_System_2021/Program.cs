@@ -20,7 +20,8 @@ namespace Time_Management_System_2021
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Generalpage());
+            //Application.Run(new Generalpage());
+            Application.Run(new LoadingPage());
 
         }
     }
