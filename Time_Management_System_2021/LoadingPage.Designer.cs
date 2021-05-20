@@ -70,6 +70,7 @@ namespace Time_Management_System_2021
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoadingPage";
             this.Text = "LoadingPage";
             this.ResumeLayout(false);
