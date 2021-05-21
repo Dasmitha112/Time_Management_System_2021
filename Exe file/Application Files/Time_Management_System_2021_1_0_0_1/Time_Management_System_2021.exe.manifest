@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Time_Management_System_2021.exe" version="1.0.0.1" publicKeyToken="2b466a64edd1cc18" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Time_Management_System_2021" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Time_Management_System_2021.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Crypto.dll" size="2572288">
+      <assemblyIdentity name="BouncyCastle.Crypto" version="1.8.6.0" publicKeyToken="0E99375E54769942" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VTDf+Xa8DIiQdrl8ppW9uX7wf2NEnTL4k+0yOY7Yv+Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itextsharp.dll" size="2621440">
+      <assemblyIdentity name="itextsharp" version="5.5.13.2" publicKeyToken="8354AE6D2174DDCA" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>eHzDzlCnRkcQ0EkX0/5p5R4wCsI7jUQkwD9OVb4QdZk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Time_Management_System_2021.exe" size="5648864">
+      <assemblyIdentity name="Time_Management_System_2021" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vFYVJ5wT7EDfPgjbnhk/o5Z5l+K4iXNJIN/IynpIcXU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Resources\MicrosoftTeams-image.png" size="28346">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JW99dWpYofollytuA9RvVjbjjfkTYfAcsh2DeN51n1A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Time_Management_System_2021.exe.config" size="940">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3k3xzHinh5iHD+7+qE2SP8GiBG2fjNchldGM42K7Wdk=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-VVLM4LK\dasmi" issuerKeyHash="6665c66416ad04e72cd5e8d7c235c9f21b66c979" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>NoCu9lcEzDlN574Tu7EFr6H67+qdivJhd2ynnXso9e4=</DigestValue></Reference></SignedInfo><SignatureValue>Mg8UCAFHSe0NZ8VZ3kEpiqJCsXAhl3FZc8qAhMtMVSmCt2n3KNJZTWKQF5FmhLvjvqnBw2+TXbvsx78LhvQI6dwO90TVLaeeFzQivtWhMERzoYeOup7we8NAcO2L80XssBMRjYJNK9kFL7CrnryFxbHSN2ctww84kPMBs+VGfEM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pPYLh+9MXl8R1h1ZHr8rBWjHc6r61oWfg0lQpZHprhtn3+hyvEQ23mGr5EgKE9FRZHHtmY0bH9+lfoZBAVAFK13t3LLvgB4la7ZpMzNqNbJcHmSTY/5M4c8RGsFxE4iJib6amnOJpCrkWdGTBhKxoVNQ5nJDY1tXJLVRXAOrPTU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="eef5287b9da76c7761f28a9deaeffaa1af05b1bb13bee74d39cc0457f6ae8036" Description="" Url=""><as:assemblyIdentity name="Time_Management_System_2021.exe" version="1.0.0.1" publicKeyToken="2b466a64edd1cc18" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-VVLM4LK\dasmi</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>P1LQqZx3e92gXtjvZ5ZeB2FH6LrfDcYoytr6JKVvWes=</DigestValue></Reference></SignedInfo><SignatureValue>Mv2BChlZ+8w0NjOLmzqCP4psLvKIzpDY5LOx3/Q6sIXc0ARMi1/IcTBAGl5xuO3J7QKqdL0Q52iagm6uoInNJJ0dx1wt5OdPIpskF95XFjmQKkUbW2HDkRLMGphX3iHessmn37g0H2q/8u3xGFeg1PISLCh5Ii+W4qz/1BScsFM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pPYLh+9MXl8R1h1ZHr8rBWjHc6r61oWfg0lQpZHprhtn3+hyvEQ23mGr5EgKE9FRZHHtmY0bH9+lfoZBAVAFK13t3LLvgB4la7ZpMzNqNbJcHmSTY/5M4c8RGsFxE4iJib6amnOJpCrkWdGTBhKxoVNQ5nJDY1tXJLVRXAOrPTU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQTjTsPJ1rN7lJ5RWNKPhS3jANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFYAVgBMAE0ANABMAEsAXABkAGEAcwBtAGkwHhcNMjEwNTIxMDcwODE2WhcNMjIwNTIxMTMwODE2WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFYAVgBMAE0ANABMAEsAXABkAGEAcwBtAGkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKT2C4fvTF5fEdYdWR6/KwVox3Oq+taFn4NJUKWR6a4bZ9/ocrxENt5hq+RIChPRUWRx7ZmNGx/fpX6GQQFQBStd7dyy74AeJWu2aTMzajWyXB5kk2P+TOHPERrBcROIiYm+mppziaQq5FnRkwYSsaFTUOZyQ2NbVyS1UVwDqz01AgMBAAEwDQYJKoZIhvcNAQELBQADgYEACUg0Bz8ns4CFjZyhi1EqyE/sNR1etbX6BTBXapPfBK6r2bKEQnfjH+vSgBVFxfhN7KmbrM/1oGW9+oTTcaBnGGZOgCRmLAfbSs3FIY7nlUK5lme7DiFWP/P9MXcjHjlwyUPq6qou9f8p5REsj1DZx2VhhwC2/VSZVIjie39vAt0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
