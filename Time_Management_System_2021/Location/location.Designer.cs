@@ -179,6 +179,9 @@ namespace Time_Management_System_2021.Location
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Lecture hall",
+            "Lab room"});
             this.comboBox1.Location = new System.Drawing.Point(438, 177);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(250, 24);
@@ -385,6 +388,9 @@ namespace Time_Management_System_2021.Location
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Lecture hall",
+            "Lab room"});
             this.comboBox2.Location = new System.Drawing.Point(542, 167);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(254, 24);
