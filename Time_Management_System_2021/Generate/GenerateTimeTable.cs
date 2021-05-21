@@ -445,6 +445,7 @@ namespace Time_Management_System_2021.Generate
             min = 30;
             sec = 0;
 
+            //Query
             String query1 = "select SubjectName,Building_Name,SubjectCode,Tag,Duration,'1' from ConsecutiveSessionRoom where Room_name LIKE '%" + cmbRoom.Text + "%'";
 
             SqlCommand cmd = new SqlCommand(query1, con);
