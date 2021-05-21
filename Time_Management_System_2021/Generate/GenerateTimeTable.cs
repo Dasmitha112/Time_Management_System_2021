@@ -91,6 +91,7 @@ namespace Time_Management_System_2021.Generate
 
             con.Close();
 
+            //column data
             dgvGroup.ColumnCount = 8;
             dgvGroup.Columns[0].Name = "Time";
             dgvGroup.Columns[1].Name = "Monday";
