@@ -284,7 +284,7 @@ namespace Time_Management_System_2021.Generate
             min = 30;
             sec = 0;
 
-            String query1 = "select SubjectName,GroupNumber,SubjectCode,Tag,Duration,'1' from Sessions where LecturerName LIKE '%" + cmbLec.Text + "%'";
+            String query1 = "select Day,SubjectName,GroupNumber,SubjectCode,Tag,Duration,'1' from Sessions where LecturerName LIKE '%" + cmbLec.Text + "%'";
 
             SqlCommand cmd = new SqlCommand(query1, con);
             con.Open();
@@ -328,6 +328,39 @@ namespace Time_Management_System_2021.Generate
                 // Loop through each column.
                 foreach (DataColumn col in dt.Columns)
                 {
+
+                    /*if (dt.Rows[0][col.ColumnName].ToString() == "Tuesday")
+                    {
+                        
+                       // Loop through each row in the table.
+                       foreach (DataRow rowIn in dt.Rows)
+                       {
+                            sw = new System.IO.StringWriter();
+
+                            // Loop through each column.
+                            foreach (DataColumn colIn in dt.Columns)
+                            {
+                                if(this.dgvLec.Columns[2].Name == "Tuesday")
+                                {
+                                    sw.Write(rowIn[colIn].ToString() + "\n");
+                                    string strIn = row[col].ToString();
+                                    Console.WriteLine(strIn + "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+                                }
+                            }
+                       }
+                    }*/
+
+                    Console.WriteLine("Outside in foreeach loop");
+
+                    string data = dt.Rows[0][col.ColumnName].ToString();
+                    Console.WriteLine(data + "///////");
+
+                    string colName = this.dgvLec.Columns[1].Name;
+                    Console.WriteLine(colName + " - Column Name");
+
+                    string str = row[col].ToString();
+                    Console.WriteLine(str + "*******************");
+
                     // Output the value of each column's data.
                     sw.Write(row[col].ToString() + "\n");
                 }
