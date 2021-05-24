@@ -45,8 +45,6 @@ namespace Time_Management_System_2021.Sessions
             this.label1 = new System.Windows.Forms.Label();
             this.txtend = new System.Windows.Forms.Label();
             this.txtstart = new System.Windows.Forms.Label();
-            this.end = new System.Windows.Forms.TextBox();
-            this.start = new System.Windows.Forms.TextBox();
             this.SesionClearBtn = new System.Windows.Forms.Button();
             this.SessionAddBtn = new System.Windows.Forms.Button();
             this.SesionDurationBox = new System.Windows.Forms.NumericUpDown();
@@ -69,8 +67,6 @@ namespace Time_Management_System_2021.Sessions
             this.MDay = new System.Windows.Forms.Label();
             this.MBoxDay = new System.Windows.Forms.ComboBox();
             this.MEnd = new System.Windows.Forms.Label();
-            this.MBoxEnd = new System.Windows.Forms.TextBox();
-            this.MBoxstart = new System.Windows.Forms.TextBox();
             this.Mstart = new System.Windows.Forms.Label();
             this.SMdelete = new System.Windows.Forms.Button();
             this.SMupdate = new System.Windows.Forms.Button();
@@ -167,6 +163,10 @@ namespace Time_Management_System_2021.Sessions
             this.sessionsTableAdapter = new Time_Management_System_2021.TimeManagementSystem_DBDataSetTableAdapters.SessionsTableAdapter();
             this.sessionsTableAdapter1 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet1TableAdapters.SessionsTableAdapter();
             this.sessionsTableAdapter2 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet2TableAdapters.SessionsTableAdapter();
+            this.start = new System.Windows.Forms.ComboBox();
+            this.end = new System.Windows.Forms.ComboBox();
+            this.MBoxstart = new System.Windows.Forms.ComboBox();
+            this.MBoxEnd = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.SessionViewTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSession)).BeginInit();
@@ -277,13 +277,13 @@ namespace Time_Management_System_2021.Sessions
             // 
             this.AddSessionTab.BackgroundImage = global::Time_Management_System_2021.Properties.Resources.background1;
             this.AddSessionTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AddSessionTab.Controls.Add(this.end);
+            this.AddSessionTab.Controls.Add(this.start);
             this.AddSessionTab.Controls.Add(this.backhomeS2);
             this.AddSessionTab.Controls.Add(this.SBoxDay);
             this.AddSessionTab.Controls.Add(this.label1);
             this.AddSessionTab.Controls.Add(this.txtend);
             this.AddSessionTab.Controls.Add(this.txtstart);
-            this.AddSessionTab.Controls.Add(this.end);
-            this.AddSessionTab.Controls.Add(this.start);
             this.AddSessionTab.Controls.Add(this.SesionClearBtn);
             this.AddSessionTab.Controls.Add(this.SessionAddBtn);
             this.AddSessionTab.Controls.Add(this.SesionDurationBox);
@@ -368,20 +368,6 @@ namespace Time_Management_System_2021.Sessions
             this.txtstart.TabIndex = 19;
             this.txtstart.Text = "Starting Time";
             this.txtstart.Click += new System.EventHandler(this.txtstart_Click);
-            // 
-            // end
-            // 
-            this.end.Location = new System.Drawing.Point(277, 393);
-            this.end.Name = "end";
-            this.end.Size = new System.Drawing.Size(100, 20);
-            this.end.TabIndex = 18;
-            // 
-            // start
-            // 
-            this.start.Location = new System.Drawing.Point(277, 358);
-            this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(100, 20);
-            this.start.TabIndex = 17;
             // 
             // SesionClearBtn
             // 
@@ -560,12 +546,12 @@ namespace Time_Management_System_2021.Sessions
             // 
             this.MGTSessionTab.BackgroundImage = global::Time_Management_System_2021.Properties.Resources.background1;
             this.MGTSessionTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MGTSessionTab.Controls.Add(this.MBoxEnd);
+            this.MGTSessionTab.Controls.Add(this.MBoxstart);
             this.MGTSessionTab.Controls.Add(this.backhome2);
             this.MGTSessionTab.Controls.Add(this.MDay);
             this.MGTSessionTab.Controls.Add(this.MBoxDay);
             this.MGTSessionTab.Controls.Add(this.MEnd);
-            this.MGTSessionTab.Controls.Add(this.MBoxEnd);
-            this.MGTSessionTab.Controls.Add(this.MBoxstart);
             this.MGTSessionTab.Controls.Add(this.Mstart);
             this.MGTSessionTab.Controls.Add(this.SMdelete);
             this.MGTSessionTab.Controls.Add(this.SMupdate);
@@ -640,20 +626,6 @@ namespace Time_Management_System_2021.Sessions
             this.MEnd.Size = new System.Drawing.Size(90, 18);
             this.MEnd.TabIndex = 24;
             this.MEnd.Text = "Ending Time";
-            // 
-            // MBoxEnd
-            // 
-            this.MBoxEnd.Location = new System.Drawing.Point(266, 397);
-            this.MBoxEnd.Name = "MBoxEnd";
-            this.MBoxEnd.Size = new System.Drawing.Size(100, 20);
-            this.MBoxEnd.TabIndex = 23;
-            // 
-            // MBoxstart
-            // 
-            this.MBoxstart.Location = new System.Drawing.Point(266, 371);
-            this.MBoxstart.Name = "MBoxstart";
-            this.MBoxstart.Size = new System.Drawing.Size(100, 20);
-            this.MBoxstart.TabIndex = 22;
             // 
             // Mstart
             // 
@@ -1611,6 +1583,58 @@ namespace Time_Management_System_2021.Sessions
             // 
             this.sessionsTableAdapter2.ClearBeforeFill = true;
             // 
+            // start
+            // 
+            this.start.FormattingEnabled = true;
+            this.start.Items.AddRange(new object[] {
+            "08.30",
+            "09.30",
+            "10.30",
+            "11.30",
+            "12.30",
+            "01.30",
+            "02.30",
+            "03.30",
+            "04.30"});
+            this.start.Location = new System.Drawing.Point(277, 358);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(198, 21);
+            this.start.TabIndex = 24;
+            // 
+            // end
+            // 
+            this.end.FormattingEnabled = true;
+            this.end.Items.AddRange(new object[] {
+            "09.30",
+            "10.30",
+            "11.30",
+            "12.30",
+            "01.30",
+            "02.30",
+            "03.30",
+            "04.30",
+            "05.30"});
+            this.end.Location = new System.Drawing.Point(277, 392);
+            this.end.Name = "end";
+            this.end.Size = new System.Drawing.Size(198, 21);
+            this.end.TabIndex = 25;
+            // 
+            // MBoxstart
+            // 
+            this.MBoxstart.FormattingEnabled = true;
+            this.MBoxstart.Location = new System.Drawing.Point(266, 369);
+            this.MBoxstart.Name = "MBoxstart";
+            this.MBoxstart.Size = new System.Drawing.Size(198, 21);
+            this.MBoxstart.TabIndex = 28;
+            // 
+            // MBoxEnd
+            // 
+            this.MBoxEnd.FormattingEnabled = true;
+            this.MBoxEnd.Location = new System.Drawing.Point(266, 397);
+            this.MBoxEnd.Name = "MBoxEnd";
+            this.MBoxEnd.Size = new System.Drawing.Size(198, 21);
+            this.MBoxEnd.TabIndex = 29;
+            // 
             // AddSessionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1699,12 +1723,8 @@ namespace Time_Management_System_2021.Sessions
         private System.Windows.Forms.Label sessionM;
         private System.Windows.Forms.Label txtend;
         private System.Windows.Forms.Label txtstart;
-        private System.Windows.Forms.TextBox end;
-        private System.Windows.Forms.TextBox start;
         private System.Windows.Forms.Label Mstart;
         private System.Windows.Forms.Label MEnd;
-        private System.Windows.Forms.TextBox MBoxEnd;
-        private System.Windows.Forms.TextBox MBoxstart;
         private System.Windows.Forms.ComboBox SBoxDay;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewSession;
@@ -1794,5 +1814,9 @@ namespace Time_Management_System_2021.Sessions
         private System.Windows.Forms.TextBox TTxt;
         private System.Windows.Forms.TextBox LectureSessionTxt;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox end;
+        private System.Windows.Forms.ComboBox start;
+        private System.Windows.Forms.ComboBox MBoxEnd;
+        private System.Windows.Forms.ComboBox MBoxstart;
     }
 }

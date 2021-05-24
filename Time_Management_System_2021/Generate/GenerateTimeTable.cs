@@ -21,6 +21,8 @@ namespace Time_Management_System_2021.Generate
     public partial class GenerateTimeTable : Form
     {
 
+        TimeSlot ts = new TimeSlot();
+
         //Round button generation
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
@@ -34,9 +36,7 @@ namespace Time_Management_System_2021.Generate
 
 
         public SqlConnection con = DBconfig.con;
-        public int hr = 8;
-        public int min = 30;
-        public int sec = 0;
+
 
         public GenerateTimeTable()
         {
@@ -44,162 +44,91 @@ namespace Time_Management_System_2021.Generate
         }
  
 
-        //Time slot generation
-        private void timeCalc(int hr1, int min1, int sec1)
-        {
-            /*
-            hr = 8
-            min = 30
-            sec = 0 */
-
-            sec += sec1;
-
-            if (sec > 60)
-            {
-                min++;
-                sec -= 60;
-            }
-
-            min += min1;
-
-            if (min > 60)
-            {
-                hr++;
-                min -= 60;
-            }
-
-            hr += hr1;
-        }
-
 
 
         //Generate button Student group
         private void button6_Click(object sender, EventArgs e)
         {
-            hr = 8;
-            min = 30;
-            sec = 0;
 
-            String query1 = "select SubjectName,GroupNumber,SubjectCode,Tag,Duration,'1' from Sessions where GroupNumber LIKE '%" + cmbGroup.Text + "%'";
+            //Query
+            String query2 = "select SubjectName,GroupNumber,SubjectCode,Tag,Duration,StartTime,Day from Sessions where GroupNumber LIKE '%" + cmbGroup.Text + "%' order by StartTime";
 
-            SqlCommand cmd = new SqlCommand(query1, con);
+            SqlCommand cmd = new SqlCommand(query2, con);
             con.Open();
-            DataTable dt = new DataTable();
+            DataTable dt2 = new DataTable();
             SqlDataReader sdr = cmd.ExecuteReader();
-            dt.Load(sdr);
+            dt2.Load(sdr);
 
 
             con.Close();
 
-            //column data
-            dgvGroup.ColumnCount = 8;
-            dgvGroup.Columns[0].Name = "Time";
-            dgvGroup.Columns[1].Name = "Monday";
-            dgvGroup.Columns[2].Name = "Tuesday";
-            dgvGroup.Columns[3].Name = "Wednesday";
-            dgvGroup.Columns[4].Name = "Thursday";
-            dgvGroup.Columns[5].Name = "Friday";
-            dgvGroup.Columns[6].Name = "Saturday";
-            dgvGroup.Columns[7].Name = "Sunday";
+            DataTable newData2 = new DataTable();
 
-            System.IO.StringWriter sw;
-            string output;
-            int xCount = 1;
-            int yCount = 0;
-            string[,] Tablero = new string[5, 8];
+            //First row data
+            newData2.Columns.Add("Time", typeof(String));
+            newData2.Columns.Add("Monday", typeof(String));
+            newData2.Columns.Add("Tuesday", typeof(String));
+            newData2.Columns.Add("Wednesday", typeof(String));
+            newData2.Columns.Add("Thursday", typeof(String));
+            newData2.Columns.Add("Friday", typeof(String));
+            newData2.Columns.Add("Saturday", typeof(String));
+            newData2.Columns.Add("Sunday", typeof(String));
 
 
-            for (int k = 0; k < Tablero.GetLength(0); k++)
+            
+
+
+            String[] timeSlot2 = new String[] { "08.30", "09.30", "10.30", "11.30", "12.30", "01.30", "02.30", "03.30", "04.30" };
+
+
+            //Fill entire table
+            for (int i = 0; i < timeSlot2.Length; i++)
             {
-                for (int l = 0; l < Tablero.GetLength(1); l++)
-                {
-                    Tablero[k, l] = " --- ";
-                }
+                newData2.Rows.Add(new object[] { timeSlot2[i], "---", "---", "---", "---", "---", "---", "---" });
             }
 
-            // Loop through each row in the table.
-            foreach (DataRow row in dt.Rows)
+            foreach (DataRow row in dt2.Rows)
             {
-                sw = new System.IO.StringWriter();
 
-                // Loop through each column.
-                foreach (DataColumn col in dt.Columns)
+                //fetching data
+                string ss2 = row[0] + "\n" + row[1] + "\n" + row[2] + "\n" + row[3] + "\n" + row[4] + "\n" + row[5] + "\n" + row[6];
+                string col2 = null;
+
+                //assigning col value to fetched data
+                if (row[6].Equals("Monday"))
                 {
-
-                    // Output the value of each column's data.
-                    sw.Write(row[col].ToString() + "\n");
+                    col2 = "Monday";
+                }
+                else if (row[6].Equals("Tuesday"))
+                {
+                    col2 = "Tuesday";
+                }
+                else if (row[6].Equals("Wednesday"))
+                {
+                    col2 = "Wednesday";
+                }
+                else if (row[6].Equals("Thursday"))
+                {
+                    col2 = "Thursday";
+                }
+                else if (row[6].Equals("Friday"))
+                {
+                    col2 = "Friday";
                 }
 
-                output = sw.ToString();
-
-                // Trim off the trailing ", ", so the output looks correct.
-                if (output.Length > 2)
-                    output = output.Substring(0, output.Length - 2);
-
-
-                if (yCount == 5)
+                //compare fetched data and with timeslot values and place to correct timetable slot
+                for (int i = 0; i < timeSlot2.Length; i++)
                 {
-                    yCount = 0;
-                    xCount++;
-                }
-                try
-                {
-
-                    Tablero[yCount, xCount] = output;
-                    yCount++;
-                }
-                catch (Exception ex)
-                {
-                }
-            }
-
-            do
-            {
-                foreach (DataGridViewRow row in dgvGroup.Rows)
-                {
-                    try
+                    if (row[5].Equals(timeSlot2[i]))
                     {
-                        dgvGroup.Rows.Remove(row);
+                        newData2.Rows[i][col2] = ss2;
+                        break;
                     }
-                    catch (Exception) { }
                 }
-            } while (dgvGroup.Rows.Count > 1);
-
-
-            for (int k = 0; k < Tablero.GetLength(0); k++)
-            {
-                var arlist1 = new ArrayList();
-
-                for (int l = 0; l < Tablero.GetLength(1); l++)
-                {
-                    arlist1.Add(Tablero[k, l]);
-                }
-
-                string srrr = (string)arlist1[1];
-                string srrr2 = srrr.Substring(srrr.Length - 2);
-
-                string[] row = new string[] {
-                    hr + "." + min,
-                    (string) arlist1[1],
-                    (string) arlist1[2],
-                    (string) arlist1[3],
-                    (string) arlist1[4],
-                    (string) arlist1[5],
-                    (string) arlist1[6],
-                    (string) arlist1[7]
-                };
-
-                try
-                {
-                    timeCalc(int.Parse(srrr2.Trim()), 0, 0);
-                }
-                catch (Exception ex)
-                {
-
-                }
-
-                dgvGroup.Rows.Add(row);
             }
+
+            //place values to table
+            dgvGroup.DataSource = newData2;
         }
         
 
@@ -281,289 +210,164 @@ namespace Time_Management_System_2021.Generate
         //Generate button lecturer
         private void button1_Click(object sender, EventArgs e)
         {
-            hr = 8;
-            min = 30;
-            sec = 0;
-
-            String query1 = "select Day,SubjectName,GroupNumber,SubjectCode,Tag,Duration,'1' from Sessions where LecturerName LIKE '%" + cmbLec.Text + "%'";
+            //Query
+            String query1 = "select SubjectName,GroupNumber,SubjectCode,Tag,Duration,StartTime,Day from Sessions where LecturerName LIKE '%" + cmbLec.Text + "%' order by StartTime";
 
             SqlCommand cmd = new SqlCommand(query1, con);
             con.Open();
             DataTable dt = new DataTable();
             SqlDataReader sdr = cmd.ExecuteReader();
             dt.Load(sdr);
- 
 
             con.Close();
 
-            dgvLec.ColumnCount = 8;
-            dgvLec.Columns[0].Name = "Time";
-            dgvLec.Columns[1].Name = "Monday";
-            dgvLec.Columns[2].Name = "Tuesday";
-            dgvLec.Columns[3].Name = "Wednesday";
-            dgvLec.Columns[4].Name = "Thursday";
-            dgvLec.Columns[5].Name = "Friday";
-            dgvLec.Columns[6].Name = "Saturday";
-            dgvLec.Columns[7].Name = "Sunday";
+            DataTable newData = new DataTable();
 
-            System.IO.StringWriter sw;
-            string output;
-            int xCount = 1;
-            int yCount = 0;
-            string[,] Tablero = new string[5, 8];
+            //First row data
+            newData.Columns.Add("Time", typeof(String));
+            newData.Columns.Add("Monday", typeof(String));
+            newData.Columns.Add("Tuesday", typeof(String));
+            newData.Columns.Add("Wednesday", typeof(String));
+            newData.Columns.Add("Thursday", typeof(String));
+            newData.Columns.Add("Friday", typeof(String));
+            newData.Columns.Add("Saturday", typeof(String));
+            newData.Columns.Add("Sunday", typeof(String));
+
+            String[] timeSlot = new String[] { "08.30", "09.30", "10.30", "11.30", "12.30", "01.30", "02.30", "03.30", "04.30" };
 
 
-            for (int k = 0; k < Tablero.GetLength(0); k++)
+            //Fill entire table
+            for (int i = 0; i < timeSlot.Length; i++)
             {
-                for (int l = 0; l < Tablero.GetLength(1); l++)
-                {
-                    Tablero[k, l] = " --- ";
-                }
+                newData.Rows.Add(new object[] { timeSlot[i], "---", "---", "---", "---", "---", "---", "---" });
             }
 
-            // Loop through each row in the table.
             foreach (DataRow row in dt.Rows)
             {
-                sw = new System.IO.StringWriter();
 
-                // Loop through each column.
-                foreach (DataColumn col in dt.Columns)
+                //fetching data
+                string ss = row[0] + "\n" + row[1] + "\n" + row[2] + "\n" + row[3] + "\n" + row[4] + "\n" + row[5] + "\n" + row[6];
+                string col = null;
+
+
+                //assigning col value to fetched data
+                if (row[6].Equals("Monday"))
                 {
+                    col = "Monday";
+                }
+                else if (row[6].Equals("Tuesday"))
+                {
+                    col = "Tuesday";
+                }
+                else if (row[6].Equals("Wednesday"))
+                {
+                    col = "Wednesday";
+                }
+                else if (row[6].Equals("Thursday"))
+                {
+                    col = "Thursday";
+                }
+                else if (row[6].Equals("Friday"))
+                {
+                    col = "Friday";
+                }
 
-                    /*if (dt.Rows[0][col.ColumnName].ToString() == "Tuesday")
+
+                //compare fetched data and with timeslot values and place to correct timetable slot
+                for (int i = 0; i < timeSlot.Length; i++)
+                {
+                    if (row[5].Equals(timeSlot[i]))
                     {
-                        
-                       // Loop through each row in the table.
-                       foreach (DataRow rowIn in dt.Rows)
-                       {
-                            sw = new System.IO.StringWriter();
-
-                            // Loop through each column.
-                            foreach (DataColumn colIn in dt.Columns)
-                            {
-                                if(this.dgvLec.Columns[2].Name == "Tuesday")
-                                {
-                                    sw.Write(rowIn[colIn].ToString() + "\n");
-                                    string strIn = row[col].ToString();
-                                    Console.WriteLine(strIn + "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
-                                }
-                            }
-                       }
-                    }*/
-
-                    Console.WriteLine("Outside in foreeach loop");
-
-                    string data = dt.Rows[0][col.ColumnName].ToString();
-                    Console.WriteLine(data + "///////");
-
-                    string colName = this.dgvLec.Columns[1].Name;
-                    Console.WriteLine(colName + " - Column Name");
-
-                    string str = row[col].ToString();
-                    Console.WriteLine(str + "*******************");
-
-                    // Output the value of each column's data.
-                    sw.Write(row[col].ToString() + "\n");
-                }
-
-                output = sw.ToString();
-
-                // Trim off the trailing ", ", so the output looks correct.
-                if (output.Length > 2)
-                    output = output.Substring(0, output.Length - 2);
-
-
-                if (yCount == 5)
-                {
-                    yCount = 0;
-                    xCount++;
-                }
-                try
-                {
-
-                    Tablero[yCount, xCount] = output;
-                    yCount++;
-                }
-                catch (Exception ex)
-                {
-                }
-            }
-
-            do
-            {
-                foreach (DataGridViewRow row in dgvLec.Rows)
-                {
-                    try
-                    {
-                        dgvLec.Rows.Remove(row);
+                        newData.Rows[i][col] = ss;
+                        break;
                     }
-                    catch (Exception) { }
                 }
-            } while (dgvLec.Rows.Count > 1);
-
-
-            for (int k = 0; k < Tablero.GetLength(0); k++)
-            {
-                var arlist1 = new ArrayList();
-
-                for (int l = 0; l < Tablero.GetLength(1); l++)
-                {
-                    arlist1.Add(Tablero[k, l]);
-                }
-
-                string srrr = (string)arlist1[1];
-                string srrr2 = srrr.Substring(srrr.Length - 2);
-
-                string[] row = new string[] {
-                    hr + "." + min,
-                    (string) arlist1[1],
-                    (string) arlist1[2],
-                    (string) arlist1[3],
-                    (string) arlist1[4],
-                    (string) arlist1[5],
-                    (string) arlist1[6],
-                    (string) arlist1[7]
-                };
-
-                try
-                {
-                    timeCalc(int.Parse(srrr2.Trim()), 0, 0);
-                }
-                catch (Exception ex)
-                {
-
-                }
-
-                dgvLec.Rows.Add(row);
             }
+
+            //place values to table
+            dgvLec.DataSource = newData;
         }
 
 
         //Generate button Class Room
         private void button9_Click(object sender, EventArgs e)
         {
-            hr = 8;
-            min = 30;
-            sec = 0;
-
             //Query
-            String query1 = "select SubjectName,Building_Name,SubjectCode,Tag,Duration,'1' from ConsecutiveSessionRoom where Room_name LIKE '%" + cmbRoom.Text + "%'";
+            String query3 = "select SubjectName,Building_Name,SubjectCode,Tag,Duration,Room_Name,StartTime,Day from ConsecutiveSessionRoom where Room_Name LIKE '%" + cmbRoom.Text + "%' order by StartTime";
 
-            SqlCommand cmd = new SqlCommand(query1, con);
+            //Loading data table
+            SqlCommand cmd = new SqlCommand(query3, con);
             con.Open();
-            DataTable dt = new DataTable();
+            DataTable dt3 = new DataTable();
             SqlDataReader sdr = cmd.ExecuteReader();
-            dt.Load(sdr);
+            dt3.Load(sdr);
 
             con.Close();
 
-            dgvClassRoom.ColumnCount = 8;
-            dgvClassRoom.Columns[0].Name = "Time";
-            dgvClassRoom.Columns[1].Name = "Monday";
-            dgvClassRoom.Columns[2].Name = "Tuesday";
-            dgvClassRoom.Columns[3].Name = "Wednesday";
-            dgvClassRoom.Columns[4].Name = "Thursday";
-            dgvClassRoom.Columns[5].Name = "Friday";
-            dgvClassRoom.Columns[6].Name = "Saturday";
-            dgvClassRoom.Columns[7].Name = "Sunday";
-
-            System.IO.StringWriter sw;
-            string output;
-            int xCount = 1;
-            int yCount = 0;
-            string[,] Tablero = new string[5, 8];
+            DataTable newData3 = new DataTable();
 
 
-            for (int k = 0; k < Tablero.GetLength(0); k++)
+
+            //First row data
+            newData3.Columns.Add("Time", typeof(String));
+            newData3.Columns.Add("Monday", typeof(String));
+            newData3.Columns.Add("Tuesday", typeof(String));
+            newData3.Columns.Add("Wednesday", typeof(String));
+            newData3.Columns.Add("Thursday", typeof(String));
+            newData3.Columns.Add("Friday", typeof(String));
+            newData3.Columns.Add("Saturday", typeof(String));
+            newData3.Columns.Add("Sunday", typeof(String));
+
+            String[] timeSlot3 = new String[] { "08.30", "09.30", "10.30", "11.30", "12.30", "01.30", "02.30", "03.30", "04.30" };
+
+            //Fill entire table
+            for (int i = 0; i < timeSlot3.Length; i++)
             {
-                for (int l = 0; l < Tablero.GetLength(1); l++)
-                {
-                    Tablero[k, l] = " --- ";
-                }
+                newData3.Rows.Add(new object[] { timeSlot3[i], "---", "---", "---", "---", "---", "---", "---" });
             }
 
-            // Loop through each row in the table.
-            foreach (DataRow row in dt.Rows)
+            foreach (DataRow row in dt3.Rows)
             {
-                sw = new System.IO.StringWriter();
 
-                // Loop through each column.
-                foreach (DataColumn col in dt.Columns)
+                //fetching data
+                string ss = row[0] + "\n" + row[1] + "\n" + row[2] + "\n" + row[3] + "\n" + row[4] + "\n" + row[5] + "\n" + row[6] + "\n" + row[7];
+                string col = null;
+
+                //assigning col value to fetched data
+                if (row[7].Equals("Monday"))
                 {
-                    // Output the value of each column's data.
-                    sw.Write(row[col].ToString() + "\n");
+                    col = "Monday";
+                }
+                else if (row[7].Equals("Tuesday"))
+                {
+                    col = "Tuesday";
+                }
+                else if (row[7].Equals("Wednesday"))
+                {
+                    col = "Wednesday";
+                }
+                else if (row[7].Equals("Thursday"))
+                {
+                    col = "Thursday";
+                }
+                else if (row[7].Equals("Friday"))
+                {
+                    col = "Friday";
                 }
 
-                output = sw.ToString();
-
-                // Trim off the trailing ", ", so the output looks correct.
-                if (output.Length > 2)
-                    output = output.Substring(0, output.Length - 2);
-
-
-                if (yCount == 5)
+                //compare fetched data and with timeslot values and place to correct timetable slot
+                for (int i = 0; i < timeSlot3.Length; i++)
                 {
-                    yCount = 0;
-                    xCount++;
-                }
-                try
-                {
-
-                    Tablero[yCount, xCount] = output;
-                    yCount++;
-                }
-                catch (Exception ex)
-                {
-                }
-            }
-
-            do
-            {
-                foreach (DataGridViewRow row in dgvClassRoom.Rows)
-                {
-                    try
+                    if (row[6].Equals(timeSlot3[i]))
                     {
-                        dgvClassRoom.Rows.Remove(row);
+                        newData3.Rows[i][col] = ss;
+                        break;
                     }
-                    catch (Exception) { }
                 }
-            } while (dgvClassRoom.Rows.Count > 1);
-
-
-            for (int k = 0; k < Tablero.GetLength(0); k++)
-            {
-                var arlist1 = new ArrayList();
-
-                for (int l = 0; l < Tablero.GetLength(1); l++)
-                {
-                    arlist1.Add(Tablero[k, l]);
-                }
-
-                string srrr = (string)arlist1[1];
-                string srrr2 = srrr.Substring(srrr.Length - 2);
-
-                string[] row = new string[] {
-                    hr + "." + min,
-                    (string) arlist1[1],
-                    (string) arlist1[2],
-                    (string) arlist1[3],
-                    (string) arlist1[4],
-                    (string) arlist1[5],
-                    (string) arlist1[6],
-                    (string) arlist1[7]
-                };
-
-                try
-                {
-                    timeCalc(int.Parse(srrr2.Trim()), 0, 0);
-                }
-                catch (Exception ex)
-                {
-
-                }
-
-                dgvClassRoom.Rows.Add(row);
             }
+
+            //place values to table
+            dgvClassRoom.DataSource = newData3;
         }
 
 

@@ -17,6 +17,7 @@ namespace Time_Management_System_2021.Sessions
     public partial class AddSessionForm : Form
     {
 
+        //Round button generation
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
             int nLeft,
@@ -340,7 +341,6 @@ namespace Time_Management_System_2021.Sessions
                 cmd.Parameters.AddWithValue("@SubjectName", SessionSubNBox.Text);
                 cmd.Parameters.AddWithValue("@SubjectCode", SessionSubCodeBox.Text);
                 cmd.Parameters.AddWithValue("@Tag", SessionTagBox.Text);
-                //cmd.Parameters.AddWithValue("@GroupNumber", SessionGroupBox.Text);
                 cmd.Parameters.AddWithValue("@GroupNumber", SessionGroupBox.Text);
                 cmd.Parameters.AddWithValue("@StudentCount", SessionStucountBox.Text);
                 cmd.Parameters.AddWithValue("@Duration", SesionDurationBox.Text);
@@ -415,9 +415,9 @@ namespace Time_Management_System_2021.Sessions
             SesionDurationBox.Value = 0;
             SessionStucountBox.Value = 0;
 
-            start.Clear();
+            start.SelectedIndex = -1;
             SBoxDay.SelectedIndex = -1;
-            end.Clear();
+            end.SelectedIndex = -1;
 
             SessionID = 0;
 
@@ -529,9 +529,9 @@ namespace Time_Management_System_2021.Sessions
             
             numericMDuration.Value = 0;
 
-            MBoxstart.Clear();
+            MBoxstart.SelectedIndex = -1;
             MBoxDay.SelectedIndex = -1;
-            MBoxEnd.Clear();
+            MBoxEnd.SelectedIndex = -1;
 
             SessionID = 0;
         }
