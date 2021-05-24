@@ -40,6 +40,8 @@ namespace Time_Management_System_2021.Sessions
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewSession = new System.Windows.Forms.DataGridView();
             this.AddSessionTab = new System.Windows.Forms.TabPage();
+            this.end = new System.Windows.Forms.ComboBox();
+            this.start = new System.Windows.Forms.ComboBox();
             this.backhomeS2 = new System.Windows.Forms.Button();
             this.SBoxDay = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,6 +65,8 @@ namespace Time_Management_System_2021.Sessions
             this.SessionLecName = new System.Windows.Forms.Label();
             this.SessionAddTopic = new System.Windows.Forms.Label();
             this.MGTSessionTab = new System.Windows.Forms.TabPage();
+            this.MBoxEnd = new System.Windows.Forms.ComboBox();
+            this.MBoxstart = new System.Windows.Forms.ComboBox();
             this.backhome2 = new System.Windows.Forms.Button();
             this.MDay = new System.Windows.Forms.Label();
             this.MBoxDay = new System.Windows.Forms.ComboBox();
@@ -163,10 +167,6 @@ namespace Time_Management_System_2021.Sessions
             this.sessionsTableAdapter = new Time_Management_System_2021.TimeManagementSystem_DBDataSetTableAdapters.SessionsTableAdapter();
             this.sessionsTableAdapter1 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet1TableAdapters.SessionsTableAdapter();
             this.sessionsTableAdapter2 = new Time_Management_System_2021.TimeManagementSystem_DBDataSet2TableAdapters.SessionsTableAdapter();
-            this.start = new System.Windows.Forms.ComboBox();
-            this.end = new System.Windows.Forms.ComboBox();
-            this.MBoxstart = new System.Windows.Forms.ComboBox();
-            this.MBoxEnd = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.SessionViewTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSession)).BeginInit();
@@ -308,6 +308,42 @@ namespace Time_Management_System_2021.Sessions
             this.AddSessionTab.TabIndex = 1;
             this.AddSessionTab.Text = "Add Session";
             this.AddSessionTab.UseVisualStyleBackColor = true;
+            // 
+            // end
+            // 
+            this.end.FormattingEnabled = true;
+            this.end.Items.AddRange(new object[] {
+            "09.30",
+            "10.30",
+            "11.30",
+            "12.30",
+            "01.30",
+            "02.30",
+            "03.30",
+            "04.30",
+            "05.30"});
+            this.end.Location = new System.Drawing.Point(277, 392);
+            this.end.Name = "end";
+            this.end.Size = new System.Drawing.Size(198, 21);
+            this.end.TabIndex = 25;
+            // 
+            // start
+            // 
+            this.start.FormattingEnabled = true;
+            this.start.Items.AddRange(new object[] {
+            "08.30",
+            "09.30",
+            "10.30",
+            "11.30",
+            "12.30",
+            "01.30",
+            "02.30",
+            "03.30",
+            "04.30"});
+            this.start.Location = new System.Drawing.Point(277, 358);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(198, 21);
+            this.start.TabIndex = 24;
             // 
             // backhomeS2
             // 
@@ -578,6 +614,42 @@ namespace Time_Management_System_2021.Sessions
             this.MGTSessionTab.Text = "Manage Session";
             this.MGTSessionTab.UseVisualStyleBackColor = true;
             this.MGTSessionTab.Click += new System.EventHandler(this.Sessions_Load);
+            // 
+            // MBoxEnd
+            // 
+            this.MBoxEnd.FormattingEnabled = true;
+            this.MBoxEnd.Items.AddRange(new object[] {
+            "08.30",
+            "09.30",
+            "10.30",
+            "11.30",
+            "12.30",
+            "01.30",
+            "02.30",
+            "03.30",
+            "04.30"});
+            this.MBoxEnd.Location = new System.Drawing.Point(266, 397);
+            this.MBoxEnd.Name = "MBoxEnd";
+            this.MBoxEnd.Size = new System.Drawing.Size(198, 21);
+            this.MBoxEnd.TabIndex = 29;
+            // 
+            // MBoxstart
+            // 
+            this.MBoxstart.FormattingEnabled = true;
+            this.MBoxstart.Items.AddRange(new object[] {
+            "08.30",
+            "09.30",
+            "10.30",
+            "11.30",
+            "12.30",
+            "01.30",
+            "02.30",
+            "03.30",
+            "04.30"});
+            this.MBoxstart.Location = new System.Drawing.Point(266, 369);
+            this.MBoxstart.Name = "MBoxstart";
+            this.MBoxstart.Size = new System.Drawing.Size(198, 21);
+            this.MBoxstart.TabIndex = 28;
             // 
             // backhome2
             // 
@@ -1582,58 +1654,6 @@ namespace Time_Management_System_2021.Sessions
             // sessionsTableAdapter2
             // 
             this.sessionsTableAdapter2.ClearBeforeFill = true;
-            // 
-            // start
-            // 
-            this.start.FormattingEnabled = true;
-            this.start.Items.AddRange(new object[] {
-            "08.30",
-            "09.30",
-            "10.30",
-            "11.30",
-            "12.30",
-            "01.30",
-            "02.30",
-            "03.30",
-            "04.30"});
-            this.start.Location = new System.Drawing.Point(277, 358);
-            this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(198, 21);
-            this.start.TabIndex = 24;
-            // 
-            // end
-            // 
-            this.end.FormattingEnabled = true;
-            this.end.Items.AddRange(new object[] {
-            "09.30",
-            "10.30",
-            "11.30",
-            "12.30",
-            "01.30",
-            "02.30",
-            "03.30",
-            "04.30",
-            "05.30"});
-            this.end.Location = new System.Drawing.Point(277, 392);
-            this.end.Name = "end";
-            this.end.Size = new System.Drawing.Size(198, 21);
-            this.end.TabIndex = 25;
-            // 
-            // MBoxstart
-            // 
-            this.MBoxstart.FormattingEnabled = true;
-            this.MBoxstart.Location = new System.Drawing.Point(266, 369);
-            this.MBoxstart.Name = "MBoxstart";
-            this.MBoxstart.Size = new System.Drawing.Size(198, 21);
-            this.MBoxstart.TabIndex = 28;
-            // 
-            // MBoxEnd
-            // 
-            this.MBoxEnd.FormattingEnabled = true;
-            this.MBoxEnd.Location = new System.Drawing.Point(266, 397);
-            this.MBoxEnd.Name = "MBoxEnd";
-            this.MBoxEnd.Size = new System.Drawing.Size(198, 21);
-            this.MBoxEnd.TabIndex = 29;
             // 
             // AddSessionForm
             // 
