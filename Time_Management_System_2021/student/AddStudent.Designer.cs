@@ -388,7 +388,11 @@ namespace Time_Management_System_2021.student
             this.programtxt.FormattingEnabled = true;
             this.programtxt.ItemHeight = 20;
             this.programtxt.Items.AddRange(new object[] {
-            "dsjksdjnjs"});
+            "IT",
+            "IM",
+            "CSE",
+            "CSSE",
+            "DS"});
             this.programtxt.Location = new System.Drawing.Point(287, 256);
             this.programtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.programtxt.Name = "programtxt";
