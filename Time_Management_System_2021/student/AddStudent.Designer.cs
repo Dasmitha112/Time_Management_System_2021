@@ -149,7 +149,7 @@ namespace Time_Management_System_2021.student
             this.btnHomeMWD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHomeMWD.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeMWD.Image")));
             this.btnHomeMWD.Location = new System.Drawing.Point(44, 42);
-            this.btnHomeMWD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHomeMWD.Margin = new System.Windows.Forms.Padding(4);
             this.btnHomeMWD.Name = "btnHomeMWD";
             this.btnHomeMWD.Size = new System.Drawing.Size(63, 46);
             this.btnHomeMWD.TabIndex = 40;
@@ -388,10 +388,7 @@ namespace Time_Management_System_2021.student
             this.programtxt.FormattingEnabled = true;
             this.programtxt.ItemHeight = 20;
             this.programtxt.Items.AddRange(new object[] {
-            "IT",
-            "IM",
-            "CSE",
-            "CSSE"});
+            "dsjksdjnjs"});
             this.programtxt.Location = new System.Drawing.Point(287, 256);
             this.programtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.programtxt.Name = "programtxt";
@@ -494,7 +491,7 @@ namespace Time_Management_System_2021.student
             this.button6.ForeColor = System.Drawing.Color.Transparent;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.Location = new System.Drawing.Point(43, 30);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(63, 46);
             this.button6.TabIndex = 30;
@@ -608,7 +605,7 @@ namespace Time_Management_System_2021.student
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.Location = new System.Drawing.Point(73, 42);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(63, 46);
             this.button7.TabIndex = 54;
