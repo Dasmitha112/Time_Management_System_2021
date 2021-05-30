@@ -399,8 +399,8 @@
             // 
             this.buildingBox.FormattingEnabled = true;
             this.buildingBox.Items.AddRange(new object[] {
-            "New Building",
-            "Main Building"});
+            "Main Building",
+            "DBlock"});
             this.buildingBox.Location = new System.Drawing.Point(568, 191);
             this.buildingBox.Name = "buildingBox";
             this.buildingBox.Size = new System.Drawing.Size(196, 21);
@@ -516,7 +516,7 @@
             // 
             this.LUPbuildingbox.FormattingEnabled = true;
             this.LUPbuildingbox.Items.AddRange(new object[] {
-            "New Building",
+            "DBlock",
             "Main Building"});
             this.LUPbuildingbox.Location = new System.Drawing.Point(577, 199);
             this.LUPbuildingbox.Name = "LUPbuildingbox";

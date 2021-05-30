@@ -246,10 +246,10 @@
             this.SEHBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SEHBox.FormattingEnabled = true;
             this.SEHBox.Items.AddRange(new object[] {
-            "0 Hour",
-            "1 Hour",
-            "2 Hour",
-            "3 Hour"});
+            "0",
+            "1",
+            "2",
+            "3"});
             this.SEHBox.Location = new System.Drawing.Point(716, 281);
             this.SEHBox.Name = "SEHBox";
             this.SEHBox.Size = new System.Drawing.Size(193, 21);
@@ -260,10 +260,10 @@
             this.SLabHBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SLabHBox.FormattingEnabled = true;
             this.SLabHBox.Items.AddRange(new object[] {
-            "0 Hour",
-            "1 Hour",
-            "2 Hour",
-            "3 Hour"});
+            "0",
+            "1",
+            "2",
+            "3"});
             this.SLabHBox.Location = new System.Drawing.Point(716, 220);
             this.SLabHBox.Name = "SLabHBox";
             this.SLabHBox.Size = new System.Drawing.Size(193, 21);
@@ -274,10 +274,10 @@
             this.STHBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.STHBox.FormattingEnabled = true;
             this.STHBox.Items.AddRange(new object[] {
-            "0 Hour",
-            "1 Hour",
-            "2 Hour",
-            "3 Hour"});
+            "0",
+            "1",
+            "2",
+            "3"});
             this.STHBox.Location = new System.Drawing.Point(716, 171);
             this.STHBox.Name = "STHBox";
             this.STHBox.Size = new System.Drawing.Size(193, 21);
@@ -318,10 +318,10 @@
             this.SLHBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SLHBox.FormattingEnabled = true;
             this.SLHBox.Items.AddRange(new object[] {
-            "0 Hour",
-            "1 Hour",
-            "2 Hour",
-            "3 Hour"});
+            "0",
+            "1",
+            "2",
+            "3"});
             this.SLHBox.Location = new System.Drawing.Point(716, 126);
             this.SLHBox.Name = "SLHBox";
             this.SLHBox.Size = new System.Drawing.Size(193, 21);
@@ -332,8 +332,8 @@
             this.SsemesterBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SsemesterBox.FormattingEnabled = true;
             this.SsemesterBox.Items.AddRange(new object[] {
-            "1 Semester",
-            "2 Semester"});
+            "S1 ",
+            "S2 "});
             this.SsemesterBox.Location = new System.Drawing.Point(259, 285);
             this.SsemesterBox.Name = "SsemesterBox";
             this.SsemesterBox.Size = new System.Drawing.Size(179, 21);
@@ -431,10 +431,10 @@
             this.SyearBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SyearBox.FormattingEnabled = true;
             this.SyearBox.Items.AddRange(new object[] {
-            "1 Year",
-            "2  Year",
-            "3  Year",
-            "4  Year"});
+            "Y1",
+            "Y2  ",
+            "Y3  ",
+            "Y4 "});
             this.SyearBox.Location = new System.Drawing.Point(259, 126);
             this.SyearBox.Name = "SyearBox";
             this.SyearBox.Size = new System.Drawing.Size(179, 21);
@@ -550,8 +550,8 @@
             this.SUPSemesterBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SUPSemesterBox.FormattingEnabled = true;
             this.SUPSemesterBox.Items.AddRange(new object[] {
-            "1 Semester",
-            "2 Semester"});
+            "S1",
+            "S2"});
             this.SUPSemesterBox.Location = new System.Drawing.Point(173, 299);
             this.SUPSemesterBox.Name = "SUPSemesterBox";
             this.SUPSemesterBox.Size = new System.Drawing.Size(179, 21);
@@ -573,9 +573,10 @@
             this.SUPTHBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SUPTHBox.FormattingEnabled = true;
             this.SUPTHBox.Items.AddRange(new object[] {
-            "1 Hour",
-            "2 Hour",
-            "3 Hour"});
+            "0",
+            "1",
+            "2",
+            "3"});
             this.SUPTHBox.Location = new System.Drawing.Point(690, 166);
             this.SUPTHBox.Name = "SUPTHBox";
             this.SUPTHBox.Size = new System.Drawing.Size(197, 21);
@@ -586,9 +587,10 @@
             this.SUPLabHBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SUPLabHBox.FormattingEnabled = true;
             this.SUPLabHBox.Items.AddRange(new object[] {
-            "1 Hour",
-            "2 Hour",
-            "3 Hour"});
+            "0",
+            "1",
+            "2",
+            "3"});
             this.SUPLabHBox.Location = new System.Drawing.Point(690, 227);
             this.SUPLabHBox.Name = "SUPLabHBox";
             this.SUPLabHBox.Size = new System.Drawing.Size(197, 21);
@@ -599,9 +601,10 @@
             this.SUPVivaHBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SUPVivaHBox.FormattingEnabled = true;
             this.SUPVivaHBox.Items.AddRange(new object[] {
-            "1 Hour",
-            "2 Hour",
-            "3 Hour"});
+            "0",
+            "1",
+            "2",
+            "3"});
             this.SUPVivaHBox.Location = new System.Drawing.Point(690, 295);
             this.SUPVivaHBox.Name = "SUPVivaHBox";
             this.SUPVivaHBox.Size = new System.Drawing.Size(197, 21);
@@ -620,9 +623,10 @@
             this.SUPLHBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SUPLHBox.FormattingEnabled = true;
             this.SUPLHBox.Items.AddRange(new object[] {
-            "1 Hour",
-            "2 Hour",
-            "3 Hour"});
+            "0",
+            "1",
+            "2",
+            "3"});
             this.SUPLHBox.Location = new System.Drawing.Point(690, 98);
             this.SUPLHBox.Name = "SUPLHBox";
             this.SUPLHBox.Size = new System.Drawing.Size(197, 21);
@@ -633,10 +637,10 @@
             this.SUPYearBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SUPYearBox.FormattingEnabled = true;
             this.SUPYearBox.Items.AddRange(new object[] {
-            "1 Year",
-            "2  Year",
-            "3  Year",
-            "4  Year"});
+            "Y1",
+            "Y2",
+            "Y3",
+            "Y4"});
             this.SUPYearBox.Location = new System.Drawing.Point(173, 111);
             this.SUPYearBox.Name = "SUPYearBox";
             this.SUPYearBox.Size = new System.Drawing.Size(179, 21);
